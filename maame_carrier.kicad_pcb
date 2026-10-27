@@ -9826,5 +9826,29 @@
 			(justify right)
 		)
 	)
+	(gr_text "STANDOFFS M2.5 >= 10MM"
+		(at 72.5 96.9 0)
+		(layer "F.SilkS")
+		(uuid "22496124-78a2-4329-88ac-a222d301d580")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "TRIM LEADS <= 1.5MM"
+		(at 72.5 99 0)
+		(layer "F.SilkS")
+		(uuid "157720b7-6584-4c6f-a75e-7a754d862271")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left)
+		)
+	)
 	(embedded_fonts no)
 )
