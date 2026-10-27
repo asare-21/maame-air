@@ -8,7 +8,7 @@
 		(title "Maame carrier board")
 		(date "2026-10-27")
 		(rev "A-draft")
-		(comment 1 "Base board under Kakute H7 V1.5 + Tekko32 stack, Pi Zero W socket, peripheral headers")
+		(comment 1 "Base board under Kakute H7 V1.5 (ESC separate), Pi Zero W socket, peripheral headers")
 	)
 	(lib_symbols
 		(symbol "maame_carrier:BEC_IN"
@@ -3575,7 +3575,7 @@
 		)
 		(uuid "b637b9a9-986b-5b28-8979-43cd75cbc46a")
 	)
-	(text "2. Kakute H7 + Tekko32 stack on H1-H4 (30.5 mm, M3), stock 8-pin ESC cable between them, unchanged."
+	(text "2. Kakute H7 alone on H1-H4 (30.5 mm, M3). Tekko32 is on the power board, lower S500 plate; stock 8-pin ESC cable runs down to it."
 		(exclude_from_sim no)
 		(at 20.32 259.08 0)
 		(effects

@@ -372,7 +372,7 @@
 				)
 			)
 		)
-		(property "Value" "M3 stack hole"
+		(property "Value" "M3 FC hole"
 			(at 0 4.2 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -3014,7 +3014,7 @@
 				)
 			)
 		)
-		(property "Value" "M3 stack hole"
+		(property "Value" "M3 FC hole"
 			(at 0 4.2 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -6246,7 +6246,7 @@
 				)
 			)
 		)
-		(property "Value" "M3 stack hole"
+		(property "Value" "M3 FC hole"
 			(at 0 4.2 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -7123,7 +7123,7 @@
 				)
 			)
 		)
-		(property "Value" "M3 stack hole"
+		(property "Value" "M3 FC hole"
 			(at 0 4.2 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -8397,8 +8397,8 @@
 		(uuid "4b1b2614-a3cf-4a4a-b804-3e95475b27cc")
 	)
 	(gr_line
-		(start 8.5 14)
-		(end 51.5 14)
+		(start 12.5 18.5)
+		(end 47.5 18.5)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -8407,8 +8407,8 @@
 		(uuid "707eedb6-9d70-4550-81a3-85a6f80f5029")
 	)
 	(gr_line
-		(start 8.5 58)
-		(end 8.5 14)
+		(start 12.5 53.5)
+		(end 12.5 18.5)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -8417,8 +8417,8 @@
 		(uuid "afe8239e-bc52-4d13-ad99-0f5d8393789f")
 	)
 	(gr_line
-		(start 51.5 14)
-		(end 51.5 58)
+		(start 47.5 18.5)
+		(end 47.5 53.5)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -8427,8 +8427,8 @@
 		(uuid "b14bf4fe-f7bb-4f6c-8ffe-14d1002a5663")
 	)
 	(gr_line
-		(start 51.5 58)
-		(end 8.5 58)
+		(start 47.5 53.5)
+		(end 12.5 53.5)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -8469,7 +8469,7 @@
 			)
 		)
 	)
-	(gr_text "TEKKO32 + KAKUTE STACK"
+	(gr_text "KAKUTE H7"
 		(at 30 33 0)
 		(layer "F.SilkS")
 		(uuid "d0368def-f4aa-4a9f-a41e-27fb44e4ae73")
