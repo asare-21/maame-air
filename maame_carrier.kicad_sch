@@ -749,60 +749,6 @@
 					)
 				)
 				(pin passive line
-					(at 12.7 -22.86 180)
-					(length 2.54)
-					(name "T1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "19"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 12.7 -25.4 180)
-					(length 2.54)
-					(name "R1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "20"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 12.7 -27.94 180)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "21"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin passive line
 					(at 12.7 -30.48 180)
 					(length 2.54)
 					(name "B+"
@@ -957,168 +903,6 @@
 						)
 					)
 					(number "18"
-						(effects
-							(font
-								(size 1.0 1.0)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 12.7 -53.34 180)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "22"
-						(effects
-							(font
-								(size 1.0 1.0)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 12.7 -55.88 180)
-					(length 2.54)
-					(name "5V"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "23"
-						(effects
-							(font
-								(size 1.0 1.0)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 12.7 -58.42 180)
-					(length 2.54)
-					(name "Vi"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "24"
-						(effects
-							(font
-								(size 1.0 1.0)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 12.7 -60.96 180)
-					(length 2.54)
-					(name "CAM"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "25"
-						(effects
-							(font
-								(size 1.0 1.0)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 12.7 -63.5 180)
-					(length 2.54)
-					(name "Z-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "26"
-						(effects
-							(font
-								(size 1.0 1.0)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 12.7 -66.04 180)
-					(length 2.54)
-					(name "5V"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "27"
-						(effects
-							(font
-								(size 1.0 1.0)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 12.7 -68.58 180)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "28"
-						(effects
-							(font
-								(size 1.0 1.0)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 12.7 -71.12 180)
-					(length 2.54)
-					(name "LED"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "29"
-						(effects
-							(font
-								(size 1.0 1.0)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 12.7 -73.66 180)
-					(length 2.54)
-					(name "9V"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "30"
 						(effects
 							(font
 								(size 1.0 1.0)
@@ -3773,6 +3557,14 @@
 (symbol "TVS_0_1" (rectangle (start -10.16 2.54) (end 10.16 -2.54) (stroke (width 0.254) (type default)) (fill (type background))))
 (symbol "TVS_1_1" (pin passive line (at -12.7 0 0) (length 2.54) (name "K" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.0 1.0))))) (pin passive line (at 12.7 0 180) (length 2.54) (name "A" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.0 1.0))))))
 )
+		(symbol "maame_carrier:HDR_1x4" (in_bom yes) (on_board yes)
+(property "Reference" "U" (at 0 3.81 0) (effects (font (size 1.27 1.27))))
+(property "Value" "HDR_1x4" (at 0 -11.43 0) (effects (font (size 1.27 1.27))))
+(property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+(symbol "HDR_1x4_0_1" (rectangle (start -10.16 2.54) (end 10.16 -10.16) (stroke (width 0.254) (type default)) (fill (type background))))
+(symbol "HDR_1x4_1_1" (pin passive line (at -12.7 0 0) (length 2.54) (name "1" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.0 1.0))))) (pin passive line (at -12.7 -2.54 0) (length 2.54) (name "2" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.0 1.0))))) (pin passive line (at -12.7 -5.08 0) (length 2.54) (name "3" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.0 1.0))))) (pin passive line (at -12.7 -7.62 0) (length 2.54) (name "4" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.0 1.0))))))
+)
 		(symbol "maame_carrier:SERVO"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -4393,7 +4185,7 @@
 		)
 		(uuid "2cafb923-0065-5192-872f-071b38677c1a")
 	)
-	(text "3. Every Kakute link is a soldered wire into J1 (labelled), never a plug-to-plug cable, so a reversed"
+	(text "3. Every Kakute link is a soldered harness (Kakute pads -> Dupont housings) plugged onto J1/J23/J24/J25 (labelled), never a plug-to-plug cable, so a reversed"
 		(exclude_from_sim no)
 		(at 20.32 264.16 0)
 		(effects
@@ -4494,16 +4286,6 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 60.96) (xy 68.58 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "02cea47f-f2c7-5cb0-b782-a52e5a8e621e")
-	)
-	(wire
-		(pts
 			(xy 347.98 43.18) (xy 353.06 43.18)
 		)
 		(stroke
@@ -4534,16 +4316,6 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 58.42) (xy 68.58 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0f9ac511-5a5b-5931-a500-104d921b63ba")
-	)
-	(wire
-		(pts
 			(xy 114.3 170.18) (xy 119.38 170.18)
 		)
 		(stroke
@@ -4561,16 +4333,6 @@
 			(type default)
 		)
 		(uuid "13a8d21f-697d-5ff2-9595-f7c6593c039b")
-	)
-	(wire
-		(pts
-			(xy 63.5 63.5) (xy 68.58 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "170ebe65-ec0d-5dbe-8684-a985d13700f1")
 	)
 	(wire
 		(pts
@@ -5562,16 +5324,6 @@
 		)
 		(uuid "2a73b1b1-6217-5780-8edf-78c8f82e4fdc")
 	)
-	(label "UART1_FC_RX"
-		(at 68.58 60.96 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "2ccb9099-1c19-50e9-a50e-56185ad6def0")
-	)
 	(label "PI_GPIO23"
 		(at 335.28 172.72 180)
 		(effects
@@ -5873,16 +5625,6 @@
 		(uuid "80d0f5c5-45e0-59ba-ad14-528ab19c348c")
 	)
 	(label "GND"
-		(at 68.58 63.5 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "833444c1-77d5-5caa-a4de-938c722fa5fd")
-	)
-	(label "GND"
 		(at 160.02 93.98 180)
 		(effects
 			(font
@@ -5971,16 +5713,6 @@
 			(justify left bottom)
 		)
 		(uuid "9a788181-7af1-5f6a-a734-0bb53781a94d")
-	)
-	(label "UART1_FC_TX"
-		(at 68.58 58.42 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "9b47d1d6-b956-5493-9bf0-558e5caa4100")
 	)
 	(label "PI_GPIO22"
 		(at 307.34 53.34 180)
@@ -7099,7 +6831,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "4392c442-c92b-5cec-9439-4d8f065469db")
 		(property "Reference" "J1"
 			(at 50.8 30.48 0)
@@ -7112,7 +6844,7 @@
 				)
 			)
 		)
-		(property "Value" "To Kakute H7 V1.5: left strip 2x9 (B+ not wired), top GND 5V Vi CAM, bottom Z- 5V GND LED, JST T1 R1 G"
+		(property "Value" "Kakute left pad strip: 2x9 male header 2.54 mm (JLC THT)"
 			(at 50.8 114.3 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7122,7 +6854,7 @@
 				)
 			)
 		)
-		(property "Footprint" "maame_carrier:Kakute_Pads_2x9_R3"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x09_P2.54mm_Vertical"
 			(at 50.8 35.56 0)
 			(hide yes)
 			(show_name no)
@@ -7146,6 +6878,17 @@
 		)
 		(property "Description" ""
 			(at 50.8 35.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C42372517"
+			(at 50.8 35.56 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7207,42 +6950,6 @@
 		)
 		(pin "18"
 			(uuid "420a4a63-76d1-4c30-a67e-8d9ea0c9bf06")
-		)
-		(pin "19"
-			(uuid "c8f3fa73-095a-4558-be8f-af4f82cabe94")
-		)
-		(pin "20"
-			(uuid "0bbb2a81-605e-4727-935b-c90789a6d274")
-		)
-		(pin "21"
-			(uuid "bc5a6005-0bd4-43d6-b506-be75d66d2961")
-		)
-		(pin "22"
-			(uuid "641a6534-dd8b-4853-b3b4-295e483241e3")
-		)
-		(pin "23"
-			(uuid "72df1f80-e42b-402f-b11a-d1d33ba7a04c")
-		)
-		(pin "24"
-			(uuid "3d326b5b-e0ee-40a0-a431-ff7a8ae66b71")
-		)
-		(pin "25"
-			(uuid "8ede30be-f6b3-4e75-929f-de32dc291004")
-		)
-		(pin "26"
-			(uuid "5f619cf9-b937-43f2-bf5b-bee0df8618dc")
-		)
-		(pin "27"
-			(uuid "b1dd3cb8-2d30-4282-befa-85775719f374")
-		)
-		(pin "28"
-			(uuid "fbbad458-f056-40cc-bce0-4ac589e11a26")
-		)
-		(pin "29"
-			(uuid "2ae48216-8204-48cb-aad5-adb49c48e1da")
-		)
-		(pin "30"
-			(uuid "3dd7447c-1445-4e7a-9955-b7c6a92b8f44")
 		)
 		(instances
 			(project "maame_carrier"
@@ -8457,134 +8164,6 @@
 			(justify right bottom)
 		)
 		(uuid "0bfcbef2-1071-48a7-b5b5-c1281a913cc4")
-	)
-	(wire
-		(pts
-			(xy 63.5 88.9) (xy 68.58 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c8278fab-59d1-470f-83a5-26afa2c32fa0")
-	)
-	(label "GND"
-		(at 68.58 88.9 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "51a39877-9d87-4db5-891a-87c15843caeb")
-	)
-	(wire
-		(pts
-			(xy 63.5 91.44) (xy 68.58 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0a87fbce-71ab-4a87-a293-3a45e3f8c22c")
-	)
-	(label "5V_FC"
-		(at 68.58 91.44 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "b966cd7d-b151-4e2a-a904-3ea9244239c1")
-	)
-	(no_connect
-		(at 63.5 93.98)
-		(uuid "3ad777f5-7064-4313-a8e2-8ab145b70563")
-	)
-	(no_connect
-		(at 63.5 96.52)
-		(uuid "1f2b85d9-11a6-43bd-ad63-4ae987e91f51")
-	)
-	(wire
-		(pts
-			(xy 63.5 99.06) (xy 68.58 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "48add16f-07eb-4bf9-b49e-5779fbae7d42")
-	)
-	(label "BUZZER_SPARE"
-		(at 68.58 99.06 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "531807e2-80ea-4497-b08b-645c31142853")
-	)
-	(wire
-		(pts
-			(xy 63.5 101.6) (xy 68.58 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "71038c5b-0405-4621-b544-42d3433a2a28")
-	)
-	(label "5V_FC"
-		(at 68.58 101.6 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "efba40df-4169-4dbd-a045-4f8b0de7776a")
-	)
-	(wire
-		(pts
-			(xy 63.5 104.14) (xy 68.58 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dce14d7b-e4a2-467d-9311-0675f87a98b1")
-	)
-	(label "GND"
-		(at 68.58 104.14 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "89fda658-ea9c-4444-bfca-21122e4991a5")
-	)
-	(wire
-		(pts
-			(xy 63.5 106.68) (xy 68.58 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c9f0377d-b8db-40c8-b4e4-e52999a7eb92")
-	)
-	(label "LED_SPARE"
-		(at 68.58 106.68 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "8818c665-9d01-4df2-9c3d-478201303d7f")
 	)
 	(wire
 		(pts
@@ -15186,26 +14765,6 @@
 		)
 		(uuid "dea1c172-4626-4b15-aa20-2f98253efdd2")
 	)
-	(wire
-		(pts
-			(xy 63.5 109.22) (xy 68.58 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bb540129-04da-4eef-a53c-6a732f5be6a7")
-	)
-	(label "9V_FC"
-		(at 68.58 109.22 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "215ed977-e5b6-4481-b9b3-f71ef9a77199")
-	)
 	(text "11. 12V_AUX: second TPS54360B, 12 V 2 A from VBAT_F. Values from TI SNVSB93 eqs 28-51: 600 kHz (162k), L 22 uH (Isat 5.9 A), Cout 2x22 uF 25 V, FB 140k/10k = 12.0 V, comp 9.1k + 15 nF, 56 pF. 9V_FC = Kakute VTX 9 V (J1 pad 30), current per Holybro spec (unconfirmed). F1 3 A hold: 5 V full (1.1 A) + 12 V full (1.5 A) at 18 V in = 2.6 A."
 		(exclude_from_sim no)
 		(at 20.32 228.6 0)
@@ -15216,6 +14775,502 @@
 			(justify left bottom)
 		)
 		(uuid "46b72a33-3578-4e3f-b00f-c8762b7f38e2")
+	)
+	(symbol
+		(lib_id "maame_carrier:HDR_1x4")
+		(at 116.84 88.9 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5359d452-b671-41c2-9a90-ad859f34d3fb")
+		(property "Reference" "J23"
+			(at 116.84 83.82 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Kakute top pads G 5V Vi CAM: 1x4 male header (JLC THT)"
+			(at 116.84 101.6 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
+			(at 116.84 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 116.84 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 116.84 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C32713270"
+			(at 116.84 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "46aaf716-b282-4e47-9a7a-ee6b6ee79a3d")
+		)
+		(pin "2"
+			(uuid "90dad0ad-cfd4-405c-85d4-a58c243ad0a0")
+		)
+		(pin "3"
+			(uuid "9438e46e-9f5d-415f-b076-47a36c38cbeb")
+		)
+		(pin "4"
+			(uuid "be089b0b-5890-483e-8783-a17e95d4c4ae")
+		)
+		(instances
+			(project "maame_carrier"
+				(path "/347efe6d-e5df-5320-8613-16be4824f8d1"
+					(reference "J23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 104.14 88.9) (xy 99.06 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "de8935ce-2a7e-4365-a3ba-de62a50ecb8e")
+	)
+	(label "GND"
+		(at 99.06 88.9 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "efbb66c1-abc4-4caf-9428-92884ba2d5d8")
+	)
+	(wire
+		(pts
+			(xy 104.14 91.44) (xy 99.06 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d8288e7-f4ad-4e8d-ac85-99b019eafaac")
+	)
+	(label "5V_FC"
+		(at 99.06 91.44 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "4fb48160-8c8a-418b-a984-a5d47426248e")
+	)
+	(no_connect
+		(at 104.14 93.98)
+		(uuid "9f26e84c-fc1f-489b-9485-502f3a2a708e")
+	)
+	(no_connect
+		(at 104.14 96.52)
+		(uuid "80fea2cc-55de-43bf-822c-55cc9912f375")
+	)
+	(symbol
+		(lib_id "maame_carrier:HDR_1x4")
+		(at 116.84 101.6 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2b0af093-1416-47c5-a5d4-7849f0ccfa98")
+		(property "Reference" "J24"
+			(at 116.84 96.52 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Kakute bottom pads Z- 5V G LED: 1x4 male header (JLC THT)"
+			(at 116.84 114.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
+			(at 116.84 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 116.84 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 116.84 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C32713270"
+			(at 116.84 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f1b3d921-c6dd-4f37-a0d4-14b278c18f83")
+		)
+		(pin "2"
+			(uuid "78aa7104-8226-4a5c-b604-45189d365e27")
+		)
+		(pin "3"
+			(uuid "cdec51a8-9db4-4149-a227-e05c92e51e53")
+		)
+		(pin "4"
+			(uuid "3ca56355-2321-4e6e-931a-eb7954114154")
+		)
+		(instances
+			(project "maame_carrier"
+				(path "/347efe6d-e5df-5320-8613-16be4824f8d1"
+					(reference "J24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 104.14 101.6) (xy 99.06 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a4d9a3a2-4440-4eac-9c89-592e6ca8a37d")
+	)
+	(label "BUZZER_SPARE"
+		(at 99.06 101.6 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "aa22ed58-8d80-4725-966b-0096256693e2")
+	)
+	(wire
+		(pts
+			(xy 104.14 104.14) (xy 99.06 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ecd6db1d-29d0-44d6-8e83-5bf81e14b91c")
+	)
+	(label "5V_FC"
+		(at 99.06 104.14 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "02177968-3d39-43bf-8cfa-c84bdc225f2e")
+	)
+	(wire
+		(pts
+			(xy 104.14 106.68) (xy 99.06 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c89dae0-6f17-45d6-955a-c7d63144395d")
+	)
+	(label "GND"
+		(at 99.06 106.68 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "75e62fe4-e1b3-4109-be95-3faff961cb40")
+	)
+	(wire
+		(pts
+			(xy 104.14 109.22) (xy 99.06 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "547c93fe-f808-4bd6-9e66-0788176c4856")
+	)
+	(label "LED_SPARE"
+		(at 99.06 109.22 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "8b8109cc-2c2b-4100-ae66-c06d89e33b25")
+	)
+	(symbol
+		(lib_id "maame_carrier:HDR_1x4")
+		(at 116.84 114.3 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ec382b91-e792-49cf-a49e-c284785b3404")
+		(property "Reference" "J25"
+			(at 116.84 109.22 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Kakute JST 9V T1 R1 G: 1x4 male header (JLC THT)"
+			(at 116.84 127 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
+			(at 116.84 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 116.84 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 116.84 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C32713270"
+			(at 116.84 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b31b9540-90d7-4a3e-bb97-ef36379b5536")
+		)
+		(pin "2"
+			(uuid "1777afe1-4a2f-4e16-866b-505a8e2f8e49")
+		)
+		(pin "3"
+			(uuid "5b66a84c-133f-48e7-97a6-6602f504ec05")
+		)
+		(pin "4"
+			(uuid "5354b9b0-ebc1-486f-be38-dc244693f728")
+		)
+		(instances
+			(project "maame_carrier"
+				(path "/347efe6d-e5df-5320-8613-16be4824f8d1"
+					(reference "J25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 104.14 114.3) (xy 99.06 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a6ce261-51ce-4e1e-a156-7395201fda3f")
+	)
+	(label "9V_FC"
+		(at 99.06 114.3 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "2b124858-9ba7-4f54-9fb3-1de480f68864")
+	)
+	(wire
+		(pts
+			(xy 104.14 116.84) (xy 99.06 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "829069a0-a8f0-4ebf-a737-dc7be4458851")
+	)
+	(label "UART1_FC_TX"
+		(at 99.06 116.84 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "563d0788-0da2-4cb9-8f65-777502bc8b76")
+	)
+	(wire
+		(pts
+			(xy 104.14 119.38) (xy 99.06 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a9e5bcd-56a2-4432-950e-394ed6804b30")
+	)
+	(label "UART1_FC_RX"
+		(at 99.06 119.38 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c6c30dfd-34cd-4497-b283-e55879b1676a")
+	)
+	(wire
+		(pts
+			(xy 104.14 121.92) (xy 99.06 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0d7e236-fd05-4f67-b87b-e8144fad9800")
+	)
+	(label "GND"
+		(at 99.06 121.92 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "28c1e502-8cca-437b-8137-4dec033c8157")
 	)
 	(sheet_instances
 		(path "/"

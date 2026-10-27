@@ -22,6 +22,10 @@ B560C 60V 5A Schottky SMC,"D8,D10",D_SMC,C85100
 Green 0805: 12V_AUX on,D11,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C2297
 "PTC fuse 2920 30V 3A hold 6A trip (BSMD2920-300-30V, LCSC C7190311)",F1,Fuse_2920_7451Metric,C7190311
 PTC fuse 1812 30V 2A hold 4A trip (BSMD1812-200-30V) - VBAT OUT,F2,Fuse_1812_4532Metric_Pad1.30x3.40mm_HandSolder,C960026
+Kakute left pad strip: 2x9 male header 2.54 mm (JLC THT),J1,PinHeader_2x09_P2.54mm_Vertical,C42372517
+Kakute top pads G 5V Vi CAM: 1x4 male header (JLC THT),J23,PinHeader_1x04_P2.54mm_Vertical,C32713270
+Kakute bottom pads Z- 5V G LED: 1x4 male header (JLC THT),J24,PinHeader_1x04_P2.54mm_Vertical,C32713270
+Kakute JST 9V T1 R1 G: 1x4 male header (JLC THT),J25,PinHeader_1x04_P2.54mm_Vertical,C32713270
 8.2uH 8.4A Coilcraft XAL6060-822MEC,L1,L_Coilcraft_XAL6060-XXX,C19191627
 22uH 5.9A Coilcraft XAL6060-223MEC,L2,L_Coilcraft_XAL6060-XXX,C5366013
 1k 0805,"R1,R2",R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C17513
