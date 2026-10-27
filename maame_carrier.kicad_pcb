@@ -7,6 +7,11 @@
 		(legacy_teardrops no)
 	)
 	(paper "A4")
+	(title_block
+		(title "MaameDrone V1.0")
+		(date "2026-10-27")
+		(rev "1.0")
+	)
 	(layers
 		(0 "F.Cu" signal)
 		(2 "B.Cu" signal)
@@ -17590,8 +17595,8 @@
 			(justify left)
 		)
 	)
-	(gr_text "MAAME CARRIER"
-		(at 81.5 6.75 0)
+	(gr_text "MaameDrone V1.0"
+		(at 80.5 6.75 0)
 		(layer "F.SilkS")
 		(uuid "e6cfa724-fc07-430c-91e4-705401fa629e")
 		(effects
@@ -17602,7 +17607,7 @@
 			(justify left)
 		)
 	)
-	(gr_text "REV A-DRAFT"
+	(gr_text "REV 1.0"
 		(at 81.5 8.85 0)
 		(layer "F.SilkS")
 		(uuid "d3a59d32-dcf1-4704-905b-fdf4556f08ef")
@@ -33595,6 +33600,18 @@
 				(xy 4.654962 0.667762) (xy 5.08982 0.576574) (xy 5.099908 0.57489) (xy 5.54078 0.519927) (xy 5.550979 0.519081)
 				(xy 5.99745 0.500605) (xy 6.002577 0.5005) (xy 88.997423 0.5005)
 			)
+		)
+	)
+	(gr_text "MaameDrone V1.0 - CONNECTION LEGEND AT REAR"
+		(at 47.5 27.6 0)
+		(layer "B.SilkS")
+		(uuid "d30d1215-0f7e-4d5b-a4d7-903bf08d710d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify mirror)
 		)
 	)
 	(embedded_fonts no)

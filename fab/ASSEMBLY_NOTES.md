@@ -1,4 +1,4 @@
-# Maame carrier rev A: assembly notes
+# MaameDrone V1.0: assembly notes
 
 ## What JLCPCB fits
 All SMD parts, plus these through-hole parts:
@@ -6,7 +6,7 @@ All SMD parts, plus these through-hole parts:
 - J23, J24, J25: 1x4 male headers, 2.54 mm (LCSC C32713270)
 - U1: Pi socket, 2x20 female header, 2.54 mm, 8.5 mm tall (LCSC C5124634)
 
-Everything else marked DNP (peripheral headers J6-J13, J17, J18, J7, JST-XH outputs J20/J21/J22, wire pads J3) is hand-soldered.
+Everything else (peripheral headers J6-J13, J17, J18, J7, JST-XH outputs J20/J21/J22, wire pads J3) is left out of the BOM/CPL and hand-soldered.
 In JLC's placement preview, check the headers sit square on their holes (the CPL gives each header's centre).
 
 ## Pi Zero W

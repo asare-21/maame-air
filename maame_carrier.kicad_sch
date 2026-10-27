@@ -5,9 +5,9 @@
 	(uuid "347efe6d-e5df-5320-8613-16be4824f8d1")
 	(paper "A3")
 	(title_block
-		(title "Maame carrier board")
+		(title "MaameDrone V1.0")
 		(date "2026-10-27")
-		(rev "A-draft")
+		(rev "1.0")
 		(comment 1 "Base board under Kakute H7 V1.5 (ESC separate), Pi Zero W socket, peripheral headers")
 	)
 	(lib_symbols
@@ -4151,7 +4151,7 @@
 		)
 		(uuid "068ff682-2c6d-51ef-8543-f47496a08285")
 	)
-	(text "MAAME CARRIER BOARD  rev A (draft, layout pending frame measurements)"
+	(text "MaameDrone V1.0 carrier board (rev 1.0)"
 		(exclude_from_sim no)
 		(at 20.32 243.84 0)
 		(effects
