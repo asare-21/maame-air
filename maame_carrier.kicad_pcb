@@ -352,7 +352,7 @@
 				)
 			)
 		)
-		(attr through_hole dnp)
+		(attr through_hole exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -1.33 -1.33)
@@ -1669,7 +1669,7 @@
 				)
 			)
 		)
-		(attr through_hole dnp)
+		(attr through_hole exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -1.33 -1.33)
@@ -1945,7 +1945,7 @@
 				)
 			)
 		)
-		(attr through_hole exclude_from_bom dnp)
+		(attr through_hole exclude_from_bom exclude_from_pos_files)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -2.85 -2.75)
@@ -2614,7 +2614,7 @@
 				)
 			)
 		)
-		(attr through_hole dnp)
+		(attr through_hole exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -1.33 -1.33)
@@ -5695,15 +5695,15 @@
 			(uuid "6366f859-bcab-42de-a2c6-3710b0a20737")
 		)
 		(embedded_fonts no)
-		(model "${KICAD6_3DMODEL_DIR}/Module.3dshapes/Raspberry_Pi_Zero_Socketed_THT_FaceDown_MountingHoles.wrl"
+		(model "${KICAD10_3DMODEL_DIR}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_2x20_P2.54mm_Vertical.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz -2.54 0 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 0 0 180)
 			)
 		)
 	)
@@ -6443,7 +6443,7 @@
 				)
 			)
 		)
-		(attr through_hole exclude_from_bom dnp)
+		(attr through_hole exclude_from_bom exclude_from_pos_files)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -2.85 -2.75)
@@ -7072,7 +7072,7 @@
 				)
 			)
 		)
-		(attr through_hole dnp)
+		(attr through_hole exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -1.33 -1.33)
@@ -7645,7 +7645,7 @@
 				)
 			)
 		)
-		(attr through_hole exclude_from_bom dnp)
+		(attr through_hole exclude_from_bom exclude_from_pos_files)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -2.85 -2.75)
@@ -8943,7 +8943,7 @@
 				)
 			)
 		)
-		(attr through_hole dnp)
+		(attr through_hole exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -1.38 -1.38)
@@ -12041,7 +12041,7 @@
 				)
 			)
 		)
-		(attr through_hole dnp)
+		(attr through_hole exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -1.33 -1.33)
@@ -12321,7 +12321,7 @@
 				)
 			)
 		)
-		(attr through_hole dnp)
+		(attr through_hole exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -1.33 -1.33)
@@ -12422,6 +12422,17 @@
 			(uuid "0ce846f0-05aa-477d-8f7c-f1ea0386322a")
 		)
 		(embedded_fonts no)
+		(model "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
 		(layer "F.Cu")
@@ -13321,7 +13332,7 @@
 				)
 			)
 		)
-		(attr through_hole dnp)
+		(attr through_hole exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -1.33 -1.33)
@@ -14513,7 +14524,7 @@
 				)
 			)
 		)
-		(attr through_hole dnp)
+		(attr through_hole exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -1.33 -1.33)
@@ -16123,7 +16134,7 @@
 				)
 			)
 		)
-		(attr through_hole dnp)
+		(attr through_hole exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -1.33 -1.33)
@@ -16261,6 +16272,17 @@
 			(uuid "9d985987-113d-48b0-9083-564795a80e86")
 		)
 		(embedded_fonts no)
+		(model "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x06_P2.54mm_Vertical.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
 		(layer "F.Cu")
