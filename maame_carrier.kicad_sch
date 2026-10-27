@@ -3984,7 +3984,7 @@
 		)
 		(uuid "ac000c21-9042-5125-8c9e-0a4774eda63b")
 	)
-	(text "8. Micro BEC (J4 in, J5 out): 6-60 V in, 5 V default (9/12 V selectable), 18x15x4.5 mm, 2.54 mm pins. NO reverse-polarity protection. 5 V rated 1.8-2.8 A continuous depending on input voltage (3.5 A for 2 s). 5V_AUX load: Pi Zero W + payload servo."
+	(text "8. Micro BEC (J4 in, J5 out): 6-60 V in, 5 V default (9/12 V selectable), 18x15x4.5 mm, 2.54 mm pins. NO reverse-polarity protection. 5 V rated 1.8-2.8 A continuous depending on input voltage (3.5 A for 2 s). 5V_AUX load: Pi Zero W + 9 g payload servo, within 1.8 A. Battery 6S Li-ion (18-25.2 V): BEC input <= 9 W / 18 V / 0.9 = 0.55 A, so F1 ~1.1 A hold has margin; F1 must be rated >= 30 V (keep >= 33 V)."
 		(exclude_from_sim no)
 		(at 20.32 294.64 0)
 		(effects
