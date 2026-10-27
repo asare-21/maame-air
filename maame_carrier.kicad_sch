@@ -596,7 +596,7 @@
 							)
 						)
 					)
-					(number "1"
+					(number "3"
 						(effects
 							(font
 								(size 1 1)
@@ -632,7 +632,7 @@
 							)
 						)
 					)
-					(number "3"
+					(number "1"
 						(effects
 							(font
 								(size 1 1)
@@ -650,7 +650,7 @@
 							)
 						)
 					)
-					(number "4"
+					(number "5"
 						(effects
 							(font
 								(size 1 1)
@@ -668,7 +668,7 @@
 							)
 						)
 					)
-					(number "5"
+					(number "4"
 						(effects
 							(font
 								(size 1 1)
@@ -686,7 +686,7 @@
 							)
 						)
 					)
-					(number "6"
+					(number "9"
 						(effects
 							(font
 								(size 1 1)
@@ -704,7 +704,7 @@
 							)
 						)
 					)
-					(number "7"
+					(number "8"
 						(effects
 							(font
 								(size 1 1)
@@ -722,7 +722,7 @@
 							)
 						)
 					)
-					(number "8"
+					(number "6"
 						(effects
 							(font
 								(size 1 1)
@@ -740,7 +740,7 @@
 							)
 						)
 					)
-					(number "9"
+					(number "7"
 						(effects
 							(font
 								(size 1 1)
@@ -6622,7 +6622,7 @@
 				)
 			)
 		)
-		(property "Value" "To Kakute pads: 5V G R3 T4 R4 T6 R6 SDA SCL T1 R1 G"
+		(property "Value" "To Kakute: left strip R3 G 5V R4 T4 SDA SCL R6 T6, JST T1 R1 G"
 			(at 50.8 68.58 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6632,7 +6632,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x12_P2.54mm_Vertical"
+		(property "Footprint" "maame_carrier:Kakute_Pads_L9_R3"
 			(at 50.8 35.56 0)
 			(hide yes)
 			(show_name no)
