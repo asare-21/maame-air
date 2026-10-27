@@ -6638,7 +6638,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "342595fd-8958-5963-8048-76f8bdc42d93")
 		(property "Reference" "U1"
 			(at 330.2 30.48 0)
@@ -6651,7 +6651,7 @@
 				)
 			)
 		)
-		(property "Value" "Raspberry Pi Zero W v1.1, component side up"
+		(property "Value" "Pi Zero W socket: 2x20 female header 2.54 mm, 8.5 mm (JLC THT)"
 			(at 330.2 88.9 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6685,6 +6685,17 @@
 		)
 		(property "Description" ""
 			(at 330.2 35.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C5124634"
+			(at 330.2 35.56 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects

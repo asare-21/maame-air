@@ -4534,11 +4534,23 @@
 				)
 			)
 		)
-		(property "Value" "Raspberry Pi Zero W v1.1, component side up"
+		(property "Value" "Pi Zero W socket: 2x20 female header 2.54 mm, 8.5 mm (JLC THT)"
 			(at 10.23 -24.13 180)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "d35d132b-4c6f-47b9-a100-49196f737f75")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C5124634"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ae0a0b6b-f702-4c2e-8af4-adc8301394ac")
 			(effects
 				(font
 					(size 1 1)
@@ -4568,7 +4580,7 @@
 				)
 			)
 		)
-		(attr through_hole dnp)
+		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -1.77 8.43)

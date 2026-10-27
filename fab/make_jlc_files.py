@@ -15,6 +15,10 @@ with open("fab/maame_carrier_BOM_JLC.csv", "w", newline="") as f:
     for (val, fp, lcsc), refs in sorted(groups.items(), key=lambda kv: nat(sorted(kv[1], key=nat)[0])):
         w.writerow([val, ",".join(sorted(refs, key=nat)), fp, lcsc])
 rows = list(csv.DictReader(open("fab/pos_raw.csv")))
+import json, os
+cent = json.load(open("fab/tht_centroids.json")) if os.path.exists("fab/tht_centroids.json") else {}
+for r in rows:  # THT headers: pad centre instead of pin-1 origin (KiCad pos files use +y up)
+    if r["Ref"] in cent: r["PosX"], r["PosY"] = cent[r["Ref"]][0], -cent[r["Ref"]][1]
 assert {r["Ref"] for r in rows} == set(parts), (sorted({r["Ref"] for r in rows} ^ set(parts)))
 with open("fab/maame_carrier_CPL_JLC.csv", "w", newline="") as f:
     w = csv.writer(f); w.writerow(["Designator", "Mid X", "Mid Y", "Layer", "Rotation"])

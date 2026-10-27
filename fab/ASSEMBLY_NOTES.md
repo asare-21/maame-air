@@ -1,11 +1,18 @@
 # Maame carrier rev A: assembly notes
 
 ## What JLCPCB fits
-All SMD parts, plus the four Kakute headers (through-hole):
+All SMD parts, plus these through-hole parts:
 - J1: 2x9 male header, 2.54 mm (LCSC C42372517)
 - J23, J24, J25: 1x4 male headers, 2.54 mm (LCSC C32713270)
+- U1: Pi socket, 2x20 female header, 2.54 mm, 8.5 mm tall (LCSC C5124634)
 
-Everything else marked DNP (other headers, Pi 2x20 socket, JST-XH outputs J20/J21/J22, wire pads J3) is hand-soldered.
+Everything else marked DNP (peripheral headers J6-J13, J17, J18, J7, JST-XH outputs J20/J21/J22, wire pads J3) is hand-soldered.
+In JLC's placement preview, check the headers sit square on their holes (the CPL gives each header's centre).
+
+## Pi Zero W
+The Pi plugs straight onto U1, component side up. A plain Pi Zero W has no header: solder a 2x20 male header
+on it first (or use a Pi Zero WH, which comes with one). The 8.5 mm socket height is needed so the Pi clears
+the 12 V regulator (U3/L2, 6.1 mm tall) underneath.
 
 ## Kakute harness (J1, J23, J24, J25)
 The Kakute pads are flat solder pads, so the Kakute does not plug straight onto the carrier.
