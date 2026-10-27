@@ -5708,7 +5708,7 @@
 	(footprint "MountingHole:MountingHole_2.7mm_M2.5"
 		(layer "F.Cu")
 		(uuid "e7f32bc9-f77f-4e66-8fe4-8308d73de804")
-		(at 5 5)
+		(at 5.85 5.85)
 		(descr "Mounting Hole 2.7mm, no annular, M2.5")
 		(tags "mounting hole 2.7mm no annular m2.5")
 		(property "Reference" "H5"
@@ -5723,7 +5723,7 @@
 				)
 			)
 		)
-		(property "Value" "M2.5 frame mount (50 mm square)"
+		(property "Value" "M2.5 frame mount, 48.3 mm square, radial slot"
 			(at 0 3.7 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -5761,7 +5761,7 @@
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
-			(end 2.7 0)
+			(end 3.5 0)
 			(stroke
 				(width 0.15)
 				(type solid)
@@ -5772,7 +5772,7 @@
 		)
 		(fp_circle
 			(center 0 0)
-			(end 2.95 0)
+			(end 3.7 0)
 			(stroke
 				(width 0.05)
 				(type solid)
@@ -5792,10 +5792,10 @@
 				)
 			)
 		)
-		(pad "" np_thru_hole circle
-			(at 0 0)
-			(size 2.7 2.7)
-			(drill 2.7)
+		(pad "" np_thru_hole oval
+			(at 0 0 315)
+			(size 4.2 2.7)
+			(drill oval 4.2 2.7)
 			(layers "*.Cu" "*.Mask")
 			(uuid "37ee93dc-dbe0-4968-bf56-2df736a25775")
 		)
@@ -5804,7 +5804,7 @@
 	(footprint "MountingHole:MountingHole_2.7mm_M2.5"
 		(layer "F.Cu")
 		(uuid "ed6e4200-9078-49cd-b20d-f109fbb8b514")
-		(at 55 5)
+		(at 54.15 5.85)
 		(descr "Mounting Hole 2.7mm, no annular, M2.5")
 		(tags "mounting hole 2.7mm no annular m2.5")
 		(property "Reference" "H6"
@@ -5819,7 +5819,7 @@
 				)
 			)
 		)
-		(property "Value" "M2.5 frame mount (50 mm square)"
+		(property "Value" "M2.5 frame mount, 48.3 mm square, radial slot"
 			(at 0 3.7 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -5857,7 +5857,7 @@
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
-			(end 2.7 0)
+			(end 3.5 0)
 			(stroke
 				(width 0.15)
 				(type solid)
@@ -5868,7 +5868,7 @@
 		)
 		(fp_circle
 			(center 0 0)
-			(end 2.95 0)
+			(end 3.7 0)
 			(stroke
 				(width 0.05)
 				(type solid)
@@ -5888,10 +5888,10 @@
 				)
 			)
 		)
-		(pad "" np_thru_hole circle
-			(at 0 0)
-			(size 2.7 2.7)
-			(drill 2.7)
+		(pad "" np_thru_hole oval
+			(at 0 0 45)
+			(size 4.2 2.7)
+			(drill oval 4.2 2.7)
 			(layers "*.Cu" "*.Mask")
 			(uuid "1082d466-6744-446d-95ce-c7e4704ac085")
 		)
@@ -5900,7 +5900,7 @@
 	(footprint "MountingHole:MountingHole_2.7mm_M2.5"
 		(layer "F.Cu")
 		(uuid "eef4eb4f-6289-4658-bee0-268dff4f762c")
-		(at 5 55)
+		(at 5.85 54.15)
 		(descr "Mounting Hole 2.7mm, no annular, M2.5")
 		(tags "mounting hole 2.7mm no annular m2.5")
 		(property "Reference" "H7"
@@ -5915,7 +5915,7 @@
 				)
 			)
 		)
-		(property "Value" "M2.5 frame mount (50 mm square)"
+		(property "Value" "M2.5 frame mount, 48.3 mm square, radial slot"
 			(at 0 3.7 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -5953,7 +5953,7 @@
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
-			(end 2.7 0)
+			(end 3.5 0)
 			(stroke
 				(width 0.15)
 				(type solid)
@@ -5964,7 +5964,7 @@
 		)
 		(fp_circle
 			(center 0 0)
-			(end 2.95 0)
+			(end 3.7 0)
 			(stroke
 				(width 0.05)
 				(type solid)
@@ -5984,10 +5984,10 @@
 				)
 			)
 		)
-		(pad "" np_thru_hole circle
-			(at 0 0)
-			(size 2.7 2.7)
-			(drill 2.7)
+		(pad "" np_thru_hole oval
+			(at 0 0 45)
+			(size 4.2 2.7)
+			(drill oval 4.2 2.7)
 			(layers "*.Cu" "*.Mask")
 			(uuid "7b6efbfd-f4df-451d-ab3a-066f2f5960a2")
 		)
@@ -5996,7 +5996,7 @@
 	(footprint "MountingHole:MountingHole_2.7mm_M2.5"
 		(layer "F.Cu")
 		(uuid "745c513f-4fb1-43cf-b086-77ed7ecc35ae")
-		(at 55 55)
+		(at 54.15 54.15)
 		(descr "Mounting Hole 2.7mm, no annular, M2.5")
 		(tags "mounting hole 2.7mm no annular m2.5")
 		(property "Reference" "H8"
@@ -6011,7 +6011,7 @@
 				)
 			)
 		)
-		(property "Value" "M2.5 frame mount (50 mm square)"
+		(property "Value" "M2.5 frame mount, 48.3 mm square, radial slot"
 			(at 0 3.7 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -6049,7 +6049,7 @@
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
-			(end 2.7 0)
+			(end 3.5 0)
 			(stroke
 				(width 0.15)
 				(type solid)
@@ -6060,7 +6060,7 @@
 		)
 		(fp_circle
 			(center 0 0)
-			(end 2.95 0)
+			(end 3.7 0)
 			(stroke
 				(width 0.05)
 				(type solid)
@@ -6080,10 +6080,10 @@
 				)
 			)
 		)
-		(pad "" np_thru_hole circle
-			(at 0 0)
-			(size 2.7 2.7)
-			(drill 2.7)
+		(pad "" np_thru_hole oval
+			(at 0 0 315)
+			(size 4.2 2.7)
+			(drill oval 4.2 2.7)
 			(layers "*.Cu" "*.Mask")
 			(uuid "ca7240b9-9a18-40c5-a595-acf8a18f27ee")
 		)
@@ -9779,7 +9779,7 @@
 		)
 	)
 	(gr_text "FRAME M2.5"
-		(at 7.6 5 0)
+		(at 9.75 5.85 0)
 		(layer "F.SilkS")
 		(uuid "f3252cee-3df7-41f0-b8d8-e240f68f9ace")
 		(effects
@@ -9791,7 +9791,7 @@
 		)
 	)
 	(gr_text "FRAME M2.5"
-		(at 52.4 5 0)
+		(at 50.25 5.85 0)
 		(layer "F.SilkS")
 		(uuid "f830b235-4cbe-471e-bed5-195f3eee1fd5")
 		(effects
@@ -9803,7 +9803,7 @@
 		)
 	)
 	(gr_text "FRAME M2.5"
-		(at 7.6 55 0)
+		(at 9.75 54.15 0)
 		(layer "F.SilkS")
 		(uuid "e2ff7307-f64e-4fd2-beea-877f59a9d6bd")
 		(effects
@@ -9815,7 +9815,7 @@
 		)
 	)
 	(gr_text "FRAME M2.5"
-		(at 52.4 55 0)
+		(at 50.25 54.15 0)
 		(layer "F.SilkS")
 		(uuid "1c79dd7a-8b23-43eb-bb46-0b79b536396f")
 		(effects

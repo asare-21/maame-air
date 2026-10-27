@@ -33,7 +33,7 @@ ax, ay = OX + W / 2, OY - 7
 g += line(ax, ay, ax, ay - 14, 0.5) + line(ax, ay - 14, ax - 3, ay - 10, 0.5) + line(ax, ay - 14, ax + 3, ay - 10, 0.5)
 g += text("NOSE (Kakute arrow direction)", ax + 5, ay - 9, 2.5, "left")
 g += text("Maame carrier 1:1 template, board 95 x 110 mm", 105, 14, 3)
-g += text("Lay on the top plate, nose arrow to the front. The 4 FRAME M2.5 holes (50 mm square) must land on your plate holes.", 105, 19.5, 2)
+g += text("Lay on the top plate, nose arrow to the front. The 4 FRAME M2.5 slots (48.3 mm square, +/-1 mm play) must land on your plate holes.", 105, 19.5, 2)
 g += text("Kakute M3 holes, ESC slot, Pi and all headers are drawn where they sit now.", 105, 24, 2)
 i = s.rindex('\t(embedded_fonts no)')
 open(dst, "w").write(s[:i] + g + s[i:])
