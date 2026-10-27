@@ -4,7 +4,7 @@ b = pcbnew.LoadBoard('maame_carrier.kicad_pcb')
 if sys.argv[1] == "pads":
     for f in b.GetFootprints():
         for p in f.Pads():
-            if (f.GetReference(), p.GetNumber()) in {("U1", "20"), ("U1", "30"), ("J1", "4")}:
+            if (f.GetReference(), p.GetNumber()) in {("U1", "20"), ("U1", "30"), ("J1", "4"), ("U1", "25"), ("J17", "4")}:
                 p.SetLocalZoneConnection(pcbnew.ZONE_CONNECTION_FULL)
 else:
     mm = pcbnew.ToMM

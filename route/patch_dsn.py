@@ -18,7 +18,7 @@ def stadium(cx, cy, half, r, n=12):
     pts = [(cx + half + r * math.cos(math.radians(-90 + 180 * k / n)), cy + r * math.sin(math.radians(-90 + 180 * k / n))) for k in range(n + 1)]
     pts += [(cx - half + r * math.cos(math.radians(90 + 180 * k / n)), cy + r * math.sin(math.radians(90 + 180 * k / n))) for k in range(n + 1)]
     return pts + [pts[0]]
-keep = [stadium(47.5, 58.25, 4.5, 2.5 + INSET)]                      # ESC cable slot
+keep = [stadium(50.5, 47.6, 4.5, 2.5 + INSET)]                      # ESC cable slot
 keep += [circle(x, y, 2.1 + 1.35 + INSET) for x in (23.25, 71.75) for y in (34.0, 82.5)]   # frame M2.5 slots + screw head/standoff
 add = "".join(f'\n    (keepout "" (polygon signal 0  {path(k)}))' for k in keep)
 i = s.index("(keepout"); s = s[:i] + add.lstrip("\n ") + "\n    " + s[i:]
