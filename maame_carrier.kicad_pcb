@@ -95,11 +95,11 @@
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "03e1afd0-e80a-42f5-af43-8eeb026bdf62")
-		(at 59 46)
+		(at 75 18 90)
 		(descr "Through hole straight pin header, 1x04, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x04 2.54mm single row")
 		(property "Reference" "J6"
-			(at 0 -2.33 0)
+			(at 0 -2.33 90)
 			(layer "F.SilkS")
 			(uuid "402e3bda-d1ab-41b6-8377-2fe50bdaffb1")
 			(effects
@@ -110,7 +110,7 @@
 			)
 		)
 		(property "Value" "Spare power: 5V_AUX G 5V_FC G"
-			(at 0 9.95 0)
+			(at 0 9.95 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "595f6a47-263c-4f03-a8ec-60594405bacc")
@@ -122,7 +122,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "f66f004b-9636-4e78-bcf9-ef6145a5f609")
@@ -133,7 +133,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "aca593fc-ecbe-4a1f-bc62-d19b2e2c6f8f")
@@ -296,7 +296,7 @@
 			(uuid "587545a8-3a1e-41e7-b56b-05b30d35bc96")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 3.81 90)
+			(at 0 3.81 180)
 			(layer "F.Fab")
 			(uuid "a9b5f8cf-d7cb-4229-b2a4-5587200b4902")
 			(effects
@@ -307,7 +307,7 @@
 			)
 		)
 		(pad "1" thru_hole rect
-			(at 0 0)
+			(at 0 0 90)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -316,7 +316,7 @@
 			(uuid "3edf78b7-7158-4226-b6bb-ca50bebc8cfb")
 		)
 		(pad "2" thru_hole oval
-			(at 0 2.54)
+			(at 0 2.54 90)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -325,7 +325,7 @@
 			(uuid "c695dfda-0831-4167-a5ec-aeed1c533cfb")
 		)
 		(pad "3" thru_hole oval
-			(at 0 5.08)
+			(at 0 5.08 90)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -334,7 +334,7 @@
 			(uuid "e9804e85-e97e-497f-8720-a257491321ba")
 		)
 		(pad "4" thru_hole oval
-			(at 0 7.62)
+			(at 0 7.62 90)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -358,7 +358,7 @@
 	(footprint "MountingHole:MountingHole_3.2mm_M3"
 		(layer "F.Cu")
 		(uuid "062234cf-9e4f-4495-85e9-562b334845ad")
-		(at 45.25 20.75)
+		(at 45.25 6.75)
 		(descr "Mounting Hole 3.2mm, no annular, M3")
 		(tags "mounting hole 3.2mm no annular m3")
 		(property "Reference" "H2"
@@ -453,7 +453,7 @@
 	(footprint "Connector_Wire:SolderWire-0.5sqmm_1x02_P4.6mm_D0.9mm_OD2.1mm"
 		(layer "F.Cu")
 		(uuid "08125d4f-c48f-4eea-b9db-dfcd58de7969")
-		(at 6 66.3 90)
+		(at 6 52.3 90)
 		(descr "Soldered wire connection, for 2 times 0.5 mm² wires, basic insulation, conductor diameter 0.9mm, outer diameter 2.1mm, size source Multi-Contact FLEXI-E 0.5 (https://ec.staubli.com/AcroFiles/Catalogues/TM_Cab-Main-11014119_(en)_hi.pdf), bend radius 3 times outer diameter, generated with kicad-footprint-generator")
 		(tags "connector wire 0.5sqmm")
 		(property "Reference" "J3"
@@ -651,7 +651,7 @@
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "134828cf-f1a8-4bd1-8738-f1b6d9ac59c1")
-		(at 114.975 55 90)
+		(at 61 32 90)
 		(descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x03 2.54mm single row")
 		(property "Reference" "J16"
@@ -905,7 +905,7 @@
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "1386e937-0d8a-4cfc-aa3d-3216837dacb9")
-		(at 71.2 52 90)
+		(at 61 18 90)
 		(descr "Through hole straight pin header, 1x04, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x04 2.54mm single row")
 		(property "Reference" "J12"
@@ -1168,7 +1168,7 @@
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "18fd49e8-fa85-4c09-ae37-e91e748c0aa6")
-		(at 84.2 66.5 90)
+		(at 80 4 90)
 		(descr "Through hole straight pin header, 1x04, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x04 2.54mm single row")
 		(property "Reference" "J9"
@@ -1431,7 +1431,7 @@
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "3edfc259-ccf6-44d2-94b1-b71637bd40e3")
-		(at 95.475 55 90)
+		(at 71 25 90)
 		(descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x03 2.54mm single row")
 		(property "Reference" "J14"
@@ -1685,11 +1685,11 @@
 	(footprint "maame_carrier:Pi_Zero_Socketed_FaceUp_MountingHoles"
 		(layer "F.Cu")
 		(uuid "3ff4694c-09f4-47ff-9a91-36c7a4cba47c")
-		(at 120.355 33.255 90)
+		(at 10.5 67 270)
 		(descr "Mirror of KiCad FaceDown footprint: Pi Zero mounted component side UP, male header fitted from the Pi underside into a 2x20 socket on this board. Raspberry Pi Zero using through hole straight pin socket, 2x20, 2.54mm pitch, https://www.raspberrypi.org/documentation/hardware/raspberrypi/mechanical/rpi_MECH_Zero_1p2.pdf")
 		(tags "raspberry pi zero through hole")
 		(property "Reference" "U1"
-			(at -6.27 -24.13 180)
+			(at -6.27 -24.13 0)
 			(layer "F.SilkS")
 			(uuid "dbca4e04-c9ff-4d90-9960-3f7454e09c1f")
 			(effects
@@ -1700,7 +1700,7 @@
 			)
 		)
 		(property "Value" "Raspberry Pi Zero W v1.1, component side"
-			(at 10.23 -24.13 0)
+			(at 10.23 -24.13 180)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "d35d132b-4c6f-47b9-a100-49196f737f75")
@@ -1712,7 +1712,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 90)
+			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "fb74e1ce-62ad-4a7b-8d71-bc89428ec4ae")
@@ -1723,7 +1723,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 90)
+			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "8023a18f-f269-4a30-8794-7b66ddfe72b2")
@@ -2594,7 +2594,7 @@
 			(uuid "acf7a6b9-6491-4d29-a827-dca740c04fe4")
 		)
 		(fp_text user "${REFERENCE}"
-			(at -1.27 -24.13 180)
+			(at -1.27 -24.13 0)
 			(layer "F.Fab")
 			(uuid "216f8fdb-d697-4306-ac66-7ca3453e8c60")
 			(effects
@@ -2605,7 +2605,7 @@
 			)
 		)
 		(pad "" np_thru_hole circle
-			(at -1.27 -53.13 180)
+			(at -1.27 -53.13 0)
 			(size 2.75 2.75)
 			(drill 2.75)
 			(layers "*.Cu" "*.Mask")
@@ -2613,7 +2613,7 @@
 			(uuid "c56ea09a-d96e-4136-a26c-a7b072ac494a")
 		)
 		(pad "" np_thru_hole circle
-			(at -1.27 4.87 180)
+			(at -1.27 4.87 0)
 			(size 2.75 2.75)
 			(drill 2.75)
 			(layers "*.Cu" "*.Mask")
@@ -2621,7 +2621,7 @@
 			(uuid "b0c77f98-1a40-42fd-b98d-17e2c950288d")
 		)
 		(pad "" np_thru_hole circle
-			(at 21.73 -53.13 180)
+			(at 21.73 -53.13 0)
 			(size 2.75 2.75)
 			(drill 2.75)
 			(layers "*.Cu" "*.Mask")
@@ -2629,7 +2629,7 @@
 			(uuid "6992cf15-1cf2-463b-9f6c-ea2346c0c83e")
 		)
 		(pad "" np_thru_hole circle
-			(at 21.73 4.87 180)
+			(at 21.73 4.87 0)
 			(size 2.75 2.75)
 			(drill 2.75)
 			(layers "*.Cu" "*.Mask")
@@ -2637,7 +2637,7 @@
 			(uuid "7875d8d1-6b97-4046-b57d-ecc1f7a4c9d6")
 		)
 		(pad "1" thru_hole rect
-			(at 0 0 90)
+			(at 0 0 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -2646,7 +2646,7 @@
 			(uuid "18066318-1f6e-4389-b4e6-3c7ec2782cf0")
 		)
 		(pad "2" thru_hole oval
-			(at -2.54 0 90)
+			(at -2.54 0 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -2655,7 +2655,7 @@
 			(uuid "1f11c961-a3a8-4a3a-9c3e-a72061a56553")
 		)
 		(pad "3" thru_hole oval
-			(at 0 -2.54 90)
+			(at 0 -2.54 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -2664,7 +2664,7 @@
 			(uuid "882b67e7-fbf1-43ad-984d-b2f0b6fb1a9b")
 		)
 		(pad "4" thru_hole oval
-			(at -2.54 -2.54 90)
+			(at -2.54 -2.54 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -2673,7 +2673,7 @@
 			(uuid "8fef4184-32d8-47d6-93cd-4355cc19d3fa")
 		)
 		(pad "5" thru_hole oval
-			(at 0 -5.08 90)
+			(at 0 -5.08 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -2682,7 +2682,7 @@
 			(uuid "dc76ec4f-d8f8-4968-9383-1c8ecc80bf4f")
 		)
 		(pad "6" thru_hole oval
-			(at -2.54 -5.08 90)
+			(at -2.54 -5.08 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -2691,7 +2691,7 @@
 			(uuid "8778eebc-e726-42f4-9bf7-5ccbf306a228")
 		)
 		(pad "7" thru_hole oval
-			(at 0 -7.62 90)
+			(at 0 -7.62 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -2700,7 +2700,7 @@
 			(uuid "8ef2749c-c168-4aa9-9826-a3859a323bc6")
 		)
 		(pad "8" thru_hole oval
-			(at -2.54 -7.62 90)
+			(at -2.54 -7.62 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -2709,7 +2709,7 @@
 			(uuid "aad2722e-fccb-4096-b4d7-25af6f73c9d5")
 		)
 		(pad "9" thru_hole oval
-			(at 0 -10.16 90)
+			(at 0 -10.16 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -2718,7 +2718,7 @@
 			(uuid "14d93d22-ca3e-4af7-bdbe-fa0532fafac7")
 		)
 		(pad "10" thru_hole oval
-			(at -2.54 -10.16 90)
+			(at -2.54 -10.16 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -2727,7 +2727,7 @@
 			(uuid "97ce0557-4d24-458e-925f-de1a94bdf35b")
 		)
 		(pad "11" thru_hole oval
-			(at 0 -12.7 90)
+			(at 0 -12.7 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -2736,7 +2736,7 @@
 			(uuid "d75124c2-95cf-4c41-be9b-55a885964adb")
 		)
 		(pad "12" thru_hole oval
-			(at -2.54 -12.7 90)
+			(at -2.54 -12.7 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -2744,7 +2744,7 @@
 			(uuid "74136b7c-9641-4538-bf9d-2a1631967afa")
 		)
 		(pad "13" thru_hole oval
-			(at 0 -15.24 90)
+			(at 0 -15.24 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -2753,7 +2753,7 @@
 			(uuid "56fcc9ef-1c69-4117-b6c3-ae2f2002dbeb")
 		)
 		(pad "14" thru_hole oval
-			(at -2.54 -15.24 90)
+			(at -2.54 -15.24 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -2762,7 +2762,7 @@
 			(uuid "7443d052-f45d-42a8-9767-8e28af31f324")
 		)
 		(pad "15" thru_hole oval
-			(at 0 -17.78 90)
+			(at 0 -17.78 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -2771,7 +2771,7 @@
 			(uuid "0c236e21-1967-48cd-9dc6-04c2e5b0ac3a")
 		)
 		(pad "16" thru_hole oval
-			(at -2.54 -17.78 90)
+			(at -2.54 -17.78 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -2780,7 +2780,7 @@
 			(uuid "33d832e2-c59d-45e6-b72b-e9552149b910")
 		)
 		(pad "17" thru_hole oval
-			(at 0 -20.32 90)
+			(at 0 -20.32 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -2789,7 +2789,7 @@
 			(uuid "8b6cbe9c-6e0e-4176-9007-ef4df8cde1f6")
 		)
 		(pad "18" thru_hole oval
-			(at -2.54 -20.32 90)
+			(at -2.54 -20.32 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -2798,7 +2798,7 @@
 			(uuid "8f7aedcb-aee0-4633-94e1-530617d31849")
 		)
 		(pad "19" thru_hole oval
-			(at 0 -22.86 90)
+			(at 0 -22.86 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -2806,7 +2806,7 @@
 			(uuid "7dc23261-a36f-49cb-a433-5e1ed8526b29")
 		)
 		(pad "20" thru_hole oval
-			(at -2.54 -22.86 90)
+			(at -2.54 -22.86 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -2815,7 +2815,7 @@
 			(uuid "c6619b09-f198-4523-8a57-c346c045f9d1")
 		)
 		(pad "21" thru_hole oval
-			(at 0 -25.4 90)
+			(at 0 -25.4 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -2823,7 +2823,7 @@
 			(uuid "27e47acf-44cc-4b90-83ac-cd7348629501")
 		)
 		(pad "22" thru_hole oval
-			(at -2.54 -25.4 90)
+			(at -2.54 -25.4 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -2832,7 +2832,7 @@
 			(uuid "de50bb27-68e8-4c5c-ab54-c8d9ee0c032b")
 		)
 		(pad "23" thru_hole oval
-			(at 0 -27.94 90)
+			(at 0 -27.94 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -2840,7 +2840,7 @@
 			(uuid "34966bef-5df9-40df-baaf-3c8508b5bda7")
 		)
 		(pad "24" thru_hole oval
-			(at -2.54 -27.94 90)
+			(at -2.54 -27.94 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -2848,7 +2848,7 @@
 			(uuid "295f8c1f-a352-446c-861b-da5e3972ecdc")
 		)
 		(pad "25" thru_hole oval
-			(at 0 -30.48 90)
+			(at 0 -30.48 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -2857,7 +2857,7 @@
 			(uuid "274f769a-2884-42ae-900e-662b188e164a")
 		)
 		(pad "26" thru_hole oval
-			(at -2.54 -30.48 90)
+			(at -2.54 -30.48 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -2865,7 +2865,7 @@
 			(uuid "84a6f57e-40df-4c4e-b5e1-f8b0f477c939")
 		)
 		(pad "27" thru_hole oval
-			(at 0 -33.02 90)
+			(at 0 -33.02 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -2873,7 +2873,7 @@
 			(uuid "a3d15928-f5ba-4c77-bbc9-034a6a2765a7")
 		)
 		(pad "28" thru_hole oval
-			(at -2.54 -33.02 90)
+			(at -2.54 -33.02 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -2881,7 +2881,7 @@
 			(uuid "34be2774-0925-48ec-a3e0-39cccf145c2a")
 		)
 		(pad "29" thru_hole oval
-			(at 0 -35.56 90)
+			(at 0 -35.56 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -2890,7 +2890,7 @@
 			(uuid "9a7695a2-4193-4cb4-8e2f-e800be17d1b3")
 		)
 		(pad "30" thru_hole oval
-			(at -2.54 -35.56 90)
+			(at -2.54 -35.56 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -2899,7 +2899,7 @@
 			(uuid "9e4b2c59-1276-436b-9832-b405ab8fbfeb")
 		)
 		(pad "31" thru_hole oval
-			(at 0 -38.1 90)
+			(at 0 -38.1 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -2908,7 +2908,7 @@
 			(uuid "eeb8511a-afcc-436f-b059-5eb5211ce968")
 		)
 		(pad "32" thru_hole oval
-			(at -2.54 -38.1 90)
+			(at -2.54 -38.1 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -2917,7 +2917,7 @@
 			(uuid "de9e52ca-5933-455b-bd68-6ce4baf41944")
 		)
 		(pad "33" thru_hole oval
-			(at 0 -40.64 90)
+			(at 0 -40.64 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -2926,7 +2926,7 @@
 			(uuid "3051d5a0-d7f2-434a-a373-9200eb5c4d50")
 		)
 		(pad "34" thru_hole oval
-			(at -2.54 -40.64 90)
+			(at -2.54 -40.64 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -2935,7 +2935,7 @@
 			(uuid "664fb901-254b-442e-92d5-65a13e1ff8c6")
 		)
 		(pad "35" thru_hole oval
-			(at 0 -43.18 90)
+			(at 0 -43.18 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -2943,7 +2943,7 @@
 			(uuid "d9446a2b-2551-467b-9a6c-25f4872ea597")
 		)
 		(pad "36" thru_hole oval
-			(at -2.54 -43.18 90)
+			(at -2.54 -43.18 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -2951,7 +2951,7 @@
 			(uuid "0dbc420f-af34-4e4e-a387-71d71b1267d3")
 		)
 		(pad "37" thru_hole oval
-			(at 0 -45.72 90)
+			(at 0 -45.72 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -2960,7 +2960,7 @@
 			(uuid "b3033a85-cd5b-42b3-a318-a7fc53ce2c7c")
 		)
 		(pad "38" thru_hole oval
-			(at -2.54 -45.72 90)
+			(at -2.54 -45.72 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -2968,7 +2968,7 @@
 			(uuid "32484f20-212a-424c-ae1f-4524270dbf75")
 		)
 		(pad "39" thru_hole oval
-			(at 0 -48.26 90)
+			(at 0 -48.26 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -2977,7 +2977,7 @@
 			(uuid "ad082c6e-287d-4fe7-8c80-4bee1298e889")
 		)
 		(pad "40" thru_hole oval
-			(at -2.54 -48.26 90)
+			(at -2.54 -48.26 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -3000,7 +3000,7 @@
 	(footprint "MountingHole:MountingHole_3.2mm_M3"
 		(layer "F.Cu")
 		(uuid "53afc453-4a26-4c7f-ac10-3c2a3d107736")
-		(at 14.75 51.25)
+		(at 14.75 37.25)
 		(descr "Mounting Hole 3.2mm, no annular, M3")
 		(tags "mounting hole 3.2mm no annular m3")
 		(property "Reference" "H3"
@@ -3095,7 +3095,7 @@
 	(footprint "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm"
 		(layer "F.Cu")
 		(uuid "62f964bc-5355-4960-bee6-2ba575049356")
-		(at 47.347349 64)
+		(at 47.3473 50)
 		(descr "CP, Radial series, Radial, pin pitch=3.50mm, , diameter=8mm, Electrolytic Capacitor")
 		(tags "CP Radial series Radial pin pitch 3.50mm  diameter 8mm Electrolytic Capacitor")
 		(property "Reference" "C1"
@@ -4813,7 +4813,7 @@
 	(footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "6390a7af-63c7-4c78-928a-240b511ca125")
-		(at 57 66.5)
+		(at 57 52.5)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
 		(property "Reference" "R1"
@@ -5006,7 +5006,7 @@
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "641c08c0-c6d3-4209-9207-8898d7ec49a1")
-		(at 65.65 66.5 90)
+		(at 61 4 90)
 		(descr "Through hole straight pin header, 1x06, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x06 2.54mm single row")
 		(property "Reference" "J8"
@@ -5287,7 +5287,7 @@
 	(footprint "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "658cf373-69b9-428c-8164-a084c9b654f0")
-		(at 56.9775 62.5 180)
+		(at 56.9775 48.5 180)
 		(descr "LED SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
 		(tags "LED handsolder")
 		(property "Reference" "D1"
@@ -5500,7 +5500,7 @@
 	(footprint "Connector_Wire:SolderWire-0.5sqmm_1x02_P4.6mm_D0.9mm_OD2.1mm"
 		(layer "F.Cu")
 		(uuid "7a2da52a-8881-478f-a51b-3fb0fcdf1ccf")
-		(at 26 66.3 90)
+		(at 26 52.3 90)
 		(descr "Soldered wire connection, for 2 times 0.5 mm² wires, basic insulation, conductor diameter 0.9mm, outer diameter 2.1mm, size source Multi-Contact FLEXI-E 0.5 (https://ec.staubli.com/AcroFiles/Catalogues/TM_Cab-Main-11014119_(en)_hi.pdf), bend radius 3 times outer diameter, generated with kicad-footprint-generator")
 		(tags "connector wire 0.5sqmm")
 		(property "Reference" "J4"
@@ -5698,7 +5698,7 @@
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "ab107a49-c8ac-4702-a4ce-d3de55f17339")
-		(at 105.65 66.5 90)
+		(at 61 11 90)
 		(descr "Through hole straight pin header, 1x06, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x06 2.54mm single row")
 		(property "Reference" "J11"
@@ -5978,7 +5978,7 @@
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "b7f9f13d-ee41-45e8-8f11-e857a2ad2461")
-		(at 85.475 55 90)
+		(at 61 25 90)
 		(descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x03 2.54mm single row")
 		(property "Reference" "J13"
@@ -6232,7 +6232,7 @@
 	(footprint "MountingHole:MountingHole_3.2mm_M3"
 		(layer "F.Cu")
 		(uuid "baa75b7f-e954-4fa4-b122-6b5f3c496fec")
-		(at 14.75 20.75)
+		(at 14.75 6.75)
 		(descr "Mounting Hole 3.2mm, no annular, M3")
 		(tags "mounting hole 3.2mm no annular m3")
 		(property "Reference" "H1"
@@ -6327,7 +6327,7 @@
 	(footprint "Connector_Wire:SolderWire-0.5sqmm_1x02_P4.6mm_D0.9mm_OD2.1mm"
 		(layer "F.Cu")
 		(uuid "c201d74d-f649-4379-bc2c-5b538383bebd")
-		(at 38 66.3 90)
+		(at 38 52.3 90)
 		(descr "Soldered wire connection, for 2 times 0.5 mm² wires, basic insulation, conductor diameter 0.9mm, outer diameter 2.1mm, size source Multi-Contact FLEXI-E 0.5 (https://ec.staubli.com/AcroFiles/Catalogues/TM_Cab-Main-11014119_(en)_hi.pdf), bend radius 3 times outer diameter, generated with kicad-footprint-generator")
 		(tags "connector wire 0.5sqmm")
 		(property "Reference" "J5"
@@ -6525,7 +6525,7 @@
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "cc858a6e-d3d4-465d-880c-882f7bb01d12")
-		(at 124.725 41.125)
+		(at 80 64)
 		(descr "Through hole straight pin header, 2x08, 2.54mm pitch, double rows")
 		(tags "Through hole pin header THT 2x08 2.54mm double row")
 		(property "Reference" "J7"
@@ -6916,7 +6916,7 @@
 	(footprint "Fuse:Fuse_1812_4532Metric_Pad1.30x3.40mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "d29c1d98-7b86-4aa3-809d-76831d2756a7")
-		(at 16 64)
+		(at 16 50)
 		(descr "Fuse SMD 1812 (4532 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: https://www.nikhef.nl/pub/departments/mt/projects/detectorR_D/dtddice/ERJ2G.pdf), generated with kicad-footprint-generator")
 		(tags "fuse handsolder")
 		(property "Reference" "F1"
@@ -7109,7 +7109,7 @@
 	(footprint "MountingHole:MountingHole_3.2mm_M3"
 		(layer "F.Cu")
 		(uuid "e144bb76-51d7-4430-82eb-15576c6a8842")
-		(at 45.25 51.25)
+		(at 45.25 37.25)
 		(descr "Mounting Hole 3.2mm, no annular, M3")
 		(tags "mounting hole 3.2mm no annular m3")
 		(property "Reference" "H4"
@@ -7204,7 +7204,7 @@
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "e679a882-61a0-4d9f-a56b-b3b38dbe93db")
-		(at 96.475 66.5 90)
+		(at 80 11 90)
 		(descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x03 2.54mm single row")
 		(property "Reference" "J10"
@@ -7458,7 +7458,7 @@
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "f2d4b95d-670e-4a8c-a03a-feadc8ab2f75")
-		(at 51 25.84)
+		(at 51 11.84)
 		(descr "Through hole straight pin header, 1x05, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x05 2.54mm single row")
 		(property "Reference" "J2"
@@ -7730,7 +7730,7 @@
 	(footprint "maame_carrier:Kakute_Pads_L9_R3"
 		(layer "F.Cu")
 		(uuid "fe3caa2b-83b6-47b7-a7dd-398bd35ae2ae")
-		(at 9 25.84)
+		(at 9 11.84)
 		(descr "Solder-wire pads for Kakute H7 V1.5")
 		(property "Reference" "J1"
 			(at 0 -2.6 0)
@@ -8183,7 +8183,7 @@
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "fdba8b1a-3a4f-47d3-b148-dd9234105eb0")
-		(at 105.475 55 90)
+		(at 81 25 90)
 		(descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x03 2.54mm single row")
 		(property "Reference" "J15"
@@ -8435,8 +8435,8 @@
 		)
 	)
 	(gr_line
-		(start 12.5 18.5)
-		(end 47.5 18.5)
+		(start 12.5 4.5)
+		(end 47.5 4.5)
 		(stroke
 			(width 0.15)
 			(type default)
@@ -8445,8 +8445,8 @@
 		(uuid "9e4db35d-e640-4602-806d-25ab5e0f89f1")
 	)
 	(gr_line
-		(start 12.5 53.5)
-		(end 12.5 18.5)
+		(start 12.5 39.5)
+		(end 12.5 4.5)
 		(stroke
 			(width 0.15)
 			(type default)
@@ -8455,8 +8455,8 @@
 		(uuid "c5734a9a-9f7c-4f71-878e-d644f1c530a7")
 	)
 	(gr_line
-		(start 47.5 18.5)
-		(end 47.5 53.5)
+		(start 47.5 4.5)
+		(end 47.5 39.5)
 		(stroke
 			(width 0.15)
 			(type default)
@@ -8465,8 +8465,8 @@
 		(uuid "3047be5b-b0fa-48be-ad16-8517d551ad46")
 	)
 	(gr_line
-		(start 47.5 53.5)
-		(end 12.5 53.5)
+		(start 47.5 39.5)
+		(end 12.5 39.5)
 		(stroke
 			(width 0.15)
 			(type default)
@@ -8476,7 +8476,7 @@
 	)
 	(gr_line
 		(start 0 0)
-		(end 130 0)
+		(end 95 0)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -8485,7 +8485,7 @@
 		(uuid "0f2cea57-8965-4069-a60c-c411e5dbc92a")
 	)
 	(gr_line
-		(start 0 72)
+		(start 0 95)
 		(end 0 0)
 		(stroke
 			(width 0.1)
@@ -8495,8 +8495,8 @@
 		(uuid "4d095173-4928-4353-a451-95c12c55a6c2")
 	)
 	(gr_line
-		(start 130 0)
-		(end 130 72)
+		(start 95 0)
+		(end 95 95)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -8505,8 +8505,8 @@
 		(uuid "cf8ee23e-1880-44a9-b323-c1f8b508bc23")
 	)
 	(gr_line
-		(start 130 72)
-		(end 0 72)
+		(start 95 95)
+		(end 0 95)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -8515,8 +8515,8 @@
 		(uuid "4b1b2614-a3cf-4a4a-b804-3e95475b27cc")
 	)
 	(gr_line
-		(start 12.5 18.5)
-		(end 47.5 18.5)
+		(start 12.5 4.5)
+		(end 47.5 4.5)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -8525,8 +8525,8 @@
 		(uuid "707eedb6-9d70-4550-81a3-85a6f80f5029")
 	)
 	(gr_line
-		(start 12.5 53.5)
-		(end 12.5 18.5)
+		(start 12.5 39.5)
+		(end 12.5 4.5)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -8535,8 +8535,8 @@
 		(uuid "afe8239e-bc52-4d13-ad99-0f5d8393789f")
 	)
 	(gr_line
-		(start 47.5 18.5)
-		(end 47.5 53.5)
+		(start 47.5 4.5)
+		(end 47.5 39.5)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -8545,8 +8545,8 @@
 		(uuid "b14bf4fe-f7bb-4f6c-8ffe-14d1002a5663")
 	)
 	(gr_line
-		(start 47.5 53.5)
-		(end 12.5 53.5)
+		(start 47.5 39.5)
+		(end 12.5 39.5)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -8555,7 +8555,7 @@
 		(uuid "9b3066ed-5d23-4cd3-aecd-1519adc76e1a")
 	)
 	(gr_text "Pi pin 1 / SD card end"
-		(at 118 2.5 0)
+		(at 14 59.8 0)
 		(layer "F.SilkS")
 		(uuid "ff0e4086-f3ae-4a2e-ac96-5145b6a07a94")
 		(effects
@@ -8566,7 +8566,7 @@
 		)
 	)
 	(gr_text "FRONT = KAKUTE ARROW"
-		(at 30 42.5 0)
+		(at 30 28.5 0)
 		(layer "F.SilkS")
 		(uuid "3d29f423-56a0-4dba-9cf5-524f8b4b0176")
 		(effects
@@ -8577,7 +8577,7 @@
 		)
 	)
 	(gr_text "MAAME CARRIER rev A-draft"
-		(at 100 41 0)
+		(at 78 40 0)
 		(layer "F.SilkS")
 		(uuid "d6bd156e-0f2a-413b-94d5-f3815cc9ac59")
 		(effects
@@ -8588,7 +8588,7 @@
 		)
 	)
 	(gr_text "KAKUTE H7"
-		(at 30 30.5 0)
+		(at 30 16.5 0)
 		(layer "F.SilkS")
 		(uuid "d0368def-f4aa-4a9f-a41e-27fb44e4ae73")
 		(effects
@@ -8599,8 +8599,8 @@
 		)
 	)
 	(gr_line
-		(start 25.5 33.5)
-		(end 34.5 33.5)
+		(start 25.5 19.5)
+		(end 34.5 19.5)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -8609,9 +8609,9 @@
 		(uuid "31d7572b-90f6-4506-b4d5-c2c0b0e6f9bc")
 	)
 	(gr_arc
-		(start 34.5 33.5)
-		(mid 37 36)
-		(end 34.5 38.5)
+		(start 34.5 19.5)
+		(mid 37 22)
+		(end 34.5 24.5)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -8620,8 +8620,8 @@
 		(uuid "d8847e7a-7eac-4462-a25e-e1df25ea3d3d")
 	)
 	(gr_line
-		(start 34.5 38.5)
-		(end 25.5 38.5)
+		(start 34.5 24.5)
+		(end 25.5 24.5)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -8630,9 +8630,9 @@
 		(uuid "df16f702-daa5-4aa5-bfcd-493bbea65ac1")
 	)
 	(gr_arc
-		(start 25.5 38.5)
-		(mid 23 36)
-		(end 25.5 33.5)
+		(start 25.5 24.5)
+		(mid 23 22)
+		(end 25.5 19.5)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -8641,7 +8641,7 @@
 		(uuid "ebc0bd99-e9c4-41ba-a357-1bfd364ddd48")
 	)
 	(gr_text "ESC CABLE SLOT"
-		(at 30 40.5 0)
+		(at 30 26.5 0)
 		(layer "F.SilkS")
 		(uuid "0b5abe54-5650-4762-a71d-7dba122787ca")
 		(effects
@@ -8652,7 +8652,7 @@
 		)
 	)
 	(gr_text "G"
-		(at 54.4 25.84 0)
+		(at 54.4 11.84 0)
 		(layer "F.SilkS")
 		(uuid "b8bf672d-6f33-4f6f-9c54-4942d3356cca")
 		(effects
@@ -8663,7 +8663,7 @@
 		)
 	)
 	(gr_text "M5"
-		(at 54.4 28.38 0)
+		(at 54.4 14.38 0)
 		(layer "F.SilkS")
 		(uuid "af23d467-b9e7-46ba-9765-4d784485f80d")
 		(effects
@@ -8674,7 +8674,7 @@
 		)
 	)
 	(gr_text "M6"
-		(at 54.4 30.92 0)
+		(at 54.4 16.92 0)
 		(layer "F.SilkS")
 		(uuid "2dbbc5b3-f81f-43ee-b075-1cd7dbe4d647")
 		(effects
@@ -8685,7 +8685,7 @@
 		)
 	)
 	(gr_text "M7"
-		(at 54.4 33.46 0)
+		(at 54.4 19.46 0)
 		(layer "F.SilkS")
 		(uuid "45490b08-ad74-4ca3-b1e7-03f8412ddb33")
 		(effects
@@ -8696,7 +8696,7 @@
 		)
 	)
 	(gr_text "M8"
-		(at 54.4 36 0)
+		(at 54.4 22 0)
 		(layer "F.SilkS")
 		(uuid "640b2021-7488-4c8a-a4d1-574f366e16cd")
 		(effects
