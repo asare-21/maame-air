@@ -3715,6 +3715,38 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "maame_carrier:Capacitor" (in_bom yes) (on_board yes)
+(property "Reference" "U" (at 0 3.81 0) (effects (font (size 1.27 1.27))))
+(property "Value" "Capacitor" (at 0 -3.81 0) (effects (font (size 1.27 1.27))))
+(property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+(symbol "Capacitor_0_1" (rectangle (start -10.16 2.54) (end 10.16 -2.54) (stroke (width 0.254) (type default)) (fill (type background))))
+(symbol "Capacitor_1_1" (pin passive line (at -12.7 0 0) (length 2.54) (name "1" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.0 1.0))))) (pin passive line (at 12.7 0 180) (length 2.54) (name "2" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.0 1.0))))))
+)
+		(symbol "maame_carrier:Inductor" (in_bom yes) (on_board yes)
+(property "Reference" "U" (at 0 3.81 0) (effects (font (size 1.27 1.27))))
+(property "Value" "Inductor" (at 0 -3.81 0) (effects (font (size 1.27 1.27))))
+(property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+(symbol "Inductor_0_1" (rectangle (start -10.16 2.54) (end 10.16 -2.54) (stroke (width 0.254) (type default)) (fill (type background))))
+(symbol "Inductor_1_1" (pin passive line (at -12.7 0 0) (length 2.54) (name "1" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.0 1.0))))) (pin passive line (at 12.7 0 180) (length 2.54) (name "2" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.0 1.0))))))
+)
+		(symbol "maame_carrier:Schottky" (in_bom yes) (on_board yes)
+(property "Reference" "U" (at 0 3.81 0) (effects (font (size 1.27 1.27))))
+(property "Value" "Schottky" (at 0 -3.81 0) (effects (font (size 1.27 1.27))))
+(property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+(symbol "Schottky_0_1" (rectangle (start -10.16 2.54) (end 10.16 -2.54) (stroke (width 0.254) (type default)) (fill (type background))))
+(symbol "Schottky_1_1" (pin passive line (at -12.7 0 0) (length 2.54) (name "K" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.0 1.0))))) (pin passive line (at 12.7 0 180) (length 2.54) (name "A" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.0 1.0))))))
+)
+		(symbol "maame_carrier:TPS54360B" (in_bom yes) (on_board yes)
+(property "Reference" "U" (at 0 8.89 0) (effects (font (size 1.27 1.27))))
+(property "Value" "TPS54360B" (at 0 -11.43 0) (effects (font (size 1.27 1.27))))
+(property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+(symbol "TPS54360B_0_1" (rectangle (start -12.7 7.62) (end 12.7 -10.16) (stroke (width 0.254) (type default)) (fill (type background))))
+(symbol "TPS54360B_1_1" (pin passive line (at 15.24 5.08 180) (length 2.54) (name "BOOT" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.0 1.0))))) (pin passive line (at 15.24 2.54 180) (length 2.54) (name "SW" (effects (font (size 1.27 1.27)))) (number "8" (effects (font (size 1.0 1.0))))) (pin passive line (at 15.24 -2.54 180) (length 2.54) (name "FB" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.0 1.0))))) (pin passive line (at -15.24 5.08 0) (length 2.54) (name "VIN" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.0 1.0))))) (pin passive line (at -15.24 2.54 0) (length 2.54) (name "EN" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.0 1.0))))) (pin passive line (at -15.24 0 0) (length 2.54) (name "RT/CLK" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.0 1.0))))) (pin passive line (at -15.24 -2.54 0) (length 2.54) (name "COMP" (effects (font (size 1.27 1.27)))) (number "6" (effects (font (size 1.0 1.0))))) (pin passive line (at -15.24 -5.08 0) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "7" (effects (font (size 1.0 1.0))))) (pin passive line (at -15.24 -7.62 0) (length 2.54) (name "EP" (effects (font (size 1.27 1.27)))) (number "9" (effects (font (size 1.0 1.0))))))
+)
 		(symbol "maame_carrier:SERVO"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -4368,7 +4400,7 @@
 		)
 		(uuid "ac000c21-9042-5125-8c9e-0a4774eda63b")
 	)
-	(text "8. Micro BEC (J4 in, J5 out): 6-60 V in, 5 V default (9/12 V selectable), 18x15x4.5 mm, 2.54 mm pins. NO reverse-polarity protection. 5 V rated 1.8-2.8 A continuous depending on input voltage (3.5 A for 2 s). 5V_AUX load: Pi Zero W + 9 g payload servo, within 1.8 A. Battery 6S Li-ion (18-25.2 V): BEC input <= 9 W / 18 V / 0.9 = 0.55 A, so F1 ~1.1 A hold has margin; F1 must be rated >= 30 V (keep >= 33 V)."
+	(text "8. Former micro BEC (now on-board, see note 10): 6-60 V in, 5 V default (9/12 V selectable), 18x15x4.5 mm, 2.54 mm pins. NO reverse-polarity protection. 5 V rated 1.8-2.8 A continuous depending on input voltage (3.5 A for 2 s). 5V_AUX load: Pi Zero W + 9 g payload servo, within 1.8 A. Battery 6S Li-ion (18-25.2 V): BEC input <= 9 W / 18 V / 0.9 = 0.55 A, so F1 ~1.1 A hold has margin; F1 must be rated >= 30 V (keep >= 33 V)."
 		(exclude_from_sim no)
 		(at 20.32 294.64 0)
 		(effects
@@ -4726,16 +4758,6 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 134.62) (xy 134.62 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "468437b9-497c-5738-8b44-dedc9d108ce2")
-	)
-	(wire
-		(pts
 			(xy 370.84 177.8) (xy 375.92 177.8)
 		)
 		(stroke
@@ -4986,16 +5008,6 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 154.94) (xy 134.62 154.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "82d576e4-af23-52d2-bcbb-1d10051bed35")
-	)
-	(wire
-		(pts
 			(xy 114.3 162.56) (xy 119.38 162.56)
 		)
 		(stroke
@@ -5076,16 +5088,6 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 152.4) (xy 134.62 152.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9ffaeefe-c045-5c2a-b7fc-ff5a5477c6ef")
-	)
-	(wire
-		(pts
 			(xy 312.42 81.28) (xy 307.34 81.28)
 		)
 		(stroke
@@ -5123,16 +5125,6 @@
 			(type default)
 		)
 		(uuid "a906fc36-629c-53b7-ab3e-a94570fad239")
-	)
-	(wire
-		(pts
-			(xy 139.7 132.08) (xy 134.62 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "aa0ffbef-6988-54ff-b77e-4b2cb457bdc2")
 	)
 	(wire
 		(pts
@@ -5474,16 +5466,6 @@
 		)
 		(uuid "13167509-65e2-58dd-b52a-8f507993fb89")
 	)
-	(label "5V_AUX"
-		(at 134.62 152.4 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "195d0d68-93b8-58af-a743-7b1d6e1e99ea")
-	)
 	(label "PI_GPIO6"
 		(at 307.34 73.66 180)
 		(effects
@@ -5543,16 +5525,6 @@
 			(justify right bottom)
 		)
 		(uuid "28867d3a-d0f1-5382-9623-f2be4b3bd380")
-	)
-	(label "GND"
-		(at 134.62 154.94 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "29a3c1d9-1c23-5abb-96fa-76c7d84806cc")
 	)
 	(label "PI_GPIO17"
 		(at 375.92 167.64 0)
@@ -6064,16 +6036,6 @@
 		)
 		(uuid "b0c7c23e-c524-56eb-9891-63243eb6d637")
 	)
-	(label "GND"
-		(at 134.62 134.62 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "b2f4cd2a-c62c-53eb-b283-9016cb3e2f42")
-	)
 	(label "5V_FC"
 		(at 160.02 43.18 180)
 		(effects
@@ -6133,16 +6095,6 @@
 			(justify right bottom)
 		)
 		(uuid "c4011973-d5ea-55b7-aa75-9e39c1e7e022")
-	)
-	(label "VBAT_F"
-		(at 134.62 132.08 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "c4d4f33d-2ad0-5d54-a8b1-62b9226ee69b")
 	)
 	(label "GND"
 		(at 271.78 147.32 0)
@@ -7742,85 +7694,6 @@
 		)
 	)
 	(symbol
-		(lib_id "maame_carrier:BEC_OUT")
-		(at 152.4 152.4 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "7e1ee27b-86fb-55e4-af4f-4010f69b4634")
-		(property "Reference" "J5"
-			(at 152.4 147.32 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(bold yes)
-				)
-			)
-		)
-		(property "Value" "Micro BEC output leads (set to 5.0 V)"
-			(at 152.4 160.02 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_Wire:SolderWire-0.5sqmm_1x02_P4.6mm_D0.9mm_OD2.1mm"
-			(at 152.4 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 152.4 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 152.4 152.4 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "ca2e5ea0-73c5-5c90-b3d6-dd0ba09b46cb")
-		)
-		(pin "2"
-			(uuid "20c5ccf6-7b57-585d-a30c-6f6c2d46b8d9")
-		)
-		(instances
-			(project "maame_carrier"
-				(path "/347efe6d-e5df-5320-8613-16be4824f8d1"
-					(reference "J5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "maame_carrier:GPS")
 		(at 177.8 35.56 0)
 		(unit 1)
@@ -8075,85 +7948,6 @@
 			(project "maame_carrier"
 				(path "/347efe6d-e5df-5320-8613-16be4824f8d1"
 					(reference "R1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "maame_carrier:BEC_IN")
-		(at 152.4 132.08 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "c7c4a331-10b3-5922-a42b-7dc2799ac449")
-		(property "Reference" "J4"
-			(at 152.4 127 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(bold yes)
-				)
-			)
-		)
-		(property "Value" "Micro BEC input leads (6-60 V, NO reverse protection)"
-			(at 152.4 139.7 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_Wire:SolderWire-0.5sqmm_1x02_P4.6mm_D0.9mm_OD2.1mm"
-			(at 152.4 132.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 152.4 132.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 152.4 132.08 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "abedd3d2-2086-5acb-b71e-6262ca8a5383")
-		)
-		(pin "2"
-			(uuid "2a2002c3-1a23-5216-8b59-d30bd9065a06")
-		)
-		(instances
-			(project "maame_carrier"
-				(path "/347efe6d-e5df-5320-8613-16be4824f8d1"
-					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -10544,6 +10338,1982 @@
 			(justify left bottom)
 		)
 		(uuid "78ac86ab-1d63-4f2d-b02a-3887b83673f1")
+	)
+	(symbol
+		(lib_id "maame_carrier:TPS54360B")
+		(at 139.7 200.66 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e6a1060e-7b38-4dea-8be5-ed78b35b211f")
+		(property "Reference" "U2"
+			(at 139.7 195.58 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TPS54360BDDAR 60V 3.5A buck"
+			(at 139.7 205.74 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:TI_SO-PowerPAD-8_ThermalVias"
+			(at 139.7 200.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 139.7 200.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 139.7 200.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C524806"
+			(at 139.7 200.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ff97c1ac-40c5-4220-99c6-29d49b0f5ea0")
+		)
+		(pin "2"
+			(uuid "cc6570bb-2bf0-4a2d-8fb8-af9acaa40b15")
+		)
+		(pin "3"
+			(uuid "c0b84b23-e207-4d15-8272-0ce7f28cd8b9")
+		)
+		(pin "4"
+			(uuid "cb4faae3-9088-4227-bb07-6f32ef6c6726")
+		)
+		(pin "5"
+			(uuid "3660119c-58d4-464c-a0e9-8e90512514cf")
+		)
+		(pin "6"
+			(uuid "77cae1ed-9458-4bd8-ba6b-b45be5c6a632")
+		)
+		(pin "7"
+			(uuid "341f7ae1-242b-481f-95bc-73e8882051fe")
+		)
+		(pin "8"
+			(uuid "e3706298-9873-4a68-bd0c-e10d9f654df8")
+		)
+		(pin "9"
+			(uuid "931a5c81-5e7b-4e7a-8442-6cf7bf1c69c1")
+		)
+		(instances
+			(project "maame_carrier"
+				(path "/347efe6d-e5df-5320-8613-16be4824f8d1"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 154.94 195.58) (xy 160.02 195.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94588cae-68fb-4143-ac30-98a3b80b9fa5")
+	)
+	(label "BEC_BOOT"
+		(at 160.02 195.58 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "efad6ec3-4e58-400f-a585-80272746b048")
+	)
+	(wire
+		(pts
+			(xy 154.94 198.12) (xy 160.02 198.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "69780d08-b91d-474e-ade3-638df7fcb88b")
+	)
+	(label "BEC_SW"
+		(at 160.02 198.12 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7f422dac-19c7-4789-baa3-0c517ac64487")
+	)
+	(wire
+		(pts
+			(xy 154.94 203.2) (xy 160.02 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0351f53d-e759-418a-a82e-16cc7d03f076")
+	)
+	(label "BEC_FB"
+		(at 160.02 203.2 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "11252e8c-ebec-415b-b45a-2f84e6067cb5")
+	)
+	(wire
+		(pts
+			(xy 124.46 195.58) (xy 119.38 195.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f1c7acd0-de4a-4736-8df6-12ea01df6d46")
+	)
+	(label "VBAT_F"
+		(at 119.38 195.58 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "24706cce-d04c-4b27-9340-7fa2a7662602")
+	)
+	(no_connect
+		(at 124.46 198.12)
+		(uuid "c058ac14-55fe-4f2c-b20f-b1b0d3fc7ca5")
+	)
+	(wire
+		(pts
+			(xy 124.46 200.66) (xy 119.38 200.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37b2b347-e542-4f6b-a2eb-e4ad50373458")
+	)
+	(label "BEC_RT"
+		(at 119.38 200.66 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "7bd5f3b0-b489-4d11-a9d2-0a60b9fcc4ff")
+	)
+	(wire
+		(pts
+			(xy 124.46 203.2) (xy 119.38 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a1bdc58-c0fe-4dfb-859a-49550c38c379")
+	)
+	(label "BEC_COMP"
+		(at 119.38 203.2 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "7a93e049-1a2a-4fc4-8a84-8a6470f8a121")
+	)
+	(wire
+		(pts
+			(xy 124.46 205.74) (xy 119.38 205.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "19989c8b-66ef-4d14-8fb0-33fa4551b875")
+	)
+	(label "GND"
+		(at 119.38 205.74 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6d9a9c76-bf46-4c9c-b128-a358daac905d")
+	)
+	(wire
+		(pts
+			(xy 124.46 208.28) (xy 119.38 208.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e1ecb1f2-5adf-49e3-9020-b8027ad86ad9")
+	)
+	(label "GND"
+		(at 119.38 208.28 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "5161a8dc-1796-4887-9cf4-9fdfdb18006e")
+	)
+	(symbol
+		(lib_id "maame_carrier:Capacitor")
+		(at 200.66 182.88 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b02a48c3-a77d-4ffb-a32b-e712b37f48d7")
+		(property "Reference" "C2"
+			(at 200.66 177.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "2.2uF 100V X7R 1210 (VIN)"
+			(at 200.66 187.96 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
+			(at 200.66 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 200.66 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 200.66 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C153036"
+			(at 200.66 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3406f523-4928-4a2b-a660-6fe2f2f6f7a9")
+		)
+		(pin "2"
+			(uuid "a8a4d7b0-cadc-4763-9824-574fe4363eda")
+		)
+		(instances
+			(project "maame_carrier"
+				(path "/347efe6d-e5df-5320-8613-16be4824f8d1"
+					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 187.96 182.88) (xy 182.88 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27ef2885-ad20-4efd-ba48-c4c31f5d1294")
+	)
+	(label "VBAT_F"
+		(at 182.88 182.88 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "202cc1fe-deab-4277-809e-991b4be69115")
+	)
+	(wire
+		(pts
+			(xy 213.36 182.88) (xy 218.44 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29bcbca6-50ea-4921-9e8e-cad8495b0389")
+	)
+	(label "GND"
+		(at 218.44 182.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "120b2fa1-9208-4b2e-82c9-4c79bb2edf47")
+	)
+	(symbol
+		(lib_id "maame_carrier:Capacitor")
+		(at 200.66 190.5 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3359111c-2afe-4831-bd05-e4873439b6d1")
+		(property "Reference" "C3"
+			(at 200.66 185.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "2.2uF 100V X7R 1210 (VIN)"
+			(at 200.66 195.58 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
+			(at 200.66 190.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 200.66 190.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 200.66 190.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C153036"
+			(at 200.66 190.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "aa7b922f-0c5f-4d15-88cd-f25d62370ce9")
+		)
+		(pin "2"
+			(uuid "77063436-1b03-4bb4-9295-a8e7cab942f5")
+		)
+		(instances
+			(project "maame_carrier"
+				(path "/347efe6d-e5df-5320-8613-16be4824f8d1"
+					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 187.96 190.5) (xy 182.88 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "392003b0-7970-47c9-91cf-31891ff1c395")
+	)
+	(label "VBAT_F"
+		(at 182.88 190.5 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "5a6e3bad-bdd2-4d39-99d6-77a92abfb2ed")
+	)
+	(wire
+		(pts
+			(xy 213.36 190.5) (xy 218.44 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "74308209-7dc3-4f82-adc6-c74048715d09")
+	)
+	(label "GND"
+		(at 218.44 190.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a13760bf-1512-4092-a977-8dfd4e4b0b96")
+	)
+	(symbol
+		(lib_id "maame_carrier:Capacitor")
+		(at 200.66 198.12 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c03dc395-cdc0-43dd-9682-1e3c4fab4c2b")
+		(property "Reference" "C4"
+			(at 200.66 193.04 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF 50V 0603 (BOOT)"
+			(at 200.66 203.2 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 200.66 198.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 200.66 198.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 200.66 198.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 200.66 198.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ababa9a4-fc00-41af-87d9-63590af586b1")
+		)
+		(pin "2"
+			(uuid "ac91e927-eb7d-4be3-8350-c126927a224d")
+		)
+		(instances
+			(project "maame_carrier"
+				(path "/347efe6d-e5df-5320-8613-16be4824f8d1"
+					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 187.96 198.12) (xy 182.88 198.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "85287359-e921-4b2c-8c1a-8f2781d701d3")
+	)
+	(label "BEC_BOOT"
+		(at 182.88 198.12 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "25bf49ae-cba0-4df6-8f22-baf124bf994d")
+	)
+	(wire
+		(pts
+			(xy 213.36 198.12) (xy 218.44 198.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b60f3250-06ec-42a7-a2b5-10994cacc784")
+	)
+	(label "BEC_SW"
+		(at 218.44 198.12 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c240dc0d-d4a7-40c2-94e4-b6183c118891")
+	)
+	(symbol
+		(lib_id "maame_carrier:Resistor")
+		(at 200.66 205.74 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "104e7215-4ec8-4995-8f94-877ae57bcd07")
+		(property "Reference" "R8"
+			(at 200.66 200.66 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "162k 1% 0603 (RT, 600 kHz)"
+			(at 200.66 210.82 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 200.66 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 200.66 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 200.66 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C227607"
+			(at 200.66 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "313c238f-a0e3-41f2-9a25-b6b2c237062e")
+		)
+		(pin "2"
+			(uuid "55017e22-f4ed-4b7b-ad2c-237408488a10")
+		)
+		(instances
+			(project "maame_carrier"
+				(path "/347efe6d-e5df-5320-8613-16be4824f8d1"
+					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 187.96 205.74) (xy 182.88 205.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3df1543d-c1df-4614-b46b-2f54f54a0d12")
+	)
+	(label "BEC_RT"
+		(at 182.88 205.74 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "90b37f0e-2026-48a6-96a4-a92c0f8ea335")
+	)
+	(wire
+		(pts
+			(xy 213.36 205.74) (xy 218.44 205.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc3dfcc9-0835-4c72-b4f0-746d5f5b3a58")
+	)
+	(label "GND"
+		(at 218.44 205.74 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6166ce88-79df-467f-aa78-108d9d610812")
+	)
+	(symbol
+		(lib_id "maame_carrier:Resistor")
+		(at 200.66 213.36 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2a8a7684-2082-4609-bde4-02163ee1f3c5")
+		(property "Reference" "R9"
+			(at 200.66 208.28 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "13k 1% 0603 (COMP)"
+			(at 200.66 218.44 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 200.66 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 200.66 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 200.66 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C22797"
+			(at 200.66 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4aee5241-32b2-4018-992e-e25f8f0ff8d5")
+		)
+		(pin "2"
+			(uuid "f56a8975-05ca-4fad-87dd-1e80502cebcb")
+		)
+		(instances
+			(project "maame_carrier"
+				(path "/347efe6d-e5df-5320-8613-16be4824f8d1"
+					(reference "R9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 187.96 213.36) (xy 182.88 213.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a52141f0-dedb-47fe-ac72-01c356841f8f")
+	)
+	(label "BEC_COMP"
+		(at 182.88 213.36 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a0605875-2d57-4737-9e68-c0bdd3579def")
+	)
+	(wire
+		(pts
+			(xy 213.36 213.36) (xy 218.44 213.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b14af22a-13be-4753-b911-c63e4ef87cda")
+	)
+	(label "BEC_COMP_RC"
+		(at 218.44 213.36 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2df67cff-0746-4ceb-8ca5-5d2f7355e26c")
+	)
+	(symbol
+		(lib_id "maame_carrier:Capacitor")
+		(at 200.66 220.98 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4e65d126-ebd7-4ed8-9969-10699c78f195")
+		(property "Reference" "C5"
+			(at 200.66 215.9 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "6.8nF 50V 0603 (COMP)"
+			(at 200.66 226.06 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 200.66 220.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 200.66 220.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 200.66 220.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C1631"
+			(at 200.66 220.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e4b6e4f3-b7e0-4fd4-bf3d-895e4c809df4")
+		)
+		(pin "2"
+			(uuid "c52d7660-4292-4af6-a4e2-b8dbcea25513")
+		)
+		(instances
+			(project "maame_carrier"
+				(path "/347efe6d-e5df-5320-8613-16be4824f8d1"
+					(reference "C5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 187.96 220.98) (xy 182.88 220.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0bf45c90-ac38-49b9-8927-623d77c3431f")
+	)
+	(label "BEC_COMP_RC"
+		(at 182.88 220.98 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1677af0e-daf4-4184-b4c2-58d0ee069f11")
+	)
+	(wire
+		(pts
+			(xy 213.36 220.98) (xy 218.44 220.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e6abd50c-2223-4739-9d8d-f5242107b96d")
+	)
+	(label "GND"
+		(at 218.44 220.98 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "207cee57-5bc7-48ef-85a1-d53cdcf547c9")
+	)
+	(symbol
+		(lib_id "maame_carrier:Capacitor")
+		(at 200.66 228.6 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "90537310-8962-4ceb-a538-c1c315b034aa")
+		(property "Reference" "C8"
+			(at 200.66 223.52 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "39pF 50V C0G 0603 (COMP)"
+			(at 200.66 233.68 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 200.66 228.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 200.66 228.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 200.66 228.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C107049"
+			(at 200.66 228.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "042490ae-e87b-4ebf-a7e3-1d723fdef467")
+		)
+		(pin "2"
+			(uuid "a8996ead-782d-482b-9ba9-d997c2e1aa0e")
+		)
+		(instances
+			(project "maame_carrier"
+				(path "/347efe6d-e5df-5320-8613-16be4824f8d1"
+					(reference "C8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 187.96 228.6) (xy 182.88 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88c59e84-bdec-4f67-8f97-a3d25dba172f")
+	)
+	(label "BEC_COMP"
+		(at 182.88 228.6 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "183c91ab-92a2-4c48-9f95-4c8b67881dbf")
+	)
+	(wire
+		(pts
+			(xy 213.36 228.6) (xy 218.44 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9235850-037f-4e78-9af9-6ce1b48eeea2")
+	)
+	(label "GND"
+		(at 218.44 228.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fdd27450-d765-4f5a-86e8-bcbeeb94c857")
+	)
+	(symbol
+		(lib_id "maame_carrier:Resistor")
+		(at 261.62 182.88 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c2d8063d-c1ca-4adf-a501-a90c7c20cfc0")
+		(property "Reference" "R10"
+			(at 261.62 177.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "53.6k 1% 0603 (FB top)"
+			(at 261.62 187.96 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 261.62 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 261.62 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 261.62 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C23074"
+			(at 261.62 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b18727da-f6e6-4227-aa82-07162e5f1179")
+		)
+		(pin "2"
+			(uuid "0d976a42-884f-4e85-a73d-e8d3e8d9853d")
+		)
+		(instances
+			(project "maame_carrier"
+				(path "/347efe6d-e5df-5320-8613-16be4824f8d1"
+					(reference "R10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 248.92 182.88) (xy 243.84 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5214d096-2242-4771-9469-0d8f880f29c6")
+	)
+	(label "5V_AUX"
+		(at 243.84 182.88 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "765ac16e-eba6-49fa-9021-c33868d7af8d")
+	)
+	(wire
+		(pts
+			(xy 274.32 182.88) (xy 279.4 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9066c2fc-3d20-4160-a774-f4eb02947a34")
+	)
+	(label "BEC_FB"
+		(at 279.4 182.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1eccc58f-3342-4d22-b7e1-99a51c74c80a")
+	)
+	(symbol
+		(lib_id "maame_carrier:Resistor")
+		(at 261.62 190.5 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e1038e57-d433-4d6c-8c6b-1dfd9286f56e")
+		(property "Reference" "R11"
+			(at 261.62 185.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k 1% 0603 (FB bottom)"
+			(at 261.62 195.58 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 261.62 190.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 261.62 190.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 261.62 190.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C25804"
+			(at 261.62 190.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "243a68c0-9a2b-4041-b69a-edf5eba1a4e1")
+		)
+		(pin "2"
+			(uuid "cc11fbd6-d28f-4f5b-9e56-7bc3c6498cb1")
+		)
+		(instances
+			(project "maame_carrier"
+				(path "/347efe6d-e5df-5320-8613-16be4824f8d1"
+					(reference "R11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 248.92 190.5) (xy 243.84 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f8088a3f-6f6c-449a-bc6a-1b3417611f76")
+	)
+	(label "BEC_FB"
+		(at 243.84 190.5 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e786b49a-413f-4730-b463-7c7fc5dd2238")
+	)
+	(wire
+		(pts
+			(xy 274.32 190.5) (xy 279.4 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b1c380ac-c5ae-43cb-8417-c723d077fc14")
+	)
+	(label "GND"
+		(at 279.4 190.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b40ab964-b7cf-4728-a4e6-5eefd849febc")
+	)
+	(symbol
+		(lib_id "maame_carrier:Inductor")
+		(at 261.62 198.12 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2ca34811-1d33-49c3-9fb1-da97918ace18")
+		(property "Reference" "L1"
+			(at 261.62 193.04 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "8.2uH 8.4A Coilcraft XAL6060-822MEC"
+			(at 261.62 203.2 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Inductor_SMD:L_Coilcraft_XAL6060-XXX"
+			(at 261.62 198.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 261.62 198.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 261.62 198.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C19191627"
+			(at 261.62 198.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a8a9b14b-970d-4bf7-80e7-50fe6b6b8814")
+		)
+		(pin "2"
+			(uuid "ef3991ea-9350-4cb9-8a67-f9ab020b69ea")
+		)
+		(instances
+			(project "maame_carrier"
+				(path "/347efe6d-e5df-5320-8613-16be4824f8d1"
+					(reference "L1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 248.92 198.12) (xy 243.84 198.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45aa8ef5-e090-4d6d-99da-2c0ef438c790")
+	)
+	(label "BEC_SW"
+		(at 243.84 198.12 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "7c4006dc-ff37-400b-8326-2260ae533091")
+	)
+	(wire
+		(pts
+			(xy 274.32 198.12) (xy 279.4 198.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8cb7281f-40ea-42fe-aafd-b783deff06fd")
+	)
+	(label "5V_AUX"
+		(at 279.4 198.12 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3c35f0a1-6b63-40bf-80da-c0b2cbc4a99e")
+	)
+	(symbol
+		(lib_id "maame_carrier:Schottky")
+		(at 261.62 205.74 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e8d9c880-5330-4dc3-9caa-f24da7561f56")
+		(property "Reference" "D8"
+			(at 261.62 200.66 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "B560C 60V 5A Schottky SMC"
+			(at 261.62 210.82 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SMC"
+			(at 261.62 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 261.62 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 261.62 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C85100"
+			(at 261.62 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d730ac5d-4959-45aa-8863-9632a3e173e0")
+		)
+		(pin "2"
+			(uuid "bc1c1e76-8e66-48aa-b046-afea376e2641")
+		)
+		(instances
+			(project "maame_carrier"
+				(path "/347efe6d-e5df-5320-8613-16be4824f8d1"
+					(reference "D8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 248.92 205.74) (xy 243.84 205.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6aba2fa8-01ac-4506-9400-7dc8e61535eb")
+	)
+	(label "BEC_SW"
+		(at 243.84 205.74 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a57cc916-ce90-4d5d-b959-d1654a78bb51")
+	)
+	(wire
+		(pts
+			(xy 274.32 205.74) (xy 279.4 205.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eeab48fc-de94-49f0-97ea-c978c0c406b6")
+	)
+	(label "GND"
+		(at 279.4 205.74 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d26c92eb-1594-4e2e-bd73-f0385bb9476f")
+	)
+	(symbol
+		(lib_id "maame_carrier:Capacitor")
+		(at 261.62 213.36 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1807a002-086c-477b-af62-d0b5946e9192")
+		(property "Reference" "C6"
+			(at 261.62 208.28 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "47uF 10V X7R 1210 (OUT)"
+			(at 261.62 218.44 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
+			(at 261.62 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 261.62 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 261.62 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C84494"
+			(at 261.62 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4c25820f-d026-463e-abb4-ad5612902a28")
+		)
+		(pin "2"
+			(uuid "9512f8b9-7376-4c31-ae98-0acdcfab55bc")
+		)
+		(instances
+			(project "maame_carrier"
+				(path "/347efe6d-e5df-5320-8613-16be4824f8d1"
+					(reference "C6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 248.92 213.36) (xy 243.84 213.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b92905e7-86c1-4001-940f-f17c136ea140")
+	)
+	(label "5V_AUX"
+		(at 243.84 213.36 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d0997979-3cae-45f8-8aa7-fb896589d75e")
+	)
+	(wire
+		(pts
+			(xy 274.32 213.36) (xy 279.4 213.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f77972cc-417e-42cd-81f4-3f24bb5e33cf")
+	)
+	(label "GND"
+		(at 279.4 213.36 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5c8925b8-fe83-4b0b-821a-554d12db7235")
+	)
+	(symbol
+		(lib_id "maame_carrier:Capacitor")
+		(at 261.62 220.98 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5bf74c9c-053e-4ae1-8e3e-0afc1de21177")
+		(property "Reference" "C7"
+			(at 261.62 215.9 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "47uF 10V X7R 1210 (OUT)"
+			(at 261.62 226.06 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
+			(at 261.62 220.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 261.62 220.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 261.62 220.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C84494"
+			(at 261.62 220.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "048eab52-f9d2-4a5a-b93c-ce71d4751034")
+		)
+		(pin "2"
+			(uuid "ff339ce4-70fb-47b4-9e56-7bab6cce5133")
+		)
+		(instances
+			(project "maame_carrier"
+				(path "/347efe6d-e5df-5320-8613-16be4824f8d1"
+					(reference "C7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 248.92 220.98) (xy 243.84 220.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70dd8692-7538-4fc0-898e-6e54b0948694")
+	)
+	(label "5V_AUX"
+		(at 243.84 220.98 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d2c7907b-05c6-4d55-b661-fa5310d6b424")
+	)
+	(wire
+		(pts
+			(xy 274.32 220.98) (xy 279.4 220.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "430883bb-3182-44d3-8bfd-953aac94e5be")
+	)
+	(label "GND"
+		(at 279.4 220.98 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4d3be039-ce3d-417c-833e-8d69eb8fcaa4")
+	)
+	(text "10. On-board 5V_AUX buck replaces the external BEC: TPS54360B per TI SNVSB93 Fig. 32 (600 kHz, 8.2 uH, B560C, 2x47 uF). UVLO divider omitted (EN floats = enabled, internal UVLO 4.3 V); FB 53.6k/10k = 5.09 V. VIN from VBAT_F (after F1)."
+		(exclude_from_sim no)
+		(at 20.32 233.68 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "866a3382-e763-4f9b-aa87-80a0895f90e5")
 	)
 	(sheet_instances
 		(path "/"

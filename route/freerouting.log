@@ -1,43 +1,34 @@
-2026-10-27 17:49:09.361 INFO   Freerouting v2.5.0 (build-date: 2026-10-05)
+2026-10-27 17:57:38.820 INFO   Freerouting v2.5.0 (build-date: 2026-10-05)
 WARNING: Final field userProfileSettings in class app.freerouting.settings.GlobalSettings has been mutated reflectively by class com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$2 in unnamed module @78186a70 (file:/Users/blckgodd/Documents/maame-autonomous-drone/tools/freerouting-2.5.0.jar)
 WARNING: Use --enable-final-field-mutation=ALL-UNNAMED to avoid a warning
 WARNING: Mutating final fields will be blocked in a future release unless final field mutation is enabled
-2026-10-27 17:49:09.618 INFO   Hardware: 10 CPU cores, 518 CPU score, 4096 MB RAM
-2026-10-27 17:49:09.618 WARN   Deprecated settings path '-mp / --router.max_passes'; use '--router.autorouter.max_passes' instead. The old path will be removed in a future release.
-2026-10-27 17:49:09.620 WARN   GUI is disabled and you don't have a console available, so the only feedback from Freerouting is in the log.
-2026-10-27 17:49:10.678 WARN   Deprecated settings path 'router.max_passes'; use 'router.autorouter.max_passes' instead. The old path will be removed in a future release.
-2026-10-27 17:49:10.948 INFO   [150653\6443B6] Loading board file 'maame_carrier.dsn'...
-2026-10-27 17:49:11.000 INFO   [150653\6443B6] Job '150653\6443B6' started at 2026-10-27T17:49:11.000549Z.
-2026-10-27 17:49:11.051 INFO   [150653\6443B6] Pipeline thread limits: autorouter pass is single-threaded, optimizer.max_threads=9.
-2026-10-27 17:49:11.081 INFO   [150653\6443B6] Fanout stage started on board '33015ca2ce11ba2bde4f25dfdd4ac705' with 32 of 32 SMD pins needing fanout (0 already connected, 0 netless).
-2026-10-27 17:49:11.298 INFO   [150653\6443B6] Fanout pass #1 on board '7fede153f3b892b16d39f5e6f9d63931' completed in 0.21 seconds with 25 SMD pins fanouted, 0 not routed, 0 insert errors, +12 extra vias (0 SMD pins still to check in pass, ripup costs=100).
-2026-10-27 17:49:11.318 INFO   [150653\6443B6] Fanout pass #2 on board '7fede153f3b892b16d39f5e6f9d63931' completed in 0.01 seconds with 0 SMD pins fanouted, 0 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=200).
-2026-10-27 17:49:11.320 INFO   [150653\6443B6] Fanout stage completed: started with 32 total SMD pins, completed in 0.24 seconds, escaped pins: 32/32 (100.0%), using 0.23 total CPU seconds, 0.12 GB total allocated, and 73.5 MB peak heap usage.
-2026-10-27 17:49:11.330 INFO   [150653\6443B6] Auto-routing stage started on board '7fede153f3b892b16d39f5e6f9d63931' with baseline score 81.00 for 94 unrouted items.
-2026-10-27 17:49:14.883 INFO   [150653\6443B6] Auto-routing pass #1 on board '7fede153f3b892b16d39f5e6f9d63931' was completed in 3.54 seconds with score 800.62 (16 unrouted and 0 violations), using 2.90 CPU seconds and the job allocated 4.34 GB of memory so far.
-2026-10-27 17:49:16.397 INFO   [150653\6443B6] Auto-routing pass #2 on board '193544543dd68933e9b3a098d9ee976c' was completed in 1.50 seconds with score 862.93 (11 unrouted and 0 violations), using 4.87 CPU seconds and the job allocated 8.29 GB of memory so far.
-2026-10-27 17:49:17.644 INFO   [150653\6443B6] Auto-routing pass #3 on board 'd6baf4fd6a275e828852e5109118a1fa' was completed in 1.24 seconds with score 937.69 (5 unrouted and 0 violations), using 5.87 CPU seconds and the job allocated 10.41 GB of memory so far.
-2026-10-27 17:49:18.881 INFO   [150653\6443B6] Auto-routing pass #4 on board '211c6ce00f4a584fc399a25bf1cd7a18' was completed in 1.23 seconds with score 950.16 (4 unrouted and 0 violations), using 6.87 CPU seconds and the job allocated 12.70 GB of memory so far.
-2026-10-27 17:49:19.762 INFO   [150653\6443B6] Auto-routing pass #5 on board '0ef6a51fb0387f462dbf8db5ac9791d5' was completed in 0.87 seconds with score 975.08 (2 unrouted and 0 violations), using 7.87 CPU seconds and the job allocated 15.01 GB of memory so far.
-2026-10-27 17:49:20.536 INFO   [150653\6443B6] Auto-routing pass #6 on board 'c947d8acb091f5a69b29a16d9fc7bd36' was completed in 0.76 seconds with score 1000.00 (0 unrouted and 0 violations), using 8.86 CPU seconds and the job allocated 17.28 GB of memory so far.
-2026-10-27 17:49:20.554 INFO   [150653\6443B6] Auto-routing pass #7 on board '5e46edad3d194e6c898a525780d98572' was completed in 0.01 seconds with score 1000.00 (0 unrouted and 0 violations), using 8.86 CPU seconds and the job allocated 17.28 GB of memory so far.
-2026-10-27 17:49:20.579 INFO   [150653\6443B6] Auto-routing stage completed: started with 107 unrouted nets, completed in 9.52 seconds, final score: 1000.00 (0 unrouted and 0 violations), using 8.86 total CPU seconds, 17.28 GB total allocated, and 503.3 MB peak heap usage.
-2026-10-27 17:49:20.615 INFO   [150653\6443B6] Optimization stage started on board '36b29565bbad8ba7b2f259ce7a46f725'. Baseline router score: 1000.00, optimizer score: 196.75, incomplete connections: 0, clearance violations: 0.
-2026-10-27 17:49:22.533 INFO   [150653\6443B6] Stopping optimization pass #1 early after 12 consecutive items could not be improved.
-2026-10-27 17:49:22.565 INFO   [150653\6443B6] Optimizer pass #1 on board 'c675a30bfbaf5e0dc467c0ce10eec3f3' was completed in 1.91 seconds with the score of 204.14 (0 unrouted and 0 violations).
-2026-10-27 17:49:22.576 INFO   [150653\6443B6] Optimizer pass #1: optimizer score 196.75 -> 204.14 (IMPROVED, 3.7594%), router score: 1000.00, incomplete connections: 0, clearance violations: 0.
-2026-10-27 17:49:27.888 INFO   [150653\6443B6] Optimizer pass #2 on board '050fffdda481cf069cd436de0d1b8707' was completed in 5.28 seconds with the score of 211.54 (0 unrouted and 0 violations).
-2026-10-27 17:49:27.898 INFO   [150653\6443B6] Optimizer pass #2: optimizer score 204.14 -> 211.54 (IMPROVED, 3.6232%), router score: 1000.00, incomplete connections: 0, clearance violations: 0.
-2026-10-27 17:49:33.286 INFO   [150653\6443B6] Optimizer pass #3 on board '82bf5fa74f60b9835a0f38bb3769b76f' was completed in 5.36 seconds with the score of 181.95 (0 unrouted and 0 violations).
-2026-10-27 17:49:33.292 INFO   [150653\6443B6] Optimizer pass #3 candidate rejected: OPTIMIZER_SCORE_NOT_IMPROVED. Restoring incumbent (optimizer score 211.54, incomplete connections: 0, clearance violations: 0).
-2026-10-27 17:49:33.307 INFO   [150653\6443B6] Optimizer pass #3: optimizer score 211.54 -> 181.95 (REGRESSED, -13.9860%), router score: 1000.00, incomplete connections: 0, clearance violations: 0.
-2026-10-27 17:49:58.022 INFO   [150653\6443B6] Optimizer pass #4 on board 'c6baa532ea8591e75003c7fddffbb9e2' was completed in 24.68 seconds with the score of 223.37 (0 unrouted and 0 violations).
-2026-10-27 17:49:58.031 INFO   [150653\6443B6] Optimizer pass #4: optimizer score 211.54 -> 223.37 (IMPROVED, 5.5944%), router score: 1000.00, incomplete connections: 0, clearance violations: 0.
-2026-10-27 17:50:23.410 INFO   [150653\6443B6] Optimizer pass #5 on board '7caa4ac1165312c7896ea4a883608bc2' was completed in 25.35 seconds with the score of 142.01 (0 unrouted and 0 violations).
-2026-10-27 17:50:23.417 INFO   [150653\6443B6] Optimizer pass #5 candidate rejected: OPTIMIZER_SCORE_NOT_IMPROVED. Restoring incumbent (optimizer score 223.37, incomplete connections: 0, clearance violations: 0).
-2026-10-27 17:50:23.431 INFO   [150653\6443B6] Optimizer pass #5: optimizer score 223.37 -> 142.01 (REGRESSED, -36.4238%), router score: 1000.00, incomplete connections: 0, clearance violations: 0.
-2026-10-27 17:50:23.431 INFO   [150653\6443B6] Stopping optimizer because the improvement in this pass (-36.4238%) is below the threshold (2.50%).
-2026-10-27 17:50:23.443 INFO   [150653\6443B6] Optimization stage completed:. Baseline router score: 1000.00, baseline optimizer score: 196.75, final router score: 1000.00, final optimizer score: 223.37, completed in 62.82 seconds, using 357.64 total CPU seconds, 485.12 GB total allocated, and 1724.8 MB peak heap usage.
-2026-10-27 17:50:23.449 INFO   [150653\6443B6] Job '150653\6443B6' finished with state: COMPLETED (elapsed: 1 minute 12.45 seconds, finished at UTC: 2026-10-27T17:50:23.448273Z).
-2026-10-27 17:50:23.455 INFO   Saving output file '/Users/blckgodd/Documents/maame-autonomous-drone/route/maame_carrier.ses' (SES)...
-2026-10-27 17:50:23.462 INFO   Successfully saved output file '/Users/blckgodd/Documents/maame-autonomous-drone/route/maame_carrier.ses' (57238 bytes).
+2026-10-27 17:57:39.074 INFO   Hardware: 10 CPU cores, 556 CPU score, 4096 MB RAM
+2026-10-27 17:57:39.074 WARN   Deprecated settings path '-mp / --router.max_passes'; use '--router.autorouter.max_passes' instead. The old path will be removed in a future release.
+2026-10-27 17:57:39.075 WARN   GUI is disabled and you don't have a console available, so the only feedback from Freerouting is in the log.
+2026-10-27 17:57:40.137 WARN   Deprecated settings path 'router.max_passes'; use 'router.autorouter.max_passes' instead. The old path will be removed in a future release.
+2026-10-27 17:57:40.404 INFO   [F3CDDC\673AF9] Loading board file 'maame_carrier.dsn'...
+2026-10-27 17:57:40.446 INFO   [F3CDDC\673AF9] Job 'F3CDDC\673AF9' started at 2026-10-27T17:57:40.446820Z.
+2026-10-27 17:57:40.489 INFO   [F3CDDC\673AF9] Pipeline thread limits: autorouter pass is single-threaded, optimizer.max_threads=9.
+2026-10-27 17:57:40.518 INFO   [F3CDDC\673AF9] Fanout stage started on board '6b5b63c3e63eda604395198498db962a' with 68 of 69 SMD pins needing fanout (1 already connected, 0 netless).
+2026-10-27 17:57:40.827 INFO   [F3CDDC\673AF9] Fanout pass #1 on board 'd99449f5541ef4179255f03b57ba3ada' completed in 0.29 seconds with 57 SMD pins fanouted, 0 not routed, 0 insert errors, +20 extra vias (0 SMD pins still to check in pass, ripup costs=100).
+2026-10-27 17:57:40.849 INFO   [F3CDDC\673AF9] Fanout pass #2 on board 'd99449f5541ef4179255f03b57ba3ada' completed in 0.02 seconds with 0 SMD pins fanouted, 0 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=200).
+2026-10-27 17:57:40.851 INFO   [F3CDDC\673AF9] Fanout stage completed: started with 69 total SMD pins, completed in 0.33 seconds, escaped pins: 68/69 (98.6%), using 0.33 total CPU seconds, 0.25 GB total allocated, and 92.7 MB peak heap usage.
+2026-10-27 17:57:40.862 INFO   [F3CDDC\673AF9] Auto-routing stage started on board 'd99449f5541ef4179255f03b57ba3ada' with baseline score 179.67 for 103 unrouted items.
+2026-10-27 17:57:44.651 INFO   [F3CDDC\673AF9] Auto-routing pass #1 on board 'd99449f5541ef4179255f03b57ba3ada' was completed in 3.78 seconds with score 829.79 (18 unrouted and 0 violations), using 3.91 CPU seconds and the job allocated 6.64 GB of memory so far.
+2026-10-27 17:57:46.211 INFO   [F3CDDC\673AF9] Auto-routing pass #2 on board '193c992b9d67f4d58278896d5c1fc7ee' was completed in 1.54 seconds with score 914.89 (9 unrouted and 0 violations), using 4.91 CPU seconds and the job allocated 8.81 GB of memory so far.
+2026-10-27 17:57:47.106 INFO   [F3CDDC\673AF9] Auto-routing pass #3 on board '912ac58b09cfac473655529b3125f79f' was completed in 0.88 seconds with score 962.17 (4 unrouted and 0 violations), using 5.91 CPU seconds and the job allocated 11.18 GB of memory so far.
+2026-10-27 17:57:47.828 INFO   [F3CDDC\673AF9] Auto-routing pass #4 on board '0815da8c2a37c8c791c5df0d8907a248' was completed in 0.71 seconds with score 990.54 (1 unrouted and 0 violations), using 6.91 CPU seconds and the job allocated 13.51 GB of memory so far.
+2026-10-27 17:57:48.000 INFO   [F3CDDC\673AF9] Auto-routing pass #5 on board 'd64fd1f21f2a20551b08614f2e3662f9' was completed in 0.16 seconds with score 1000.00 (0 unrouted and 0 violations), using 6.91 CPU seconds and the job allocated 13.51 GB of memory so far.
+2026-10-27 17:57:48.024 INFO   [F3CDDC\673AF9] Auto-routing pass #6 on board 'a81fa16b52d4eaaf309ea0ebd38886d2' was completed in 0.01 seconds with score 1000.00 (0 unrouted and 0 violations), using 6.91 CPU seconds and the job allocated 13.51 GB of memory so far.
+2026-10-27 17:57:48.061 INFO   [F3CDDC\673AF9] Auto-routing stage completed: started with 140 unrouted nets, completed in 7.56 seconds, final score: 1000.00 (0 unrouted and 0 violations), using 6.91 total CPU seconds, 13.51 GB total allocated, and 345.4 MB peak heap usage.
+2026-10-27 17:57:48.098 INFO   [F3CDDC\673AF9] Optimization stage started on board 'ed5634c53ea2bb86298ed1e5cf2f7f18'. Baseline router score: 1000.00, optimizer score: 378.57, incomplete connections: 0, clearance violations: 0.
+2026-10-27 17:57:48.920 INFO   [F3CDDC\673AF9] Stopping optimization pass #1 early after 12 consecutive items could not be improved.
+2026-10-27 17:57:49.016 INFO   [F3CDDC\673AF9] Optimizer pass #1 on board 'ba3d1b9a35e6fe41c45ad2eaae1910ca' was completed in 0.84 seconds with the score of 390.48 (0 unrouted and 0 violations).
+2026-10-27 17:57:49.037 INFO   [F3CDDC\673AF9] Optimizer pass #1: optimizer score 378.57 -> 390.48 (IMPROVED, 3.1447%), router score: 1000.00, incomplete connections: 0, clearance violations: 0.
+2026-10-27 17:57:53.961 INFO   [F3CDDC\673AF9] Optimizer pass #2 on board 'a153776e5fd0025dee7817a9d0e2fae7' was completed in 4.86 seconds with the score of 392.86 (0 unrouted and 0 violations).
+2026-10-27 17:57:53.973 INFO   [F3CDDC\673AF9] Optimizer pass #2: optimizer score 390.48 -> 392.86 (IMPROVED, 0.6098%), router score: 1000.00, incomplete connections: 0, clearance violations: 0.
+2026-10-27 17:57:53.973 INFO   [F3CDDC\673AF9] Stopping optimizer because the improvement in this pass (0.6098%) is below the threshold (2.50%).
+2026-10-27 17:57:53.991 INFO   [F3CDDC\673AF9] Optimization stage completed:. Baseline router score: 1000.00, baseline optimizer score: 378.57, final router score: 1000.00, final optimizer score: 392.86, completed in 5.88 seconds, using 34.16 total CPU seconds, 38.04 GB total allocated, and 873.2 MB peak heap usage.
+2026-10-27 17:57:53.996 INFO   [F3CDDC\673AF9] Job 'F3CDDC\673AF9' finished with state: COMPLETED (elapsed: 13.55 seconds, finished at UTC: 2026-10-27T17:57:53.995658Z).
+2026-10-27 17:57:54.008 INFO   Saving output file '/Users/blckgodd/Documents/maame-autonomous-drone/route/maame_carrier.ses' (SES)...
+2026-10-27 17:57:54.009 INFO   Successfully saved output file '/Users/blckgodd/Documents/maame-autonomous-drone/route/maame_carrier.ses' (64867 bytes).

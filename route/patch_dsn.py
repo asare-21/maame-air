@@ -25,7 +25,7 @@ i = s.index("(keepout"); s = s[:i] + add.lstrip("\n ") + "\n    " + s[i:]
 # net classes
 i = s.index("(class kicad_default"); j = s.index("(circuit", i)
 toks = re.findall(r'"[^"]*"|\S+', s[i + len("(class kicad_default"):j])
-PWR, GND, VB = {"/5V_AUX", "/5V_FC"}, {"/GND"}, {"/VBAT", "/VBAT_F"}
+PWR, GND, VB = {"/5V_AUX", "/5V_FC", "/BEC_SW"}, {"/GND"}, {"/VBAT", "/VBAT_F"}
 rest = [t for t in toks if t not in PWR | GND | VB]
 via = '(circuit\n        (use_via "Via[0-1]_600:300_um")\n      )\n'
 def cls(name, nets, w, c): return f'(class {name} {" ".join(nets)}\n      {via}      (rule\n        (width {w})\n        (clearance {c})\n      )\n    )\n    '

@@ -523,7 +523,12 @@
     },
     "net_colors": {},
     "netclass_assignments": {},
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "Power",
+        "pattern": "/BEC_SW"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
