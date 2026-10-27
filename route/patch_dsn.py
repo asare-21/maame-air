@@ -1,7 +1,7 @@
 # Patch the KiCad DSN for Freerouting: net-class widths, 0.55 mm inset boundary, keep-outs round the frame slots and ESC slot.
 import re, math, sys
 p = sys.argv[1]; s = open(p).read()
-W, H, R, INSET = 95.0, 116.5, 3.0, 0.55
+W, H, R, INSET = 95.0, 116.5, 6.0, 0.55
 um = lambda v: f"{v * 1000:.1f}"
 # DSN y axis is negated (board y -> -y)
 def rrect(x0, y0, x1, y1, r, n=8):
