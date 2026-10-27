@@ -8447,7 +8447,7 @@
 			)
 		)
 	)
-	(gr_text "arrow = FC front"
+	(gr_text "FRONT = KAKUTE ARROW"
 		(at 30 42.5 0)
 		(layer "F.SilkS")
 		(uuid "3d29f423-56a0-4dba-9cf5-524f8b4b0176")
