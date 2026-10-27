@@ -8317,8 +8317,8 @@
 		)
 	)
 	(gr_line
-		(start 8.5 14)
-		(end 51.5 14)
+		(start 12.5 18.5)
+		(end 47.5 18.5)
 		(stroke
 			(width 0.15)
 			(type default)
@@ -8327,8 +8327,8 @@
 		(uuid "9e4db35d-e640-4602-806d-25ab5e0f89f1")
 	)
 	(gr_line
-		(start 8.5 58)
-		(end 8.5 14)
+		(start 12.5 53.5)
+		(end 12.5 18.5)
 		(stroke
 			(width 0.15)
 			(type default)
@@ -8337,8 +8337,8 @@
 		(uuid "c5734a9a-9f7c-4f71-878e-d644f1c530a7")
 	)
 	(gr_line
-		(start 51.5 14)
-		(end 51.5 58)
+		(start 47.5 18.5)
+		(end 47.5 53.5)
 		(stroke
 			(width 0.15)
 			(type default)
@@ -8347,8 +8347,8 @@
 		(uuid "3047be5b-b0fa-48be-ad16-8517d551ad46")
 	)
 	(gr_line
-		(start 51.5 58)
-		(end 8.5 58)
+		(start 47.5 53.5)
+		(end 12.5 53.5)
 		(stroke
 			(width 0.15)
 			(type default)
@@ -8448,7 +8448,7 @@
 		)
 	)
 	(gr_text "arrow = FC front"
-		(at 30 37 0)
+		(at 30 42.5 0)
 		(layer "F.SilkS")
 		(uuid "3d29f423-56a0-4dba-9cf5-524f8b4b0176")
 		(effects
@@ -8470,13 +8470,66 @@
 		)
 	)
 	(gr_text "KAKUTE H7"
-		(at 30 33 0)
+		(at 30 30.5 0)
 		(layer "F.SilkS")
 		(uuid "d0368def-f4aa-4a9f-a41e-27fb44e4ae73")
 		(effects
 			(font
 				(size 1.5 1.5)
 				(thickness 0.224999)
+			)
+		)
+	)
+	(gr_line
+		(start 25.5 33.5)
+		(end 34.5 33.5)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "31d7572b-90f6-4506-b4d5-c2c0b0e6f9bc")
+	)
+	(gr_arc
+		(start 34.5 33.5)
+		(mid 37 36)
+		(end 34.5 38.5)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "d8847e7a-7eac-4462-a25e-e1df25ea3d3d")
+	)
+	(gr_line
+		(start 34.5 38.5)
+		(end 25.5 38.5)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "df16f702-daa5-4aa5-bfcd-493bbea65ac1")
+	)
+	(gr_arc
+		(start 25.5 38.5)
+		(mid 23 36)
+		(end 25.5 33.5)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "ebc0bd99-e9c4-41ba-a357-1bfd364ddd48")
+	)
+	(gr_text "ESC CABLE SLOT"
+		(at 30 40.5 0)
+		(layer "F.SilkS")
+		(uuid "0b5abe54-5650-4762-a71d-7dba122787ca")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
 			)
 		)
 	)
