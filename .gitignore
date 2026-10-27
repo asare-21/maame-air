@@ -1,0 +1,7 @@
+.DS_Store
+.history/
+tools/*.jar
+*-backups/
+fp-info-cache
+*.kicad_prl
+*.lck

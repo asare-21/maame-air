@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name "maame_carrier")(type "KiCad")(uri "${KIPRJMOD}/maame_carrier.kicad_sym")(options "")(descr "Maame carrier"))
+)
