@@ -23,5 +23,5 @@ assert {r["Ref"] for r in rows} == set(parts), (sorted({r["Ref"] for r in rows} 
 with open("fab/maame_carrier_CPL_JLC.csv", "w", newline="") as f:
     w = csv.writer(f); w.writerow(["Designator", "Mid X", "Mid Y", "Layer", "Rotation"])
     for r in sorted(rows, key=lambda r: nat(r["Ref"])):
-        w.writerow([r["Ref"], f'{float(r["PosX"]):.4f}mm', f'{float(r["PosY"]):.4f}mm', "Top", f'{float(r["Rot"]):g}'])
+        w.writerow([r["Ref"], f'{float(r["PosX"]):.4f}mm', f'{float(r["PosY"]):.4f}mm', "Top", f'{float(r["Rot"]) % 360:g}'])
 print(len(parts), "parts,", len(groups), "BOM lines")
