@@ -144,7 +144,7 @@
 				)
 			)
 		)
-		(attr through_hole)
+		(attr through_hole dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -1.33 -1.33)
@@ -313,7 +313,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "5V_AUX")
+			(net "/5V_AUX")
 			(uuid "3edf78b7-7158-4226-b6bb-ca50bebc8cfb")
 		)
 		(pad "2" thru_hole oval
@@ -322,7 +322,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "GND")
+			(net "/GND")
 			(uuid "c695dfda-0831-4167-a5ec-aeed1c533cfb")
 		)
 		(pad "3" thru_hole oval
@@ -331,7 +331,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "5V_FC")
+			(net "/5V_FC")
 			(uuid "e9804e85-e97e-497f-8720-a257491321ba")
 		)
 		(pad "4" thru_hole oval
@@ -340,7 +340,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "GND")
+			(net "/GND")
 			(uuid "334c4e7a-faf0-4a37-9631-6dc9b4a9bb95")
 		)
 		(embedded_fonts no)
@@ -408,7 +408,7 @@
 				)
 			)
 		)
-		(attr exclude_from_pos_files exclude_from_bom)
+		(attr board_only exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -626,7 +626,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(roundrect_rratio 0.119048)
-			(net "VBAT")
+			(net "/VBAT")
 			(uuid "c37c445d-4e67-4eb4-8cb6-0dc4751c6cd1")
 		)
 		(pad "2" thru_hole circle
@@ -635,7 +635,7 @@
 			(drill 1.1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "GND")
+			(net "/GND")
 			(uuid "1053aec7-f210-407f-bb96-fc674b2dbc86")
 		)
 		(embedded_fonts no)
@@ -703,7 +703,7 @@
 				)
 			)
 		)
-		(attr through_hole)
+		(attr through_hole dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -1.33 -1.33)
@@ -872,7 +872,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "5V_FC")
+			(net "/5V_FC")
 			(uuid "04718276-ab0c-45a0-9fd9-a744fff51684")
 		)
 		(pad "2" thru_hole oval
@@ -881,7 +881,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "GND")
+			(net "/GND")
 			(uuid "c58d29a8-aa76-4afd-9d8d-a24714a6cb11")
 		)
 		(pad "3" thru_hole oval
@@ -890,7 +890,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "I2C_SCL")
+			(net "/I2C_SCL")
 			(uuid "5dd6eb01-ac53-4347-9899-a4152074922d")
 		)
 		(pad "4" thru_hole oval
@@ -899,7 +899,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "I2C_SDA")
+			(net "/I2C_SDA")
 			(uuid "068dcaaa-e579-43da-8fff-4a3bbd364820")
 		)
 		(embedded_fonts no)
@@ -967,7 +967,7 @@
 				)
 			)
 		)
-		(attr through_hole)
+		(attr through_hole dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -1.33 -1.33)
@@ -1136,7 +1136,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "5V_FC")
+			(net "/5V_FC")
 			(uuid "88c0bdc0-3e7e-44c1-8b52-1c0ceed9404b")
 		)
 		(pad "2" thru_hole oval
@@ -1145,7 +1145,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "GND")
+			(net "/GND")
 			(uuid "6358e4fd-8d55-426f-b3c1-c85c348b0fdd")
 		)
 		(pad "3" thru_hole oval
@@ -1154,7 +1154,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "UART4_FC_RX")
+			(net "/UART4_FC_RX")
 			(uuid "cac6923a-8438-4aa8-8f1d-c37b7d40602d")
 		)
 		(pad "4" thru_hole oval
@@ -1163,7 +1163,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "UART4_FC_TX")
+			(net "/UART4_FC_TX")
 			(uuid "65b59423-0c65-4ee1-9e51-73cb9aaa6598")
 		)
 		(embedded_fonts no)
@@ -1197,7 +1197,7 @@
 				)
 			)
 		)
-		(property "Value" "Raspberry Pi Zero W v1.1, component side"
+		(property "Value" "Raspberry Pi Zero W v1.1, component side up"
 			(at 10.23 -24.13 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -1231,7 +1231,7 @@
 				)
 			)
 		)
-		(attr through_hole)
+		(attr through_hole dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 18.79 -57.89)
@@ -2140,7 +2140,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "3V3_PI")
+			(net "/3V3_PI")
 			(uuid "18066318-1f6e-4389-b4e6-3c7ec2782cf0")
 		)
 		(pad "2" thru_hole oval
@@ -2149,7 +2149,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "5V_AUX")
+			(net "/5V_AUX")
 			(uuid "1f11c961-a3a8-4a3a-9c3e-a72061a56553")
 		)
 		(pad "3" thru_hole oval
@@ -2158,7 +2158,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "PI_SDA")
+			(net "/PI_SDA")
 			(uuid "882b67e7-fbf1-43ad-984d-b2f0b6fb1a9b")
 		)
 		(pad "4" thru_hole oval
@@ -2167,7 +2167,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "5V_AUX")
+			(net "/5V_AUX")
 			(uuid "8fef4184-32d8-47d6-93cd-4355cc19d3fa")
 		)
 		(pad "5" thru_hole oval
@@ -2176,7 +2176,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "PI_SCL")
+			(net "/PI_SCL")
 			(uuid "dc76ec4f-d8f8-4968-9383-1c8ecc80bf4f")
 		)
 		(pad "6" thru_hole oval
@@ -2185,7 +2185,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "GND")
+			(net "/GND")
 			(uuid "8778eebc-e726-42f4-9bf7-5ccbf306a228")
 		)
 		(pad "7" thru_hole oval
@@ -2194,7 +2194,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "PI_GPIO4")
+			(net "/PI_GPIO4")
 			(uuid "8ef2749c-c168-4aa9-9826-a3859a323bc6")
 		)
 		(pad "8" thru_hole oval
@@ -2203,7 +2203,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "UART1_FC_RX")
+			(net "/UART1_FC_RX")
 			(uuid "aad2722e-fccb-4096-b4d7-25af6f73c9d5")
 		)
 		(pad "9" thru_hole oval
@@ -2212,7 +2212,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "GND")
+			(net "/GND")
 			(uuid "14d93d22-ca3e-4af7-bdbe-fa0532fafac7")
 		)
 		(pad "10" thru_hole oval
@@ -2221,7 +2221,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "UART1_FC_TX")
+			(net "/UART1_FC_TX")
 			(uuid "97ce0557-4d24-458e-925f-de1a94bdf35b")
 		)
 		(pad "11" thru_hole oval
@@ -2230,7 +2230,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "PI_GPIO17")
+			(net "/PI_GPIO17")
 			(uuid "d75124c2-95cf-4c41-be9b-55a885964adb")
 		)
 		(pad "12" thru_hole oval
@@ -2239,6 +2239,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
+			(net "/LED_BATT_LO")
 			(uuid "74136b7c-9641-4538-bf9d-2a1631967afa")
 		)
 		(pad "13" thru_hole oval
@@ -2247,7 +2248,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "PI_GPIO27")
+			(net "/PI_GPIO27")
 			(uuid "56fcc9ef-1c69-4117-b6c3-ae2f2002dbeb")
 		)
 		(pad "14" thru_hole oval
@@ -2256,7 +2257,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "GND")
+			(net "/GND")
 			(uuid "7443d052-f45d-42a8-9767-8e28af31f324")
 		)
 		(pad "15" thru_hole oval
@@ -2265,7 +2266,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "PI_GPIO22")
+			(net "/PI_GPIO22")
 			(uuid "0c236e21-1967-48cd-9dc6-04c2e5b0ac3a")
 		)
 		(pad "16" thru_hole oval
@@ -2274,7 +2275,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "PI_GPIO23")
+			(net "/PI_GPIO23")
 			(uuid "33d832e2-c59d-45e6-b72b-e9552149b910")
 		)
 		(pad "17" thru_hole oval
@@ -2283,7 +2284,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "3V3_PI")
+			(net "/3V3_PI")
 			(uuid "8b6cbe9c-6e0e-4176-9007-ef4df8cde1f6")
 		)
 		(pad "18" thru_hole oval
@@ -2292,7 +2293,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "PI_GPIO24")
+			(net "/PI_GPIO24")
 			(uuid "8f7aedcb-aee0-4633-94e1-530617d31849")
 		)
 		(pad "19" thru_hole oval
@@ -2301,6 +2302,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
+			(net "unconnected-(U1-GPIO10-Pad19)")
 			(uuid "7dc23261-a36f-49cb-a433-5e1ed8526b29")
 		)
 		(pad "20" thru_hole oval
@@ -2309,7 +2311,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "GND")
+			(net "/GND")
 			(uuid "c6619b09-f198-4523-8a57-c346c045f9d1")
 		)
 		(pad "21" thru_hole oval
@@ -2318,6 +2320,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
+			(net "unconnected-(U1-GPIO9-Pad21)")
 			(uuid "27e47acf-44cc-4b90-83ac-cd7348629501")
 		)
 		(pad "22" thru_hole oval
@@ -2326,7 +2329,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "PI_GPIO25")
+			(net "/PI_GPIO25")
 			(uuid "de50bb27-68e8-4c5c-ab54-c8d9ee0c032b")
 		)
 		(pad "23" thru_hole oval
@@ -2335,6 +2338,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
+			(net "unconnected-(U1-GPIO11-Pad23)")
 			(uuid "34966bef-5df9-40df-baaf-3c8508b5bda7")
 		)
 		(pad "24" thru_hole oval
@@ -2343,6 +2347,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
+			(net "unconnected-(U1-GPIO8-Pad24)")
 			(uuid "295f8c1f-a352-446c-861b-da5e3972ecdc")
 		)
 		(pad "25" thru_hole oval
@@ -2351,7 +2356,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "GND")
+			(net "/GND")
 			(uuid "274f769a-2884-42ae-900e-662b188e164a")
 		)
 		(pad "26" thru_hole oval
@@ -2360,6 +2365,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
+			(net "unconnected-(U1-GPIO7-Pad26)")
 			(uuid "84a6f57e-40df-4c4e-b5e1-f8b0f477c939")
 		)
 		(pad "27" thru_hole oval
@@ -2368,6 +2374,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
+			(net "unconnected-(U1-ID_SD-Pad27)")
 			(uuid "a3d15928-f5ba-4c77-bbc9-034a6a2765a7")
 		)
 		(pad "28" thru_hole oval
@@ -2376,6 +2383,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
+			(net "unconnected-(U1-ID_SC-Pad28)")
 			(uuid "34be2774-0925-48ec-a3e0-39cccf145c2a")
 		)
 		(pad "29" thru_hole oval
@@ -2384,7 +2392,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "PI_GPIO5")
+			(net "/PI_GPIO5")
 			(uuid "9a7695a2-4193-4cb4-8e2f-e800be17d1b3")
 		)
 		(pad "30" thru_hole oval
@@ -2393,7 +2401,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "GND")
+			(net "/GND")
 			(uuid "9e4b2c59-1276-436b-9832-b405ab8fbfeb")
 		)
 		(pad "31" thru_hole oval
@@ -2402,7 +2410,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "PI_GPIO6")
+			(net "/PI_GPIO6")
 			(uuid "eeb8511a-afcc-436f-b059-5eb5211ce968")
 		)
 		(pad "32" thru_hole oval
@@ -2411,7 +2419,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "PI_GPIO12")
+			(net "/PI_GPIO12")
 			(uuid "de9e52ca-5933-455b-bd68-6ce4baf41944")
 		)
 		(pad "33" thru_hole oval
@@ -2420,7 +2428,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "PI_GPIO13")
+			(net "/PI_GPIO13")
 			(uuid "3051d5a0-d7f2-434a-a373-9200eb5c4d50")
 		)
 		(pad "34" thru_hole oval
@@ -2429,7 +2437,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "GND")
+			(net "/GND")
 			(uuid "664fb901-254b-442e-92d5-65a13e1ff8c6")
 		)
 		(pad "35" thru_hole oval
@@ -2438,6 +2446,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
+			(net "/LED_BATT_HI")
 			(uuid "d9446a2b-2551-467b-9a6c-25f4872ea597")
 		)
 		(pad "36" thru_hole oval
@@ -2446,6 +2455,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
+			(net "/LED_PI_ACTIVE")
 			(uuid "0dbc420f-af34-4e4e-a387-71d71b1267d3")
 		)
 		(pad "37" thru_hole oval
@@ -2454,7 +2464,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "PI_GPIO26")
+			(net "/PI_GPIO26")
 			(uuid "b3033a85-cd5b-42b3-a318-a7fc53ce2c7c")
 		)
 		(pad "38" thru_hole oval
@@ -2463,6 +2473,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
+			(net "/LED_DATA")
 			(uuid "32484f20-212a-424c-ae1f-4524270dbf75")
 		)
 		(pad "39" thru_hole oval
@@ -2471,7 +2482,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "GND")
+			(net "/GND")
 			(uuid "ad082c6e-287d-4fe7-8c80-4bee1298e889")
 		)
 		(pad "40" thru_hole oval
@@ -2480,6 +2491,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
+			(net "/LED_BATT_MID")
 			(uuid "6366f859-bcab-42de-a2c6-3710b0a20737")
 		)
 		(embedded_fonts no)
@@ -2547,7 +2559,7 @@
 				)
 			)
 		)
-		(attr exclude_from_pos_files exclude_from_bom)
+		(attr board_only exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -4285,7 +4297,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "5V_AUX")
+			(net "/5V_AUX")
 			(uuid "3b08f530-1639-4132-bcc0-0747235da5de")
 		)
 		(pad "2" thru_hole circle
@@ -4294,7 +4306,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "GND")
+			(net "/GND")
 			(uuid "cc31fb78-fb9e-4a60-bf76-708c070c1b6d")
 		)
 		(embedded_fonts no)
@@ -4480,7 +4492,7 @@
 			(size 1.2 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.208333)
-			(net "5V_AUX")
+			(net "/5V_AUX")
 			(uuid "4f77aee9-7086-48fb-bf85-c141cbfa7ee2")
 		)
 		(pad "2" smd roundrect
@@ -4488,7 +4500,7 @@
 			(size 1.2 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.208333)
-			(net "LED_A")
+			(net "/LED_A")
 			(uuid "563d3312-2d1d-4aa0-be4d-e60299de9286")
 		)
 		(embedded_fonts no)
@@ -4522,7 +4534,7 @@
 				)
 			)
 		)
-		(property "Value" "TBS M10Q: order matches its pads TX RX G"
+		(property "Value" "TBS M10Q: order matches its pads TX RX GND VCC SCL SDA"
 			(at 0 15.03 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -4556,7 +4568,7 @@
 				)
 			)
 		)
-		(attr through_hole)
+		(attr through_hole dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -1.33 -1.33)
@@ -4725,7 +4737,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "UART6_FC_RX")
+			(net "/UART6_FC_RX")
 			(uuid "1558c72b-e66b-4ce6-9a96-cdb2119d958e")
 		)
 		(pad "2" thru_hole oval
@@ -4734,7 +4746,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "UART6_FC_TX")
+			(net "/UART6_FC_TX")
 			(uuid "697db35a-d819-4b61-961a-e4a696cee7f8")
 		)
 		(pad "3" thru_hole oval
@@ -4743,7 +4755,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "GND")
+			(net "/GND")
 			(uuid "f54e0c46-8def-4bad-88f3-4ed966af52c7")
 		)
 		(pad "4" thru_hole oval
@@ -4752,7 +4764,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "5V_FC")
+			(net "/5V_FC")
 			(uuid "b24a64b4-e212-41f1-8b2e-549a431972cd")
 		)
 		(pad "5" thru_hole oval
@@ -4761,7 +4773,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "I2C_SCL")
+			(net "/I2C_SCL")
 			(uuid "7ac81bc9-b731-4f6f-9607-ff1cfb70b49e")
 		)
 		(pad "6" thru_hole oval
@@ -4770,7 +4782,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "I2C_SDA")
+			(net "/I2C_SDA")
 			(uuid "ce2e4176-6302-401e-86fa-0696a7b23200")
 		)
 		(embedded_fonts no)
@@ -4976,7 +4988,7 @@
 			(size 1.15 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.217391)
-			(net "GND")
+			(net "/GND")
 			(uuid "195c83ac-11dc-4b6a-80c8-a0bf9bf2e63e")
 		)
 		(pad "2" smd roundrect
@@ -4984,7 +4996,7 @@
 			(size 1.15 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.217391)
-			(net "LED_A")
+			(net "/LED_A")
 			(uuid "740cce46-4895-4f7d-94cd-322c8af0aebc")
 		)
 		(embedded_fonts no)
@@ -5170,7 +5182,7 @@
 			(size 1.2 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.208333)
-			(net "5V_FC")
+			(net "/5V_FC")
 			(uuid "feaf74a1-da92-423f-a253-e88a7453327d")
 		)
 		(pad "2" smd roundrect
@@ -5178,7 +5190,7 @@
 			(size 1.2 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.208333)
-			(net "LED2_A")
+			(net "/LED2_A")
 			(uuid "2b17d30d-87d2-4d6b-9e38-063c3d712875")
 		)
 		(embedded_fonts no)
@@ -5384,7 +5396,7 @@
 			(size 1.15 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.217391)
-			(net "GND")
+			(net "/GND")
 			(uuid "4812e0b6-aa95-4623-9571-7194ef64e762")
 		)
 		(pad "2" smd roundrect
@@ -5392,7 +5404,7 @@
 			(size 1.15 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.217391)
-			(net "LED2_A")
+			(net "/LED2_A")
 			(uuid "4c447a2a-aa27-4997-a5f2-f45c79d9e874")
 		)
 		(embedded_fonts no)
@@ -5578,7 +5590,7 @@
 			(size 1.2 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.208333)
-			(net "LED_PI_ACTIVE")
+			(net "/LED_PI_ACTIVE")
 			(uuid "404315b6-f01a-4c65-91ba-69229f149590")
 		)
 		(pad "2" smd roundrect
@@ -5586,7 +5598,7 @@
 			(size 1.2 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.208333)
-			(net "LED3_A")
+			(net "/LED3_A")
 			(uuid "80732c01-b60e-4da4-887a-dc2437c852b2")
 		)
 		(embedded_fonts no)
@@ -5792,7 +5804,7 @@
 			(size 1.15 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.217391)
-			(net "GND")
+			(net "/GND")
 			(uuid "388db531-1f1d-45fd-b237-13b88f98664d")
 		)
 		(pad "2" smd roundrect
@@ -5800,7 +5812,7 @@
 			(size 1.15 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.217391)
-			(net "LED3_A")
+			(net "/LED3_A")
 			(uuid "a59608af-0d6e-4bdf-a6ea-25647b875541")
 		)
 		(embedded_fonts no)
@@ -5986,7 +5998,7 @@
 			(size 1.2 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.208333)
-			(net "LED_DATA")
+			(net "/LED_DATA")
 			(uuid "fac556a7-d4a5-414f-9125-7ccc5dc5a07b")
 		)
 		(pad "2" smd roundrect
@@ -5994,7 +6006,7 @@
 			(size 1.2 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.208333)
-			(net "LED4_A")
+			(net "/LED4_A")
 			(uuid "d2059918-8978-431a-acb4-c6df22e00896")
 		)
 		(embedded_fonts no)
@@ -6200,7 +6212,7 @@
 			(size 1.15 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.217391)
-			(net "GND")
+			(net "/GND")
 			(uuid "2cd658d9-2f7b-481a-b8c3-562665a14ec7")
 		)
 		(pad "2" smd roundrect
@@ -6208,7 +6220,7 @@
 			(size 1.15 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.217391)
-			(net "LED4_A")
+			(net "/LED4_A")
 			(uuid "507c86fb-e43d-4080-b74e-753f9ccc0578")
 		)
 		(embedded_fonts no)
@@ -6394,7 +6406,7 @@
 			(size 1.2 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.208333)
-			(net "LED_BATT_HI")
+			(net "/LED_BATT_HI")
 			(uuid "627c825e-1206-481a-baaf-b57e9cb6446b")
 		)
 		(pad "2" smd roundrect
@@ -6402,7 +6414,7 @@
 			(size 1.2 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.208333)
-			(net "LED5_A")
+			(net "/LED5_A")
 			(uuid "4fe55a75-bbf0-465e-b60f-ae3bd2be89d6")
 		)
 		(embedded_fonts no)
@@ -6608,7 +6620,7 @@
 			(size 1.15 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.217391)
-			(net "GND")
+			(net "/GND")
 			(uuid "24dde267-e454-4b01-8ac8-e56907ca48c5")
 		)
 		(pad "2" smd roundrect
@@ -6616,7 +6628,7 @@
 			(size 1.15 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.217391)
-			(net "LED5_A")
+			(net "/LED5_A")
 			(uuid "90488564-cb00-4a65-a269-258fe2f428a4")
 		)
 		(embedded_fonts no)
@@ -6802,7 +6814,7 @@
 			(size 1.2 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.208333)
-			(net "LED_BATT_MID")
+			(net "/LED_BATT_MID")
 			(uuid "e0064855-f326-4ca7-ba59-6d9072757f54")
 		)
 		(pad "2" smd roundrect
@@ -6810,7 +6822,7 @@
 			(size 1.2 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.208333)
-			(net "LED6_A")
+			(net "/LED6_A")
 			(uuid "a6275075-fe62-4e89-b488-73306c03378e")
 		)
 		(embedded_fonts no)
@@ -7016,7 +7028,7 @@
 			(size 1.15 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.217391)
-			(net "GND")
+			(net "/GND")
 			(uuid "b213527f-f592-4ff2-99b2-c371112e5ecf")
 		)
 		(pad "2" smd roundrect
@@ -7024,7 +7036,7 @@
 			(size 1.15 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.217391)
-			(net "LED6_A")
+			(net "/LED6_A")
 			(uuid "15d9e739-0b02-4b61-ae62-cdcf1acdfe04")
 		)
 		(embedded_fonts no)
@@ -7210,7 +7222,7 @@
 			(size 1.2 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.208333)
-			(net "LED_BATT_LO")
+			(net "/LED_BATT_LO")
 			(uuid "0f92300a-a445-463e-b72b-cbb602e978a3")
 		)
 		(pad "2" smd roundrect
@@ -7218,7 +7230,7 @@
 			(size 1.2 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.208333)
-			(net "LED7_A")
+			(net "/LED7_A")
 			(uuid "995c6b59-ec9c-4b47-9d60-9e1d595f28a2")
 		)
 		(embedded_fonts no)
@@ -7424,7 +7436,7 @@
 			(size 1.15 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.217391)
-			(net "GND")
+			(net "/GND")
 			(uuid "8227ea10-7c0b-4037-b3ea-d03b11cb0749")
 		)
 		(pad "2" smd roundrect
@@ -7432,7 +7444,7 @@
 			(size 1.15 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.217391)
-			(net "LED7_A")
+			(net "/LED7_A")
 			(uuid "efa07ccf-4544-4499-89de-ba7e80bd51c1")
 		)
 		(embedded_fonts no)
@@ -7622,7 +7634,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(roundrect_rratio 0.119048)
-			(net "VBAT_F")
+			(net "/VBAT_F")
 			(uuid "4bd1047b-4ebf-443d-9164-799238b9afdc")
 		)
 		(pad "2" thru_hole circle
@@ -7631,7 +7643,7 @@
 			(drill 1.1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "GND")
+			(net "/GND")
 			(uuid "7d4dbf21-30dc-428d-848f-b385d46c034e")
 		)
 		(embedded_fonts no)
@@ -7665,7 +7677,7 @@
 				)
 			)
 		)
-		(property "Value" "TF-Luna pin order 1-6 (CFG tied to GND ="
+		(property "Value" "TF-Luna pin order 1-6 (CFG tied to GND = I2C mode)"
 			(at 0 15.03 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -7699,7 +7711,7 @@
 				)
 			)
 		)
-		(attr through_hole)
+		(attr through_hole dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -1.33 -1.33)
@@ -7868,7 +7880,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "5V_FC")
+			(net "/5V_FC")
 			(uuid "6544ace8-88c3-4b0e-b1c6-3863cef8bb97")
 		)
 		(pad "2" thru_hole oval
@@ -7877,7 +7889,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "I2C_SDA")
+			(net "/I2C_SDA")
 			(uuid "31af0843-541f-40c7-89f4-2f2a5659d8ff")
 		)
 		(pad "3" thru_hole oval
@@ -7886,7 +7898,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "I2C_SCL")
+			(net "/I2C_SCL")
 			(uuid "f314e4cb-1f8e-4087-9a65-74c9513ca468")
 		)
 		(pad "4" thru_hole oval
@@ -7895,7 +7907,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "GND")
+			(net "/GND")
 			(uuid "6111159f-6555-4986-89ce-d9602f4921c2")
 		)
 		(pad "5" thru_hole oval
@@ -7904,7 +7916,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "GND")
+			(net "/GND")
 			(uuid "2e4a2fd3-59e6-405f-a83d-58d2293dc8d5")
 		)
 		(pad "6" thru_hole oval
@@ -7913,6 +7925,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
+			(net "unconnected-(J11-MUX-Pad6)")
 			(uuid "67798af2-22fa-407f-9616-817523175649")
 		)
 		(embedded_fonts no)
@@ -7956,7 +7969,7 @@
 				)
 			)
 		)
-		(attr through_hole)
+		(attr through_hole dnp)
 		(fp_line
 			(start -1.33 -1.33)
 			(end 1.33 -1.33)
@@ -8043,7 +8056,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "5V_AUX")
+			(net "/5V_AUX")
 			(uuid "56b99fa6-a5b9-4dcd-a9ec-4b9d1809f11a")
 		)
 		(pad "2" thru_hole oval
@@ -8052,7 +8065,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "GND")
+			(net "/GND")
 			(uuid "0ce846f0-05aa-477d-8f7c-f1ea0386322a")
 		)
 		(embedded_fonts no)
@@ -8109,7 +8122,7 @@
 				)
 			)
 		)
-		(attr exclude_from_pos_files exclude_from_bom)
+		(attr board_only exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -8205,7 +8218,7 @@
 				)
 			)
 		)
-		(attr exclude_from_pos_files exclude_from_bom)
+		(attr board_only exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -8301,7 +8314,7 @@
 				)
 			)
 		)
-		(attr exclude_from_pos_files exclude_from_bom)
+		(attr board_only exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -8397,7 +8410,7 @@
 				)
 			)
 		)
-		(attr exclude_from_pos_files exclude_from_bom)
+		(attr board_only exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -8493,7 +8506,7 @@
 				)
 			)
 		)
-		(attr exclude_from_pos_files exclude_from_bom)
+		(attr board_only exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -8711,7 +8724,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(roundrect_rratio 0.119048)
-			(net "5V_AUX")
+			(net "/5V_AUX")
 			(uuid "8f5b55d0-bab4-4a71-b1d5-5b2bba844012")
 		)
 		(pad "2" thru_hole circle
@@ -8720,7 +8733,7 @@
 			(drill 1.1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "GND")
+			(net "/GND")
 			(uuid "947b23dc-83b9-4a45-9872-eadac0781baf")
 		)
 		(embedded_fonts no)
@@ -8788,7 +8801,7 @@
 				)
 			)
 		)
-		(attr through_hole)
+		(attr through_hole dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -1.33 -1.33)
@@ -8977,7 +8990,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "3V3_PI")
+			(net "/3V3_PI")
 			(uuid "617a3b4f-ae03-49a1-80ee-046acebbf885")
 		)
 		(pad "2" thru_hole oval
@@ -8986,7 +8999,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "GND")
+			(net "/GND")
 			(uuid "52575ecc-003d-4f23-b855-15401d7505e4")
 		)
 		(pad "3" thru_hole oval
@@ -8995,7 +9008,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "PI_SDA")
+			(net "/PI_SDA")
 			(uuid "2f0075cc-5e81-4b92-8966-2134ccdd3fb3")
 		)
 		(pad "4" thru_hole oval
@@ -9004,7 +9017,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "PI_SCL")
+			(net "/PI_SCL")
 			(uuid "59a50041-0d79-42af-b8e0-79bc8526f652")
 		)
 		(pad "5" thru_hole oval
@@ -9013,7 +9026,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "PI_GPIO4")
+			(net "/PI_GPIO4")
 			(uuid "c0dc1485-ee28-4854-b280-cc18f946e245")
 		)
 		(pad "6" thru_hole oval
@@ -9022,7 +9035,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "PI_GPIO17")
+			(net "/PI_GPIO17")
 			(uuid "c347ad89-0182-43cb-be49-bec911bfa047")
 		)
 		(pad "7" thru_hole oval
@@ -9031,7 +9044,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "PI_GPIO27")
+			(net "/PI_GPIO27")
 			(uuid "7a7a8178-f345-450d-b007-75fff7eeac79")
 		)
 		(pad "8" thru_hole oval
@@ -9040,7 +9053,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "PI_GPIO22")
+			(net "/PI_GPIO22")
 			(uuid "d557f124-c772-4cb2-b9c1-ad7b0e8fb436")
 		)
 		(pad "9" thru_hole oval
@@ -9049,7 +9062,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "PI_GPIO23")
+			(net "/PI_GPIO23")
 			(uuid "a4f06ac9-e761-492d-913e-979659a7726e")
 		)
 		(pad "10" thru_hole oval
@@ -9058,7 +9071,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "PI_GPIO24")
+			(net "/PI_GPIO24")
 			(uuid "1e8ace39-07cc-4cc6-a957-697febdb1a85")
 		)
 		(pad "11" thru_hole oval
@@ -9067,7 +9080,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "PI_GPIO25")
+			(net "/PI_GPIO25")
 			(uuid "fff13ec4-c05c-4aea-9823-6ec10c8d0a5b")
 		)
 		(pad "12" thru_hole oval
@@ -9076,7 +9089,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "PI_GPIO5")
+			(net "/PI_GPIO5")
 			(uuid "a1c7ee88-c790-49e0-8645-ae717c4652c2")
 		)
 		(pad "13" thru_hole oval
@@ -9085,7 +9098,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "PI_GPIO6")
+			(net "/PI_GPIO6")
 			(uuid "13bcc552-d6e4-4c47-873f-18daa98699ce")
 		)
 		(pad "14" thru_hole oval
@@ -9094,7 +9107,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "PI_GPIO12")
+			(net "/PI_GPIO12")
 			(uuid "aaad1505-9464-4197-acd6-101c1c8e1217")
 		)
 		(pad "15" thru_hole oval
@@ -9103,7 +9116,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "PI_GPIO13")
+			(net "/PI_GPIO13")
 			(uuid "a0f0bdc8-0d3e-406b-8a18-6647f60ebd6e")
 		)
 		(pad "16" thru_hole oval
@@ -9112,7 +9125,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "PI_GPIO26")
+			(net "/PI_GPIO26")
 			(uuid "4240ad9e-cb18-4c28-ac89-49c8449263ca")
 		)
 		(embedded_fonts no)
@@ -9146,7 +9159,7 @@
 				)
 			)
 		)
-		(property "Value" "PTC fuse 1812, >=33 V, ~1.1 A hold (part"
+		(property "Value" "PTC fuse 1812, >=33 V, ~1.1 A hold (part TBC)"
 			(at 0 2.65 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -9298,7 +9311,7 @@
 			(size 1.3 3.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.192308)
-			(net "VBAT")
+			(net "/VBAT")
 			(uuid "08be42be-c89a-46d4-b45b-5f471a902e21")
 		)
 		(pad "2" smd roundrect
@@ -9306,7 +9319,7 @@
 			(size 1.3 3.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.192308)
-			(net "VBAT_F")
+			(net "/VBAT_F")
 			(uuid "0f1180a8-bc87-4b63-bbe3-9d315df66491")
 		)
 		(embedded_fonts no)
@@ -9374,7 +9387,7 @@
 				)
 			)
 		)
-		(attr exclude_from_pos_files exclude_from_bom)
+		(attr board_only exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -9470,7 +9483,7 @@
 				)
 			)
 		)
-		(attr through_hole)
+		(attr through_hole dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -1.33 -1.33)
@@ -9639,7 +9652,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "RC_IBUS")
+			(net "/RC_IBUS")
 			(uuid "e5f53aaf-5b13-4522-b364-38851e83287a")
 		)
 		(pad "2" thru_hole oval
@@ -9648,7 +9661,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "5V_FC")
+			(net "/5V_FC")
 			(uuid "b021afaf-7185-4524-9f70-a159de6ec6cd")
 		)
 		(pad "3" thru_hole oval
@@ -9657,7 +9670,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "GND")
+			(net "/GND")
 			(uuid "34f59855-3e8d-4ca5-ae96-e4a805a957a1")
 		)
 		(embedded_fonts no)
@@ -9701,7 +9714,7 @@
 				)
 			)
 		)
-		(attr through_hole)
+		(attr through_hole dnp)
 		(fp_line
 			(start -1.33 -1.33)
 			(end 3.87 -1.33)
@@ -9868,6 +9881,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
+			(net "unconnected-(J1-B+-Pad1)")
 			(uuid "a37d1dda-6669-4a0b-b871-cd07694f7e22")
 		)
 		(pad "2" thru_hole oval
@@ -9876,6 +9890,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
+			(net "unconnected-(J1-Vo-Pad2)")
 			(uuid "1b9847bc-36f5-4fd9-a010-d914c5182d8a")
 		)
 		(pad "3" thru_hole oval
@@ -9884,7 +9899,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "GND")
+			(net "/GND")
 			(uuid "ac9848d8-79d5-4a09-b21d-1700a1f42464")
 		)
 		(pad "4" thru_hole oval
@@ -9893,7 +9908,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "GND")
+			(net "/GND")
 			(uuid "31bedf61-ee25-4a65-8588-97948dff8706")
 		)
 		(pad "5" thru_hole oval
@@ -9902,7 +9917,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "RC_IBUS")
+			(net "/RC_IBUS")
 			(uuid "4bd6eba9-aebc-45ae-8b9f-32c14867db26")
 		)
 		(pad "6" thru_hole oval
@@ -9911,7 +9926,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "UART3_TX_SPARE")
+			(net "/UART3_TX_SPARE")
 			(uuid "a22f761e-649f-411f-86ce-c5e83ded95be")
 		)
 		(pad "7" thru_hole oval
@@ -9920,7 +9935,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "GND")
+			(net "/GND")
 			(uuid "d412db26-cd1b-44f7-9eb7-3416530c671d")
 		)
 		(pad "8" thru_hole oval
@@ -9929,7 +9944,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "5V_FC")
+			(net "/5V_FC")
 			(uuid "3c9ffbcd-0336-430a-8450-f092d9e1d96e")
 		)
 		(pad "9" thru_hole oval
@@ -9938,7 +9953,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "UART4_FC_RX")
+			(net "/UART4_FC_RX")
 			(uuid "5ec6f51c-d734-4916-8c3d-fdee5bc89e5d")
 		)
 		(pad "10" thru_hole oval
@@ -9947,7 +9962,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "UART4_FC_TX")
+			(net "/UART4_FC_TX")
 			(uuid "27ceaddc-167f-4aef-ac07-aedc8ebd2f7b")
 		)
 		(pad "11" thru_hole oval
@@ -9956,7 +9971,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "I2C_SDA")
+			(net "/I2C_SDA")
 			(uuid "1c526a63-95b0-44df-8d66-59b6de3ca0af")
 		)
 		(pad "12" thru_hole oval
@@ -9965,7 +9980,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "I2C_SCL")
+			(net "/I2C_SCL")
 			(uuid "bd8000ee-f02c-4dea-b0c9-1d5fd7242aba")
 		)
 		(pad "13" thru_hole oval
@@ -9974,7 +9989,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "UART6_FC_RX")
+			(net "/UART6_FC_RX")
 			(uuid "1b983853-e769-4073-9590-8da59555710d")
 		)
 		(pad "14" thru_hole oval
@@ -9983,7 +9998,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "UART6_FC_TX")
+			(net "/UART6_FC_TX")
 			(uuid "5bedaf64-cc8e-4c33-a5f6-5d5c35e9b936")
 		)
 		(pad "15" thru_hole oval
@@ -9992,7 +10007,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "RSSI_SPARE")
+			(net "/RSSI_SPARE")
 			(uuid "9309865b-e2a1-477c-949b-aa5da9b3c8e0")
 		)
 		(pad "16" thru_hole oval
@@ -10001,7 +10016,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "5V_FC")
+			(net "/5V_FC")
 			(uuid "6765732a-50c7-46b7-9aed-2701c8a43d05")
 		)
 		(pad "17" thru_hole oval
@@ -10010,7 +10025,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "GND")
+			(net "/GND")
 			(uuid "87395f2f-83f8-4225-bcd9-c209153c3b9d")
 		)
 		(pad "18" thru_hole oval
@@ -10019,7 +10034,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "3V3_FC")
+			(net "/3V3_FC")
 			(uuid "dfe31cd5-683b-421e-8bf0-78229dbd3999")
 		)
 		(pad "19" thru_hole rect
@@ -10028,7 +10043,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "UART1_FC_TX")
+			(net "/UART1_FC_TX")
 			(uuid "3321ba9d-a883-456c-8a62-b8a9ff7cf416")
 		)
 		(pad "20" thru_hole oval
@@ -10037,7 +10052,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "UART1_FC_RX")
+			(net "/UART1_FC_RX")
 			(uuid "b318b09d-0b6e-460d-bd03-ab56bd7f6508")
 		)
 		(pad "21" thru_hole oval
@@ -10046,7 +10061,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "GND")
+			(net "/GND")
 			(uuid "90d465d8-625f-47e0-9f70-73a187d07c30")
 		)
 		(fp_line
@@ -10215,7 +10230,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "GND")
+			(net "/GND")
 			(uuid "52b8a7e7-ae89-4019-981c-9d59d2591581")
 		)
 		(pad "23" thru_hole oval
@@ -10224,7 +10239,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "5V_FC")
+			(net "/5V_FC")
 			(uuid "3755e695-36dc-489a-928d-88c4e343df53")
 		)
 		(pad "24" thru_hole oval
@@ -10233,6 +10248,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
+			(net "unconnected-(J1-Vi-Pad24)")
 			(uuid "21f6ad7c-adf0-4c1e-bd4b-528828eeafc0")
 		)
 		(pad "25" thru_hole oval
@@ -10241,6 +10257,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
+			(net "unconnected-(J1-CAM-Pad25)")
 			(uuid "61a6580a-3531-4150-8773-e1d72339c334")
 		)
 		(pad "26" thru_hole oval
@@ -10249,7 +10266,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "BUZZER_SPARE")
+			(net "/BUZZER_SPARE")
 			(uuid "3671da2f-2589-4d53-815b-ae61a057bf6e")
 		)
 		(pad "27" thru_hole oval
@@ -10258,7 +10275,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "5V_FC")
+			(net "/5V_FC")
 			(uuid "44ae8319-0624-4eff-bdc6-3e375d18b8ca")
 		)
 		(pad "28" thru_hole oval
@@ -10267,7 +10284,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "GND")
+			(net "/GND")
 			(uuid "d835afa6-338f-41c3-b851-375c773e6f59")
 		)
 		(pad "29" thru_hole oval
@@ -10276,7 +10293,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "LED_SPARE")
+			(net "/LED_SPARE")
 			(uuid "8fb5cff9-9ade-4ff1-906b-0e78106bb543")
 		)
 		(embedded_fonts no)
@@ -10454,7 +10471,7 @@
 				)
 			)
 		)
-		(attr through_hole)
+		(attr through_hole dnp)
 		(fp_line
 			(start -1.33 -1.33)
 			(end 1.33 -1.33)
@@ -10541,7 +10558,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "UART3_TX_SPARE")
+			(net "/UART3_TX_SPARE")
 			(uuid "22010601-d2fa-4399-9532-cc49dcb04e6d")
 		)
 		(pad "2" thru_hole oval
@@ -10550,7 +10567,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "RSSI_SPARE")
+			(net "/RSSI_SPARE")
 			(uuid "ea3d1ef6-9780-42f6-95f1-0b8ee65c0b0c")
 		)
 		(pad "3" thru_hole oval
@@ -10559,7 +10576,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "3V3_FC")
+			(net "/3V3_FC")
 			(uuid "fd1be3a2-82f0-4ced-b473-3a5ef2e104c7")
 		)
 		(pad "4" thru_hole oval
@@ -10568,7 +10585,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "GND")
+			(net "/GND")
 			(uuid "5baab39b-ca1f-45c7-bd80-6ba07a057a8d")
 		)
 		(pad "5" thru_hole oval
@@ -10577,7 +10594,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "BUZZER_SPARE")
+			(net "/BUZZER_SPARE")
 			(uuid "eb57ecbd-d57b-4de6-b6cb-562403e94158")
 		)
 		(pad "6" thru_hole oval
@@ -10586,7 +10603,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "LED_SPARE")
+			(net "/LED_SPARE")
 			(uuid "9d985987-113d-48b0-9083-564795a80e86")
 		)
 		(embedded_fonts no)
