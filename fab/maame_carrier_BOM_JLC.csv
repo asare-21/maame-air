@@ -1,0 +1,13 @@
+Comment,Designator,Footprint,LCSC Part #
+470uF 16V SMD electrolytic (LCSC C22383803),C1,CP_Elec_6.3x7.7,C22383803
+Green 0805: 5V_AUX on,D1,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C2297
+Green 0805: 5V_FC on,D2,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C2297
+Green 0805: Pi active (GPIO16),D3,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C2297
+Yellow 0805: data (GPIO20),D4,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C2296
+Green 0805: battery high (GPIO19),D5,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C2297
+Yellow 0805: battery mid (GPIO21),D6,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C2296
+Red 0805: battery low (GPIO18),D7,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C84256
+"PTC fuse 1812 33V 1.1A hold (TECHFUSE mSMD110-33V, LCSC C70119)",F1,Fuse_1812_4532Metric_Pad1.30x3.40mm_HandSolder,C70119
+1k 0805,"R1,R2",R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C17513
+330R 0805,"R3,R4,R5,R6",R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C17630
+390R 0805,R7,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C17655

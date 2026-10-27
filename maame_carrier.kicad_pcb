@@ -6929,7 +6929,7 @@
 				)
 			)
 		)
-		(property "Value" "PTC fuse 1812, >=33 V, ~1.1 A hold (part TBC)"
+		(property "Value" "PTC fuse 1812 33V 1.1A hold (TECHFUSE mSMD110-33V, LCSC C70119)"
 			(at 0 2.65 0)
 			(layer "F.Fab")
 			(hide yes)
