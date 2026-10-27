@@ -4400,7 +4400,7 @@
 		)
 		(uuid "ac000c21-9042-5125-8c9e-0a4774eda63b")
 	)
-	(text "8. Former micro BEC (now on-board, see note 10): 6-60 V in, 5 V default (9/12 V selectable), 18x15x4.5 mm, 2.54 mm pins. NO reverse-polarity protection. 5 V rated 1.8-2.8 A continuous depending on input voltage (3.5 A for 2 s). 5V_AUX load: Pi Zero W + 9 g payload servo, within 1.8 A. Battery 6S Li-ion (18-25.2 V): BEC input <= 9 W / 18 V / 0.9 = 0.55 A, so F1 ~1.1 A hold has margin; F1 must be rated >= 30 V (keep >= 33 V)."
+	(text "8. Power: 6S Li-ion (18-25.2 V) from J3 tap -> F1 PTC (2 A hold, 4 A trip, 30 V) -> U2 5 V buck (note 10) -> 5V_AUX. Full 3.5 A out at 18 V in draws ~1.1 A."
 		(exclude_from_sim no)
 		(at 20.32 294.64 0)
 		(effects
@@ -7246,7 +7246,7 @@
 				)
 			)
 		)
-		(property "Value" "PTC fuse 1812 33V 1.1A hold (TECHFUSE mSMD110-33V, LCSC C70119)"
+		(property "Value" "PTC fuse 1812 30V 2A hold 4A trip (BSMD1812-200-30V, LCSC C960026)"
 			(at 101.6 137.16 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7288,7 +7288,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C70119"
+		(property "LCSC" "C960026"
 			(at 101.6 132.08 0)
 			(hide yes)
 			(show_name no)

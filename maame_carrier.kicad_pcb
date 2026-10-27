@@ -8737,7 +8737,7 @@
 				)
 			)
 		)
-		(property "Value" "PTC fuse 1812 33V 1.1A hold (TECHFUSE mSMD110-33V, LCSC C70119)"
+		(property "Value" "PTC fuse 1812 30V 2A hold 4A trip (BSMD1812-200-30V, LCSC C960026)"
 			(at 0 2.65 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -8771,7 +8771,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C70119"
+		(property "LCSC" "C960026"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -13314,7 +13314,7 @@
 			)
 		)
 	)
-	(gr_text "F1 PTC ~1.1A"
+	(gr_text "F1 PTC 2A"
 		(at 12.1 18.35 0)
 		(layer "F.SilkS")
 		(uuid "40d7ea8d-63d7-4006-8d57-7f39073f6595")
