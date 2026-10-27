@@ -1,7 +1,7 @@
 # Build a 1:1 plate template copy of the board: shift onto the middle of an A4 page, add grid, check bar, nose arrow.
 import re, sys, uuid
 src, dst = sys.argv[1], sys.argv[2]
-OX, OY, W, H = 57.5, 52, 95, 110
+OX, OY, W, H = 57.5, 52, 95, 111
 s = open(src).read()
 # top-level coordinates only (two-tab depth); footprint children are local and move with their footprint
 s = re.sub(r'(?m)^(\t\t\((?:at|start|end|mid|center) )([-\d.]+) ([-\d.]+)',
@@ -32,8 +32,8 @@ g += text("50 mm: measure this bar. If it is not exactly 50 mm, reprint at 100% 
 ax, ay = OX + W / 2, OY - 7
 g += line(ax, ay, ax, ay - 14, 0.5) + line(ax, ay - 14, ax - 3, ay - 10, 0.5) + line(ax, ay - 14, ax + 3, ay - 10, 0.5)
 g += text("NOSE (Kakute arrow direction)", ax + 5, ay - 9, 2.5, "left")
-g += text("Maame carrier 1:1 template, board 95 x 110 mm", 105, 14, 3)
-g += text("Lay on the top plate, nose arrow to the front. The 4 FRAME M2.5 slots (48.5 mm square, +/-1 mm play) must land on your plate holes.", 105, 19.5, 2)
+g += text("Maame carrier 1:1 template, board 95 x 111 mm, Kakute at centre", 105, 14, 3)
+g += text("Nose forward. The 4 FRAME M2.5 slots (48.5 mm square) must sit over your plate holes.", 105, 19.5, 2)
 g += text("Kakute M3 holes, ESC slot, Pi and all headers are drawn where they sit now.", 105, 24, 2)
 i = s.rindex('\t(embedded_fonts no)')
 open(dst, "w").write(s[:i] + g + s[i:])
