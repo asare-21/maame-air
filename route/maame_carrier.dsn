@@ -83,6 +83,9 @@
     (component maame_carrier:Pi_Zero_Socketed_FaceUp_MountingHoles
       (place U1 22800 -91800 front -90 (PN "Raspberry Pi Zero W v1.1, component side up"))
     )
+    (component "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
+      (place J20 4600 -26600 front 0 (PN "VBAT OUT 6S fused (JST-XH 2-pin)"))
+    )
     (component Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
       (place R1 34500 -30600 front 0 (PN "1k 0805"))
       (place R6 56500 -30600 front 0 (PN "330R 0805"))
@@ -129,10 +132,13 @@
     (component Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical
       (place J13 3200 -87250 front 0 (PN "Payload servo power (+ -); servo signal plugs into the Kakute port-2 lead"))
     )
+    (component Fuse:Fuse_1812_4532Metric_Pad1.30x3.40mm_HandSolder
+      (place F2 14600 -23400 front 90 (PN "PTC fuse 1812 30V 2A hold 4A trip (BSMD1812-200-30V) - VBAT OUT"))
+    )
     (component Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical
       (place J7 72000 -8750 front 0 (PN "Pi expansion: 3V3 logic ONLY"))
     )
-    (component Fuse:Fuse_1812_4532Metric_Pad1.30x3.40mm_HandSolder
+    (component Fuse:Fuse_1812_4532Metric_Pad1.30x3.40mm_HandSolder::1
       (place F1 12100 -14050 front 0 (PN "PTC fuse 1812 30V 2A hold 4A trip (BSMD1812-200-30V, LCSC C960026)"))
     )
     (component Capacitor_SMD:C_1210_3225Metric::1
@@ -491,6 +497,26 @@
       (keepout "" (circle F.Cu 3250 21730 -4870))
       (keepout "" (circle B.Cu 3250 21730 -4870))
     )
+    (image "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
+      (outline (polygon signal 0  5445 -3895  -2945 -3895  -2945 2845  5445 2845))
+      (outline (path signal 120  -2850 2750  -2850 1500))
+      (outline (path signal 120  -2550 200  -1800 200))
+      (outline (path signal 120  -1800 200  -1800 -2750))
+      (outline (path signal 120  -1800 -2750  1250 -2750))
+      (outline (path signal 120  -1600 2750  -2850 2750))
+      (outline (path signal 120  4300 200  4300 -2750))
+      (outline (path signal 120  4300 -2750  1250 -2750))
+      (outline (path signal 120  5050 200  4300 200))
+      (outline (path signal 120  -2560 2460  5060 2460  5060 -3510  -2560 -3510  -2560 2460))
+      (outline (path signal 120  -2550 2450  -750 2450  -750 1700  -2550 1700  -2550 2450))
+      (outline (path signal 120  750 2450  1750 2450  1750 1700  750 1700  750 2450))
+      (outline (path signal 120  3250 2450  5050 2450  5050 1700  3250 1700  3250 2450))
+      (outline (path signal 100  -625 2350  0 1350))
+      (outline (path signal 100  0 1350  625 2350))
+      (outline (path signal 100  -2450 2350  4950 2350  4950 -3400  -2450 -3400  -2450 2350))
+      (pin RoundRect[A]Pad_1700.000000x2000.000000_250.951000_um_0.000000_0 1 0 0)
+      (pin Oval[A]Pad_1700.000000x2000.000000_um 2 2500 0)
+    )
     (image Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
       (outline (polygon signal 0  1845 -945  -1845 -945  -1845 945  1845 945))
       (outline (path signal 120  -227.064 735  227.064 735))
@@ -672,6 +698,14 @@
       (pin Rect[A]Pad_1700.000000x1700.000000_um 1 0 0)
       (pin Oval[A]Pad_1700.000000x1700.000000_um 2 0 -2540)
     )
+    (image Fuse:Fuse_1812_4532Metric_Pad1.30x3.40mm_HandSolder
+      (outline (polygon signal 0  -3125 -1945  -3125 1945  3125 1945  3125 -1945))
+      (outline (path signal 120  -1386.25 1710  1386.25 1710))
+      (outline (path signal 120  -1386.25 -1710  1386.25 -1710))
+      (outline (path signal 100  -2250 1600  -2250 -1600  2250 -1600  2250 1600  -2250 1600))
+      (pin RoundRect[T]Pad_1300.000000x3400.000000_250.951000_um_0.000000_0 1 -2225 0)
+      (pin RoundRect[T]Pad_1300.000000x3400.000000_250.951000_um_0.000000_0 2 2225 0)
+    )
     (image Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical
       (outline (polygon signal 0  4345 -19545  -1795 -19545  -1795 1795  4345 1795))
       (outline (path signal 120  -1330 1330  0 1330))
@@ -704,7 +738,7 @@
       (pin Oval[A]Pad_1700.000000x1700.000000_um 15 0 -17780)
       (pin Oval[A]Pad_1700.000000x1700.000000_um 16 2540 -17780)
     )
-    (image Fuse:Fuse_1812_4532Metric_Pad1.30x3.40mm_HandSolder
+    (image Fuse:Fuse_1812_4532Metric_Pad1.30x3.40mm_HandSolder::1
       (outline (polygon signal 0  3115 -1945  -3115 -1945  -3115 1945  3115 1945))
       (outline (path signal 120  -1386.25 1710  1386.25 1710))
       (outline (path signal 120  -1386.25 -1710  1386.25 -1710))
@@ -862,6 +896,11 @@
       (shape (circle B.Cu 600))
       (attach off)
     )
+    (padstack Oval[A]Pad_1700.000000x2000.000000_um
+      (shape (path F.Cu 1700  0 -150  0 150))
+      (shape (path B.Cu 1700  0 -150  0 150))
+      (attach off)
+    )
     (padstack Oval[A]Pad_1700.000000x1700.000000_um
       (shape (path F.Cu 1700  0 0  0 0))
       (shape (path B.Cu 1700  0 0  0 0))
@@ -977,6 +1016,21 @@
             -715.951 2500))
       (attach off)
     )
+    (padstack RoundRect[A]Pad_1700.000000x2000.000000_250.951000_um_0.000000_0
+      (shape (polygon F.Cu 0  -850.951 750  -831.848 846.035  -777.449 927.449  -696.035 981.848
+            -599.999 1000.95  600 1000.95  696.035 981.848  777.449 927.449
+            831.848 846.035  850.95 749.999  850.951 -750  831.848 -846.035
+            777.449 -927.449  696.035 -981.848  599.999 -1000.95  -600 -1000.95
+            -696.035 -981.848  -777.449 -927.449  -831.848 -846.035  -850.95 -749.999
+            -850.951 750))
+      (shape (polygon B.Cu 0  -850.951 750  -831.848 846.035  -777.449 927.449  -696.035 981.848
+            -599.999 1000.95  600 1000.95  696.035 981.848  777.449 927.449
+            831.848 846.035  850.95 749.999  850.951 -750  831.848 -846.035
+            777.449 -927.449  696.035 -981.848  599.999 -1000.95  -600 -1000.95
+            -696.035 -981.848  -777.449 -927.449  -831.848 -846.035  -850.95 -749.999
+            -850.951 750))
+      (attach off)
+    )
     (padstack Rect[B]Pad_2950.000000x4500.000000_um
       (shape (rect B.Cu -1475 -2250 1475 2250))
       (attach off)
@@ -1011,15 +1065,15 @@
     (net /GND
       (pins J6-2 J6-4 J3-2 D8-2 J12-2 J9-2 U2-7 U2-9 U2-9@1 U2-9@2 U2-9@3 U2-9@4 U2-9@5
         U2-9@6 U2-9@7 U2-9@8 U2-9@9 U2-9@10 C6-2 C2-2 U1-6 U1-9 U1-14 U1-20 U1-25
-        U1-30 U1-34 U1-39 R11-2 J8-3 D9-2 D6-1 D1-1 C5-2 J18-2 C1-2 R8-2 D5-1 C7-2
-        D4-1 C8-2 J11-4 J11-5 J13-2 D2-1 J7-2 C3-2 D3-1 J10-3 J1-3 J1-4 J1-7 J1-17
-        J1-21 J1-22 J1-28 J17-4 D7-1)
+        U1-30 U1-34 U1-39 J20-2 R11-2 J8-3 D9-2 D6-1 D1-1 C5-2 J18-2 C1-2 R8-2 D5-1
+        C7-2 D4-1 C8-2 J11-4 J11-5 J13-2 D2-1 J7-2 C3-2 D3-1 J10-3 J1-3 J1-4 J1-7
+        J1-17 J1-21 J1-22 J1-28 J17-4 D7-1)
     )
     (net /5V_FC
       (pins J6-3 J12-1 J9-1 J8-4 J11-1 J10-2 J1-8 J1-16 J1-23 J1-27 R2-1)
     )
     (net /VBAT
-      (pins J3-1 F1-1)
+      (pins J3-1 F2-1 F1-1)
     )
     (net /BEC_SW
       (pins D8-1 U2-8 C4-2 L1-1)
@@ -1141,6 +1195,9 @@
     (net /LED_BATT_MID
       (pins U1-40 R6-1)
     )
+    (net /VBAT_OUT_F
+      (pins J20-1 F2-2)
+    )
     (net /LED_A
       (pins R1-2 D1-2)
     )
@@ -1231,7 +1288,7 @@
         (clearance 250)
       )
     )
-    (class VBAT /VBAT /VBAT_F
+    (class VBAT /VBAT /VBAT_F /VBAT_OUT_F
       (circuit
         (use_via "Via[0-1]_600:300_um")
       )
