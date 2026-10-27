@@ -3984,6 +3984,17 @@
 		)
 		(uuid "ac000c21-9042-5125-8c9e-0a4774eda63b")
 	)
+	(text "8. Micro BEC (J4 in, J5 out): 6-60 V in, 5 V default (9/12 V selectable), 18x15x4.5 mm, 2.54 mm pins. NO reverse-polarity protection. 5 V rated 1.8-2.8 A continuous depending on input voltage (3.5 A for 2 s). 5V_AUX load: Pi Zero W + payload servo."
+		(exclude_from_sim no)
+		(at 20.32 294.64 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "771b494e-7c36-4f47-b863-0228d9892148")
+	)
 	(text "7. UNCONFIRMED: TF-Luna lead order, SiK lead order, M10Q lead colours. Silkscreen labels every pin; beep before soldering."
 		(exclude_from_sim no)
 		(at 20.32 289.56 0)
@@ -7579,7 +7590,7 @@
 				)
 			)
 		)
-		(property "Value" "Micro BEC input leads"
+		(property "Value" "Micro BEC input leads (6-60 V, NO reverse protection)"
 			(at 152.4 139.7 0)
 			(show_name no)
 			(do_not_autoplace no)

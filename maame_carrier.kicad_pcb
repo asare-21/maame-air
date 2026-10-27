@@ -455,7 +455,7 @@
 	(footprint "Connector_Wire:SolderWire-0.5sqmm_1x02_P4.6mm_D0.9mm_OD2.1mm"
 		(layer "F.Cu")
 		(uuid "08125d4f-c48f-4eea-b9db-dfcd58de7969")
-		(at 6 52.3 90)
+		(at 4 52.3 90)
 		(descr "Soldered wire connection, for 2 times 0.5 mm² wires, basic insulation, conductor diameter 0.9mm, outer diameter 2.1mm, size source Multi-Contact FLEXI-E 0.5 (https://ec.staubli.com/AcroFiles/Catalogues/TM_Cab-Main-11014119_(en)_hi.pdf), bend radius 3 times outer diameter, generated with kicad-footprint-generator")
 		(tags "connector wire 0.5sqmm")
 		(property "Reference" "J3"
@@ -2594,7 +2594,7 @@
 	(footprint "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm"
 		(layer "F.Cu")
 		(uuid "62f964bc-5355-4960-bee6-2ba575049356")
-		(at 47.3473 50)
+		(at 49.35 50)
 		(descr "CP, Radial series, Radial, pin pitch=3.50mm, , diameter=8mm, Electrolytic Capacitor")
 		(tags "CP Radial series Radial pin pitch 3.50mm  diameter 8mm Electrolytic Capacitor")
 		(property "Reference" "C1"
@@ -4313,7 +4313,7 @@
 	(footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "6390a7af-63c7-4c78-928a-240b511ca125")
-		(at 57 52.5)
+		(at 57.4 55.6)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
 		(property "Reference" "R1"
@@ -4789,7 +4789,7 @@
 	(footprint "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "658cf373-69b9-428c-8164-a084c9b654f0")
-		(at 56.9775 48.5 180)
+		(at 57.4 53 180)
 		(descr "LED SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
 		(tags "LED handsolder")
 		(property "Reference" "D1"
@@ -5003,7 +5003,7 @@
 	(footprint "Connector_Wire:SolderWire-0.5sqmm_1x02_P4.6mm_D0.9mm_OD2.1mm"
 		(layer "F.Cu")
 		(uuid "7a2da52a-8881-478f-a51b-3fb0fcdf1ccf")
-		(at 26 52.3 90)
+		(at 19.5 52.3 90)
 		(descr "Soldered wire connection, for 2 times 0.5 mm² wires, basic insulation, conductor diameter 0.9mm, outer diameter 2.1mm, size source Multi-Contact FLEXI-E 0.5 (https://ec.staubli.com/AcroFiles/Catalogues/TM_Cab-Main-11014119_(en)_hi.pdf), bend radius 3 times outer diameter, generated with kicad-footprint-generator")
 		(tags "connector wire 0.5sqmm")
 		(property "Reference" "J4"
@@ -5018,7 +5018,7 @@
 				)
 			)
 		)
-		(property "Value" "Micro BEC input leads"
+		(property "Value" "Micro BEC input leads (6-60 V, NO reverse protection)"
 			(at 2.3 2.25 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -5708,7 +5708,7 @@
 	(footprint "Connector_Wire:SolderWire-0.5sqmm_1x02_P4.6mm_D0.9mm_OD2.1mm"
 		(layer "F.Cu")
 		(uuid "c201d74d-f649-4379-bc2c-5b538383bebd")
-		(at 38 52.3 90)
+		(at 43.6 52.3 90)
 		(descr "Soldered wire connection, for 2 times 0.5 mm² wires, basic insulation, conductor diameter 0.9mm, outer diameter 2.1mm, size source Multi-Contact FLEXI-E 0.5 (https://ec.staubli.com/AcroFiles/Catalogues/TM_Cab-Main-11014119_(en)_hi.pdf), bend radius 3 times outer diameter, generated with kicad-footprint-generator")
 		(tags "connector wire 0.5sqmm")
 		(property "Reference" "J5"
@@ -6299,7 +6299,7 @@
 	(footprint "Fuse:Fuse_1812_4532Metric_Pad1.30x3.40mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "d29c1d98-7b86-4aa3-809d-76831d2756a7")
-		(at 16 50)
+		(at 12 50)
 		(descr "Fuse SMD 1812 (4532 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: https://www.nikhef.nl/pub/departments/mt/projects/detectorR_D/dtddice/ERJ2G.pdf), generated with kicad-footprint-generator")
 		(tags "fuse handsolder")
 		(property "Reference" "F1"
@@ -8635,202 +8635,6 @@
 		(layer "F.SilkS")
 		(uuid "1b65c32f-2d44-472f-953b-e0d2e87563ed")
 	)
-	(gr_text "VBAT TAP"
-		(at 6 45.3 0)
-		(layer "F.SilkS")
-		(uuid "dd0fb9c4-a0df-4207-84a4-85e427b8a11c")
-		(effects
-			(font
-				(size 1.0 1.0)
-				(thickness 0.15)
-			)
-		)
-	)
-	(gr_text "+"
-		(at 7.9 52.3 0)
-		(layer "F.SilkS")
-		(uuid "cf191169-cad1-42e9-9e1a-e95126ee5379")
-		(effects
-			(font
-				(size 1.0 1.0)
-				(thickness 0.15)
-			)
-			(justify left)
-		)
-	)
-	(gr_text "-"
-		(at 7.9 47.7 0)
-		(layer "F.SilkS")
-		(uuid "76e0eb98-429c-43c5-af84-7d5546d6b5c5")
-		(effects
-			(font
-				(size 1.0 1.0)
-				(thickness 0.15)
-			)
-			(justify left)
-		)
-	)
-	(gr_text "J4 BEC IN"
-		(at 26 45.3 0)
-		(layer "F.SilkS")
-		(uuid "77bc7a16-e467-4729-9cea-3147fe4827c4")
-		(effects
-			(font
-				(size 1.0 1.0)
-				(thickness 0.15)
-			)
-		)
-	)
-	(gr_text "+"
-		(at 27.9 52.3 0)
-		(layer "F.SilkS")
-		(uuid "e96e7543-a38e-400b-9774-0c753be6dad1")
-		(effects
-			(font
-				(size 1.0 1.0)
-				(thickness 0.15)
-			)
-			(justify left)
-		)
-	)
-	(gr_text "-"
-		(at 27.9 47.7 0)
-		(layer "F.SilkS")
-		(uuid "12e447f3-fbdc-42b8-8af4-972002581258")
-		(effects
-			(font
-				(size 1.0 1.0)
-				(thickness 0.15)
-			)
-			(justify left)
-		)
-	)
-	(gr_text "J5 BEC OUT"
-		(at 38 45.3 0)
-		(layer "F.SilkS")
-		(uuid "ea0bb524-6dd9-4fbf-b693-50096e0863bd")
-		(effects
-			(font
-				(size 1.0 1.0)
-				(thickness 0.15)
-			)
-		)
-	)
-	(gr_text "+"
-		(at 39.9 52.3 0)
-		(layer "F.SilkS")
-		(uuid "77d90556-aa03-46ca-a34f-9c5acb779c47")
-		(effects
-			(font
-				(size 1.0 1.0)
-				(thickness 0.15)
-			)
-			(justify left)
-		)
-	)
-	(gr_text "-"
-		(at 39.9 47.7 0)
-		(layer "F.SilkS")
-		(uuid "dfc5745d-e859-40e3-86cd-d57ea58558e6")
-		(effects
-			(font
-				(size 1.0 1.0)
-				(thickness 0.15)
-			)
-			(justify left)
-		)
-	)
-	(gr_text "J3"
-		(at 4.1 50 0)
-		(layer "F.SilkS")
-		(uuid "d46656eb-24f3-4973-8a0b-cc9c16fbd9ec")
-		(effects
-			(font
-				(size 1.0 1.0)
-				(thickness 0.15)
-			)
-			(justify right)
-		)
-	)
-	(gr_text "F1 PTC ~1.1A"
-		(at 16 47.3 0)
-		(layer "F.SilkS")
-		(uuid "66ae92ba-e5f6-4132-a1a5-3a8920b37ccd")
-		(effects
-			(font
-				(size 1.0 1.0)
-				(thickness 0.15)
-			)
-		)
-	)
-	(gr_text "VBAT_F"
-		(at 31.5 50 0)
-		(layer "F.SilkS")
-		(uuid "1e46f65a-4752-4049-8912-93edb0035068")
-		(effects
-			(font
-				(size 1.0 1.0)
-				(thickness 0.15)
-			)
-		)
-	)
-	(gr_text "C1 5V_AUX"
-		(at 47.35 56 0)
-		(layer "F.SilkS")
-		(uuid "69e674b0-5ff3-463b-8e5f-3d8ab57b4587")
-		(effects
-			(font
-				(size 1.0 1.0)
-				(thickness 0.15)
-			)
-		)
-	)
-	(gr_text "D1 PWR LED"
-		(at 57.2 56 0)
-		(layer "F.SilkS")
-		(uuid "33845666-7344-4d7b-80ff-6d1c5443577d")
-		(effects
-			(font
-				(size 1.0 1.0)
-				(thickness 0.15)
-			)
-		)
-	)
-	(gr_text "K"
-		(at 58 46.6 0)
-		(layer "F.SilkS")
-		(uuid "53751f90-d953-44ae-b792-b47cfe72b9a4")
-		(effects
-			(font
-				(size 1.0 1.0)
-				(thickness 0.15)
-			)
-		)
-	)
-	(gr_text "PI ZERO W: COMPONENTS UP"
-		(at 1.5 57.7 0)
-		(layer "F.SilkS")
-		(uuid "47e042f5-3a74-431a-9f94-1bcce4beb853")
-		(effects
-			(font
-				(size 1.0 1.0)
-				(thickness 0.15)
-			)
-			(justify left)
-		)
-	)
-	(gr_text "PI PIN 1 / SD CARD END"
-		(at 1.5 59.7 0)
-		(layer "F.SilkS")
-		(uuid "2cc91d1a-6d2a-4bb6-86e0-eebc82408fc9")
-		(effects
-			(font
-				(size 1.0 1.0)
-				(thickness 0.15)
-			)
-			(justify left)
-		)
-	)
 	(gr_line
 		(start 33 13.4)
 		(end 33 8.4)
@@ -8904,6 +8708,315 @@
 		(effects
 			(font
 				(size 1.0 1.0)
+				(thickness 0.15)
+			)
+			(justify left)
+		)
+	)
+	(gr_line
+		(start 23.5 43)
+		(end 41.5 43)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "2ea80566-da42-4321-9f26-e8e76912189a")
+	)
+	(gr_line
+		(start 41.5 43)
+		(end 41.5 58)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "5dfe807a-0a9d-4933-915e-a6de1de45dff")
+	)
+	(gr_line
+		(start 41.5 58)
+		(end 23.5 58)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "3605de5c-9c6d-474b-b4e7-51b3b78868ff")
+	)
+	(gr_line
+		(start 23.5 58)
+		(end 23.5 43)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "20d35aee-4625-4f8f-9b0d-49cbfbc924ff")
+	)
+	(gr_line
+		(start 23.5 43)
+		(end 41.5 43)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "39b017af-2ac1-45eb-a8e6-419e28bfe693")
+	)
+	(gr_line
+		(start 41.5 43)
+		(end 41.5 58)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "1fccbc83-cfe1-4aba-850f-9574b9f2e3cb")
+	)
+	(gr_line
+		(start 41.5 58)
+		(end 23.5 58)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "8b7b6a5d-c33a-49b0-aa80-b4af11c90be1")
+	)
+	(gr_line
+		(start 23.5 58)
+		(end 23.5 43)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "b2cb843a-4468-465c-8ad3-27035e57bc3c")
+	)
+	(gr_text "BEC 5V (DEFAULT)"
+		(at 32.5 45.4 0)
+		(layer "F.SilkS")
+		(uuid "dfdddd1f-35af-456a-988a-d96676b75c84")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "18 x 15 MODULE"
+		(at 32.5 47.9 0)
+		(layer "F.SilkS")
+		(uuid "a7f582d7-2c0c-4563-8e3e-5032dffbaa0a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "NO REVERSE"
+		(at 32.5 50.4 0)
+		(layer "F.SilkS")
+		(uuid "ba33063f-0436-4d22-bf9a-70af86bfc71c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "PROTECTION:"
+		(at 32.5 52.9 0)
+		(layer "F.SilkS")
+		(uuid "de0fe506-b35a-4ea2-aafe-4fda52a1583a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "CHECK +/-"
+		(at 32.5 55.4 0)
+		(layer "F.SilkS")
+		(uuid "efe7e525-16cf-4d22-8c44-b1c7da60b571")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "VBAT TAP"
+		(at 4.5 43.2 0)
+		(layer "F.SilkS")
+		(uuid "78369353-9ed2-4d4c-9ca0-2e24d464dde8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "+"
+		(at 5.9 52.3 0)
+		(layer "F.SilkS")
+		(uuid "d025e75a-758e-49b4-90ea-08c8845e9d83")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "-"
+		(at 5.9 47.7 0)
+		(layer "F.SilkS")
+		(uuid "a80a11d7-59bb-4716-9816-948ec197c4f4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "F1 PTC ~1.1A"
+		(at 12 54.3 0)
+		(layer "F.SilkS")
+		(uuid "40d7ea8d-63d7-4006-8d57-7f39073f6595")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "J4 BEC IN"
+		(at 22.8 43.2 0)
+		(layer "F.SilkS")
+		(uuid "f7a8bbb0-2e01-40c3-a82f-b432584180d5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify right)
+		)
+	)
+	(gr_text "+"
+		(at 21.4 52.3 0)
+		(layer "F.SilkS")
+		(uuid "acc904ff-354d-4e95-960c-3c44ba1dd006")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "-"
+		(at 21.4 47.7 0)
+		(layer "F.SilkS")
+		(uuid "15acc2e4-6a2e-4dde-a762-c20d589ba24e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "J5 BEC OUT"
+		(at 42.3 43.2 0)
+		(layer "F.SilkS")
+		(uuid "b1fb0174-93a5-4748-9203-b317537cf33e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "+"
+		(at 45.5 52.3 0)
+		(layer "F.SilkS")
+		(uuid "fbc88eef-b094-492d-a75a-a03827e1f325")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "-"
+		(at 43.6 45.6 0)
+		(layer "F.SilkS")
+		(uuid "2b03dcd1-c604-4379-a76c-614d451d0a52")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "C1 5V_AUX"
+		(at 51.1 56 0)
+		(layer "F.SilkS")
+		(uuid "35b00ca7-6768-40f4-94a8-86ac4bfb1272")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "D1 PWR LED"
+		(at 57.4 57.9 0)
+		(layer "F.SilkS")
+		(uuid "0af1fb92-fe68-48a8-b341-f40624b41c38")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "K"
+		(at 58.4 51.2 0)
+		(layer "F.SilkS")
+		(uuid "d20a4a00-0eb7-42e8-b155-e0cb88276843")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "PI ZERO W: COMPONENTS UP"
+		(at 1 58.6 0)
+		(layer "F.SilkS")
+		(uuid "83012991-d7ab-41ef-ac9b-ad0e555a28db")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "PI PIN 1 / SD CARD END"
+		(at 1 60.6 0)
+		(layer "F.SilkS")
+		(uuid "5e2251a2-6963-4b49-85ae-50eb50bf985a")
+		(effects
+			(font
+				(size 1 1)
 				(thickness 0.15)
 			)
 			(justify left)
