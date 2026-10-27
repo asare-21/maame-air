@@ -3513,6 +3513,208 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "maame_carrier:PI_SPI"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PI_SPI"
+				(at 0 -19.05 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PI_SPI_0_1"
+				(rectangle
+					(start -10.16 2.54)
+					(end 10.16 -17.78)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "PI_SPI_1_1"
+				(pin passive line
+					(at -12.7 0 0)
+					(length 2.54)
+					(name "3V3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.0 1.0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 -2.54 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.0 1.0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 -5.08 0)
+					(length 2.54)
+					(name "MOSI"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.0 1.0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 -7.62 0)
+					(length 2.54)
+					(name "MISO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.0 1.0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 -10.16 0)
+					(length 2.54)
+					(name "SCLK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.0 1.0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 -12.7 0)
+					(length 2.54)
+					(name "CE0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.0 1.0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 -15.24 0)
+					(length 2.54)
+					(name "CE1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.0 1.0)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "maame_carrier:SERVO"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -4211,32 +4413,12 @@
 		(uuid "f56836a7-e386-534d-bb0e-c2f885cdcbab")
 	)
 	(no_connect
-		(at 347.98 63.5)
-		(uuid "214dc14d-e078-5454-b8e4-ca157e6161f7")
-	)
-	(no_connect
-		(at 312.42 60.96)
-		(uuid "4a922e8d-1f7c-5c8e-a9d5-3be62ae46e1d")
-	)
-	(no_connect
-		(at 312.42 58.42)
-		(uuid "63c5b629-d42c-59f6-ae6b-b2f6f0af9172")
-	)
-	(no_connect
 		(at 347.98 68.58)
 		(uuid "75b0f047-3782-5b33-b7b0-b81d1db3ff01")
 	)
 	(no_connect
-		(at 347.98 66.04)
-		(uuid "87d9b0d2-af14-5c1f-9e31-8f1f2ea3ea78")
-	)
-	(no_connect
 		(at 312.42 68.58)
 		(uuid "9b062c18-547b-58ef-8872-a6a59aa49ad2")
-	)
-	(no_connect
-		(at 312.42 63.5)
-		(uuid "bdf9dc55-cb0d-5d49-a10b-8ad903695b50")
 	)
 	(no_connect
 		(at 165.1 119.38)
@@ -6373,6 +6555,100 @@
 			(project "maame_carrier"
 				(path "/347efe6d-e5df-5320-8613-16be4824f8d1"
 					(reference "J17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "maame_carrier:PI_SPI")
+		(at 116.84 63.5 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp yes)
+		(uuid "4f2a1ba7-e416-4a51-be70-807b862e54f9")
+		(property "Reference" "J18"
+			(at 116.84 58.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(bold yes)
+				)
+			)
+		)
+		(property "Value" "Pi SPI0, 3V3 logic"
+			(at 116.84 76.2 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical"
+			(at 116.84 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 116.84 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 116.84 63.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ec4a174a-2ec6-4fb7-8694-eae775b805d6")
+		)
+		(pin "2"
+			(uuid "964ff337-99e1-400c-aed5-a401cabbcec6")
+		)
+		(pin "3"
+			(uuid "a0b6b21e-d92c-4f8b-8d45-e94cf9da36d8")
+		)
+		(pin "4"
+			(uuid "878236e5-7704-4da9-8b4a-c18ac7d3b0bc")
+		)
+		(pin "5"
+			(uuid "69c89161-59c9-44d8-a89c-44c0fb0168dd")
+		)
+		(pin "6"
+			(uuid "7c21c2c2-442b-4416-8993-334c436a26ad")
+		)
+		(pin "7"
+			(uuid "1518ae55-6800-4324-b484-4063936ffed5")
+		)
+		(instances
+			(project "maame_carrier"
+				(path "/347efe6d-e5df-5320-8613-16be4824f8d1"
+					(reference "J18")
 					(unit 1)
 				)
 			)
@@ -10028,6 +10304,246 @@
 			(justify left bottom)
 		)
 		(uuid "f93d8df3-32e8-42f2-9999-597410410bfc")
+	)
+	(wire
+		(pts
+			(xy 104.14 63.5) (xy 99.06 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd6bfa4e-b8a2-4ada-b9d0-f3fea50e3473")
+	)
+	(label "3V3_PI"
+		(at 99.06 63.5 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "374b7a54-a3b7-4d1e-97ec-e8ac227d0445")
+	)
+	(wire
+		(pts
+			(xy 104.14 66.04) (xy 99.06 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ea0c3d5-919c-4a8b-b1d4-3fe44cafdb3b")
+	)
+	(label "GND"
+		(at 99.06 66.04 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "5f729ec0-512e-4f95-86f7-768c3e5de853")
+	)
+	(wire
+		(pts
+			(xy 104.14 68.58) (xy 99.06 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1990d9b3-5121-4e61-b7a2-9a7f0e7ed028")
+	)
+	(label "PI_SPI_MOSI"
+		(at 99.06 68.58 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a0b46536-b762-4b6c-a4ce-8204c6ad4cf8")
+	)
+	(wire
+		(pts
+			(xy 104.14 71.12) (xy 99.06 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "05c27423-ab78-47ef-9166-9f11c699a610")
+	)
+	(label "PI_SPI_MISO"
+		(at 99.06 71.12 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "881d727f-373a-4e9b-ac4a-1243e82c4299")
+	)
+	(wire
+		(pts
+			(xy 104.14 73.66) (xy 99.06 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c0ce129-c4ff-4454-87ea-0d4ef8e0c7e1")
+	)
+	(label "PI_SPI_SCLK"
+		(at 99.06 73.66 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "30466c54-01c5-4a65-aa1f-5b5e582c6b8f")
+	)
+	(wire
+		(pts
+			(xy 104.14 76.2) (xy 99.06 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "26a61bfc-db61-4afb-8bb8-cffcdc59b443")
+	)
+	(label "PI_SPI_CE0"
+		(at 99.06 76.2 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "83a145fc-39e2-44b5-b89e-2f8642528005")
+	)
+	(wire
+		(pts
+			(xy 104.14 78.74) (xy 99.06 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8fff0ed8-d71c-49ae-88bf-7caa5025c004")
+	)
+	(label "PI_SPI_CE1"
+		(at 99.06 78.74 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f7d0f445-1688-44bc-b292-8a60f76a43e6")
+	)
+	(wire
+		(pts
+			(xy 312.42 58.42) (xy 307.34 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "878f4974-1357-43d1-915f-ebe289443bb4")
+	)
+	(label "PI_SPI_MOSI"
+		(at 307.34 58.42 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "5bd72b9d-bbcd-4917-87d6-899156a87336")
+	)
+	(wire
+		(pts
+			(xy 312.42 60.96) (xy 307.34 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "140386b2-254e-4588-9725-7fe305ddc178")
+	)
+	(label "PI_SPI_MISO"
+		(at 307.34 60.96 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "ca0ad6a8-d90b-4973-a8dc-4001db901852")
+	)
+	(wire
+		(pts
+			(xy 312.42 63.5) (xy 307.34 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a338dac-7a46-43e3-bcd4-a14fe59a7f4d")
+	)
+	(label "PI_SPI_SCLK"
+		(at 307.34 63.5 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "4c8e386f-86b1-4534-8ac9-416791db1ed2")
+	)
+	(wire
+		(pts
+			(xy 347.98 63.5) (xy 353.06 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e2617f06-53f5-4440-8e12-4d86f0a35f9a")
+	)
+	(label "PI_SPI_CE0"
+		(at 353.06 63.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3041f3ed-6179-484a-880a-862e25acc95c")
+	)
+	(wire
+		(pts
+			(xy 347.98 66.04) (xy 353.06 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f13afbd0-238a-4002-8fa2-e6434f4551e1")
+	)
+	(label "PI_SPI_CE1"
+		(at 353.06 66.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "78ac86ab-1d63-4f2d-b02a-3887b83673f1")
 	)
 	(sheet_instances
 		(path "/"

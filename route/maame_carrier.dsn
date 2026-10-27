@@ -21,7 +21,7 @@
       )
     )
     (boundary
-      (path pcb 0  92000.0 -550.0 92478.0 -597.1 92937.6 -736.5 93361.1 -962.9 93732.4 -1267.6 94037.1 -1638.9 94263.5 -2062.4 94402.9 -2522.0 94450.0 -3000.0 94450.0 -113500.0 94402.9 -113978.0 94263.5 -114437.6 94037.1 -114861.1 93732.4 -115232.4 93361.1 -115537.1 92937.6 -115763.5 92478.0 -115902.9 92000.0 -115950.0 3000.0 -115950.0 2522.0 -115902.9 2062.4 -115763.5 1638.9 -115537.1 1267.6 -115232.4 962.9 -114861.1 736.5 -114437.6 597.1 -113978.0 550.0 -113500.0 550.0 -3000.0 597.1 -2522.0 736.5 -2062.4 962.9 -1638.9 1267.6 -1267.6 1638.9 -962.9 2062.4 -736.5 2522.0 -597.1 3000.0 -550.0 92000.0 -550.0)
+      (path pcb 0  89000.0 -550.0 90063.2 -654.7 91085.6 -964.9 92027.9 -1468.5 92853.7 -2146.3 93531.5 -2972.1 94035.1 -3914.4 94345.3 -4936.8 94450.0 -6000.0 94450.0 -110500.0 94345.3 -111563.2 94035.1 -112585.6 93531.5 -113527.9 92853.7 -114353.7 92027.9 -115031.5 91085.6 -115535.1 90063.2 -115845.3 89000.0 -115950.0 6000.0 -115950.0 4936.8 -115845.3 3914.4 -115535.1 2972.1 -115031.5 2146.3 -114353.7 1468.5 -113527.9 964.9 -112585.6 654.7 -111563.2 550.0 -110500.0 550.0 -6000.0 654.7 -4936.8 964.9 -3914.4 1468.5 -2972.1 2146.3 -2146.3 2972.1 -1468.5 3914.4 -964.9 4936.8 -654.7 6000.0 -550.0 89000.0 -550.0)
     )
     (keepout "" (polygon signal 0  55000.0 -44550.0 55789.4 -44653.9 56525.0 -44958.6 57156.7 -45443.3 57641.4 -46075.0 57946.1 -46810.6 58050.0 -47600.0 57946.1 -48389.4 57641.4 -49125.0 57156.7 -49756.7 56525.0 -50241.4 55789.4 -50546.1 55000.0 -50650.0 46000.0 -50650.0 45210.6 -50546.1 44475.0 -50241.4 43843.3 -49756.7 43358.6 -49125.0 43053.9 -48389.4 42950.0 -47600.0 43053.9 -46810.6 43358.6 -46075.0 43843.3 -45443.3 44475.0 -44958.6 45210.6 -44653.9 46000.0 -44550.0 55000.0 -44550.0))
     (keepout "" (polygon signal 0  27250.0 -34000.0 27113.7 -35035.3 26714.1 -36000.0 26078.4 -36828.4 25250.0 -37464.1 24285.3 -37863.7 23250.0 -38000.0 22214.7 -37863.7 21250.0 -37464.1 20421.6 -36828.4 19785.9 -36000.0 19386.3 -35035.3 19250.0 -34000.0 19386.3 -32964.7 19785.9 -32000.0 20421.6 -31171.6 21250.0 -30535.9 22214.7 -30136.3 23250.0 -30000.0 24285.3 -30136.3 25250.0 -30535.9 26078.4 -31171.6 26714.1 -32000.0 27113.7 -32964.7 27250.0 -34000.0))
@@ -90,6 +90,9 @@
       (place D2 29000 -27500 front 0 (PN "Green 0805: 5V_FC on"))
       (place D3 40000 -27500 front 0 (PN "Green 0805: Pi active (GPIO16)"))
       (place D7 62000 -27500 front 0 (PN "Red 0805: battery low (GPIO18)"))
+    )
+    (component Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical
+      (place J18 84000 -93000 front 0 (PN "Pi SPI0, 3V3 logic"))
     )
     (component Capacitor_SMD:CP_Elec_6.3x7.7
       (place C1 51200 -14050 front 0 (PN "470uF 16V SMD electrolytic (LCSC C22383803)"))
@@ -438,6 +441,27 @@
       (pin RoundRect[T]Pad_1150.000000x1400.000000_250.951000_um_0.000000_0 1 -1025 0)
       (pin RoundRect[T]Pad_1150.000000x1400.000000_250.951000_um_0.000000_0 2 1025 0)
     )
+    (image Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical
+      (outline (polygon signal 0  1765 -17015  -1765 -17015  -1765 1775  1765 1775))
+      (outline (path signal 120  -1380 1380  0 1380))
+      (outline (path signal 120  -1380 0  -1380 1380))
+      (outline (path signal 120  -1380 -1270  -1380 -16620))
+      (outline (path signal 120  -1380 -1270  1380 -1270))
+      (outline (path signal 120  -1380 -16620  1380 -16620))
+      (outline (path signal 120  1380 -1270  1380 -16620))
+      (outline (path signal 100  -1270 635  -635 1270))
+      (outline (path signal 100  -1270 -16510  -1270 635))
+      (outline (path signal 100  -635 1270  1270 1270))
+      (outline (path signal 100  1270 1270  1270 -16510))
+      (outline (path signal 100  1270 -16510  -1270 -16510))
+      (pin Rect[A]Pad_1700.000000x1700.000000_um 1 0 0)
+      (pin Round[A]Pad_1700.000000_um 2 0 -2540)
+      (pin Round[A]Pad_1700.000000_um 3 0 -5080)
+      (pin Round[A]Pad_1700.000000_um 4 0 -7620)
+      (pin Round[A]Pad_1700.000000_um 5 0 -10160)
+      (pin Round[A]Pad_1700.000000_um 6 0 -12700)
+      (pin Round[A]Pad_1700.000000_um 7 0 -15240)
+    )
     (image Capacitor_SMD:CP_Elec_6.3x7.7
       (outline (polygon signal 0  3545 1045  4695 1045  4695 -1045  3545 -1045  3545 -3545
             -2397.93 -3545  -3545 -2397.93  -3545 -1045  -4695 -1045  -4695 1045
@@ -677,6 +701,11 @@
       (pin Oval[A]Pad_1700.000000x1700.000000_um 5 0 -10160)
       (pin Oval[A]Pad_1700.000000x1700.000000_um 6 0 -12700)
     )
+    (padstack Round[A]Pad_1700.000000_um
+      (shape (circle F.Cu 1700))
+      (shape (circle B.Cu 1700))
+      (attach off)
+    )
     (padstack Round[A]Pad_2100.000000_um
       (shape (circle F.Cu 2100))
       (shape (circle B.Cu 2100))
@@ -760,8 +789,8 @@
     )
     (net /GND
       (pins J6-2 J6-4 J3-2 J12-2 J9-2 U1-6 U1-9 U1-14 U1-20 U1-25 U1-30 U1-34 U1-39
-        J8-3 D6-1 D1-1 C1-2 J4-2 D5-1 D4-1 J11-4 J11-5 J13-2 D2-1 J5-2 J7-2 D3-1 J10-3
-        J1-3 J1-4 J1-7 J1-17 J1-21 J1-22 J1-28 J17-4 D7-1)
+        J8-3 D6-1 D1-1 J18-2 C1-2 J4-2 D5-1 D4-1 J11-4 J11-5 J13-2 D2-1 J5-2 J7-2
+        D3-1 J10-3 J1-3 J1-4 J1-7 J1-17 J1-21 J1-22 J1-28 J17-4 D7-1)
     )
     (net /5V_FC
       (pins J6-3 J12-1 J9-1 J8-4 J11-1 J10-2 J1-8 J1-16 J1-23 J1-27 R2-1)
@@ -782,7 +811,7 @@
       (pins J9-4 J1-10)
     )
     (net /3V3_PI
-      (pins U1-1 U1-17 J7-1)
+      (pins U1-1 U1-17 J18-1 J7-1)
     )
     (net /PI_SDA
       (pins U1-3 J7-3)
@@ -817,23 +846,23 @@
     (net /PI_GPIO24
       (pins U1-18 J7-10)
     )
-    (net "unconnected-(U1-GPIO10-Pad19)"
-      (pins U1-19)
+    (net /PI_SPI_MOSI
+      (pins U1-19 J18-3)
     )
-    (net "unconnected-(U1-GPIO9-Pad21)"
-      (pins U1-21)
+    (net /PI_SPI_MISO
+      (pins U1-21 J18-4)
     )
     (net /PI_GPIO25
       (pins U1-22 J7-11)
     )
-    (net "unconnected-(U1-GPIO11-Pad23)"
-      (pins U1-23)
+    (net /PI_SPI_SCLK
+      (pins U1-23 J18-5)
     )
-    (net "unconnected-(U1-GPIO8-Pad24)"
-      (pins U1-24)
+    (net /PI_SPI_CE0
+      (pins U1-24 J18-6)
     )
-    (net "unconnected-(U1-GPIO7-Pad26)"
-      (pins U1-26)
+    (net /PI_SPI_CE1
+      (pins U1-26 J18-7)
     )
     (net "unconnected-(U1-ID_SD-Pad27)"
       (pins U1-27)
@@ -931,7 +960,7 @@
     (net /LED_SPARE
       (pins J1-29 J17-6)
     )
-    (class kicad_default /3V3_FC /3V3_PI /BUZZER_SPARE /I2C_SCL /I2C_SDA /LED2_A /LED3_A /LED4_A /LED5_A /LED6_A /LED7_A /LED_A /LED_BATT_HI /LED_BATT_LO /LED_BATT_MID /LED_DATA /LED_PI_ACTIVE /LED_SPARE /PI_GPIO12 /PI_GPIO13 /PI_GPIO17 /PI_GPIO22 /PI_GPIO23 /PI_GPIO24 /PI_GPIO25 /PI_GPIO26 /PI_GPIO27 /PI_GPIO4 /PI_GPIO5 /PI_GPIO6 /PI_SCL /PI_SDA /RC_IBUS /RSSI_SPARE /UART1_FC_RX /UART1_FC_TX /UART3_TX_SPARE /UART4_FC_RX /UART4_FC_TX /UART6_FC_RX /UART6_FC_TX "unconnected-(J1-B+-Pad1)" "unconnected-(J1-CAM-Pad25)" "unconnected-(J1-Vi-Pad24)" "unconnected-(J1-Vo-Pad2)" "unconnected-(J11-MUX-Pad6)" "unconnected-(U1-GPIO10-Pad19)" "unconnected-(U1-GPIO11-Pad23)" "unconnected-(U1-GPIO7-Pad26)" "unconnected-(U1-GPIO8-Pad24)" "unconnected-(U1-GPIO9-Pad21)" "unconnected-(U1-ID_SC-Pad28)" "unconnected-(U1-ID_SD-Pad27)"
+    (class kicad_default /3V3_FC /3V3_PI /BUZZER_SPARE /I2C_SCL /I2C_SDA /LED2_A /LED3_A /LED4_A /LED5_A /LED6_A /LED7_A /LED_A /LED_BATT_HI /LED_BATT_LO /LED_BATT_MID /LED_DATA /LED_PI_ACTIVE /LED_SPARE /PI_GPIO12 /PI_GPIO13 /PI_GPIO17 /PI_GPIO22 /PI_GPIO23 /PI_GPIO24 /PI_GPIO25 /PI_GPIO26 /PI_GPIO27 /PI_GPIO4 /PI_GPIO5 /PI_GPIO6 /PI_SCL /PI_SDA /PI_SPI_CE0 /PI_SPI_CE1 /PI_SPI_MISO /PI_SPI_MOSI /PI_SPI_SCLK /RC_IBUS /RSSI_SPARE /UART1_FC_RX /UART1_FC_TX /UART3_TX_SPARE /UART4_FC_RX /UART4_FC_TX /UART6_FC_RX /UART6_FC_TX "unconnected-(J1-B+-Pad1)" "unconnected-(J1-CAM-Pad25)" "unconnected-(J1-Vi-Pad24)" "unconnected-(J1-Vo-Pad2)" "unconnected-(J11-MUX-Pad6)" "unconnected-(U1-ID_SC-Pad28)" "unconnected-(U1-ID_SD-Pad27)"
       (circuit
         (use_via "Via[0-1]_600:300_um")
       )
