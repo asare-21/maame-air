@@ -1,7 +1,7 @@
 # Build a 1:1 plate template copy of the board: shift onto the middle of an A4 page, add grid, check bar, nose arrow.
 import re, sys, uuid
 src, dst = sys.argv[1], sys.argv[2]
-OX, OY, W, H = 57.5, 60, 95, 95
+OX, OY, W, H = 57.5, 52, 95, 110
 s = open(src).read()
 # top-level coordinates only (two-tab depth); footprint children are local and move with their footprint
 s = re.sub(r'(?m)^(\t\t\((?:at|start|end|mid|center) )([-\d.]+) ([-\d.]+)',
@@ -15,14 +15,15 @@ def text(t, x, y, size=2.5, just=""):
     return (f'\t(gr_text "{t}"\n\t\t(at {x:g} {y:g} 0)\n\t\t(layer "{L}")\n\t\t(uuid "{uuid.uuid4()}")\n'
             f'\t\t(effects\n\t\t\t(font\n\t\t\t\t(size {size} {size})\n\t\t\t\t(thickness {size*0.15:g})\n\t\t\t){j}\n\t\t)\n\t)\n')
 g = ""
-for v in range(0, 100, 5):  # 5 mm grid over the board, heavier every 10 mm
-    if v > W: break
+for v in range(0, max(W, H) + 1, 5):  # 5 mm grid over the board, heavier every 10 mm
     w = 0.15 if v % 10 == 0 else 0.05
-    g += line(OX + v, OY, OX + v, OY + H, w) + line(OX, OY + v, OX + W, OY + v, w)
-for v in range(0, 100, 10):  # axis labels in board mm
-    g += text(str(v), OX + v, OY - 2.5, 1.8) + text(str(v), OX - 3.5, OY + v, 1.8)
+    if v <= W: g += line(OX + v, OY, OX + v, OY + H, w)
+    if v <= H: g += line(OX, OY + v, OX + W, OY + v, w)
+for v in range(0, max(W, H) + 1, 10):  # axis labels in board mm
+    if v <= W: g += text(str(v), OX + v, OY - 2.5, 1.8)
+    if v <= H: g += text(str(v), OX - 3.5, OY + v, 1.8)
 # 50 mm check bar with 10 mm ticks
-by = OY + H + 22
+by = OY + H + 12
 g += line(OX, by, OX + 50, by, 0.4)
 for v in range(0, 51, 10):
     g += line(OX + v, by - 2, OX + v, by + 2, 0.3)
@@ -31,8 +32,8 @@ g += text("50 mm: measure this bar. If it is not exactly 50 mm, reprint at 100% 
 ax, ay = OX + W / 2, OY - 7
 g += line(ax, ay, ax, ay - 14, 0.5) + line(ax, ay - 14, ax - 3, ay - 10, 0.5) + line(ax, ay - 14, ax + 3, ay - 10, 0.5)
 g += text("NOSE (Kakute arrow direction)", ax + 5, ay - 9, 2.5, "left")
-g += text("Maame carrier 1:1 plate template. Board outline is a 95 x 95 mm placeholder.", 105, 14, 3)
-g += text("Lay on the top plate, nose arrow to the front; poke through the holes you want; read positions off the grid (mm from top-left).", 105, 19.5, 2)
-g += text("Kakute M3 holes, ESC slot and Pi outline are drawn where they sit now.", 105, 24, 2)
+g += text("Maame carrier 1:1 template, board 95 x 110 mm", 105, 14, 3)
+g += text("Lay on the top plate, nose arrow to the front. The 4 FRAME M2.5 holes (50 mm square) must land on your plate holes.", 105, 19.5, 2)
+g += text("Kakute M3 holes, ESC slot, Pi and all headers are drawn where they sit now.", 105, 24, 2)
 i = s.rindex('\t(embedded_fonts no)')
 open(dst, "w").write(s[:i] + g + s[i:])

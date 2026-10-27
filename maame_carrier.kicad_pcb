@@ -359,7 +359,7 @@
 	(footprint "MountingHole:MountingHole_3.2mm_M3"
 		(layer "F.Cu")
 		(uuid "062234cf-9e4f-4495-85e9-562b334845ad")
-		(at 45.25 6.75)
+		(at 45.25 14.75)
 		(descr "Mounting Hole 3.2mm, no annular, M3")
 		(tags "mounting hole 3.2mm no annular m3")
 		(property "Reference" "H2"
@@ -455,7 +455,7 @@
 	(footprint "Connector_Wire:SolderWire-0.5sqmm_1x02_P4.6mm_D0.9mm_OD2.1mm"
 		(layer "F.Cu")
 		(uuid "08125d4f-c48f-4eea-b9db-dfcd58de7969")
-		(at 4 52.3 90)
+		(at 4 66.3 90)
 		(descr "Soldered wire connection, for 2 times 0.5 mm² wires, basic insulation, conductor diameter 0.9mm, outer diameter 2.1mm, size source Multi-Contact FLEXI-E 0.5 (https://ec.staubli.com/AcroFiles/Catalogues/TM_Cab-Main-11014119_(en)_hi.pdf), bend radius 3 times outer diameter, generated with kicad-footprint-generator")
 		(tags "connector wire 0.5sqmm")
 		(property "Reference" "J3"
@@ -1182,7 +1182,7 @@
 	(footprint "maame_carrier:Pi_Zero_Socketed_FaceUp_MountingHoles"
 		(layer "F.Cu")
 		(uuid "3ff4694c-09f4-47ff-9a91-36c7a4cba47c")
-		(at 10.5 67 270)
+		(at 10.5 81 270)
 		(descr "Mirror of KiCad FaceDown footprint: Pi Zero mounted component side UP, male header fitted from the Pi underside into a 2x20 socket on this board. Raspberry Pi Zero using through hole straight pin socket, 2x20, 2.54mm pitch, https://www.raspberrypi.org/documentation/hardware/raspberrypi/mechanical/rpi_MECH_Zero_1p2.pdf")
 		(tags "raspberry pi zero through hole")
 		(property "Reference" "U1"
@@ -2498,7 +2498,7 @@
 	(footprint "MountingHole:MountingHole_3.2mm_M3"
 		(layer "F.Cu")
 		(uuid "53afc453-4a26-4c7f-ac10-3c2a3d107736")
-		(at 14.75 37.25)
+		(at 14.75 45.25)
 		(descr "Mounting Hole 3.2mm, no annular, M3")
 		(tags "mounting hole 3.2mm no annular m3")
 		(property "Reference" "H3"
@@ -2594,7 +2594,7 @@
 	(footprint "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm"
 		(layer "F.Cu")
 		(uuid "62f964bc-5355-4960-bee6-2ba575049356")
-		(at 49.35 50)
+		(at 49.35 64)
 		(descr "CP, Radial series, Radial, pin pitch=3.50mm, , diameter=8mm, Electrolytic Capacitor")
 		(tags "CP Radial series Radial pin pitch 3.50mm  diameter 8mm Electrolytic Capacitor")
 		(property "Reference" "C1"
@@ -4313,7 +4313,7 @@
 	(footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "6390a7af-63c7-4c78-928a-240b511ca125")
-		(at 56.8 55.6)
+		(at 56.8 69.6)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
 		(property "Reference" "R1"
@@ -4789,7 +4789,7 @@
 	(footprint "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "658cf373-69b9-428c-8164-a084c9b654f0")
-		(at 56.8 53 180)
+		(at 56.8 67 180)
 		(descr "LED SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
 		(tags "LED handsolder")
 		(property "Reference" "D1"
@@ -5003,7 +5003,7 @@
 	(footprint "Connector_Wire:SolderWire-0.5sqmm_1x02_P4.6mm_D0.9mm_OD2.1mm"
 		(layer "F.Cu")
 		(uuid "7a2da52a-8881-478f-a51b-3fb0fcdf1ccf")
-		(at 19.5 52.3 90)
+		(at 19.5 66.3 90)
 		(descr "Soldered wire connection, for 2 times 0.5 mm² wires, basic insulation, conductor diameter 0.9mm, outer diameter 2.1mm, size source Multi-Contact FLEXI-E 0.5 (https://ec.staubli.com/AcroFiles/Catalogues/TM_Cab-Main-11014119_(en)_hi.pdf), bend radius 3 times outer diameter, generated with kicad-footprint-generator")
 		(tags "connector wire 0.5sqmm")
 		(property "Reference" "J4"
@@ -5612,7 +5612,7 @@
 	(footprint "MountingHole:MountingHole_3.2mm_M3"
 		(layer "F.Cu")
 		(uuid "baa75b7f-e954-4fa4-b122-6b5f3c496fec")
-		(at 14.75 6.75)
+		(at 14.75 14.75)
 		(descr "Mounting Hole 3.2mm, no annular, M3")
 		(tags "mounting hole 3.2mm no annular m3")
 		(property "Reference" "H1"
@@ -5705,10 +5705,394 @@
 		)
 		(embedded_fonts no)
 	)
+	(footprint "MountingHole:MountingHole_2.7mm_M2.5"
+		(layer "F.Cu")
+		(uuid "e7f32bc9-f77f-4e66-8fe4-8308d73de804")
+		(at 5 5)
+		(descr "Mounting Hole 2.7mm, no annular, M2.5")
+		(tags "mounting hole 2.7mm no annular m2.5")
+		(property "Reference" "H5"
+			(at 0 -3.7 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "d59ed3e7-520b-49e5-adb3-40644d074a04")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "M2.5 frame mount (50 mm square)"
+			(at 0 3.7 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7ba6208f-ff4e-4cbf-a1e1-22eb147cf94f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4608e229-5303-4cf6-98a5-5b7cb8d79848")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bdc58d6a-bf6a-44ea-b7d9-7527b7701867")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(attr exclude_from_pos_files exclude_from_bom)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_circle
+			(center 0 0)
+			(end 2.7 0)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(fill no)
+			(layer "Cmts.User")
+			(uuid "d19e003c-7f09-4503-aec5-dd7a57e4cca4")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 2.95 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "dc28323c-a0ca-47f7-88e3-a3792425459c")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "bfbdf2eb-b625-4b3f-ac05-d6a18dc0918f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "" np_thru_hole circle
+			(at 0 0)
+			(size 2.7 2.7)
+			(drill 2.7)
+			(layers "*.Cu" "*.Mask")
+			(uuid "37ee93dc-dbe0-4968-bf56-2df736a25775")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "MountingHole:MountingHole_2.7mm_M2.5"
+		(layer "F.Cu")
+		(uuid "ed6e4200-9078-49cd-b20d-f109fbb8b514")
+		(at 55 5)
+		(descr "Mounting Hole 2.7mm, no annular, M2.5")
+		(tags "mounting hole 2.7mm no annular m2.5")
+		(property "Reference" "H6"
+			(at 0 -3.7 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "9498d382-bd8d-4c79-a391-a85a871f23ab")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "M2.5 frame mount (50 mm square)"
+			(at 0 3.7 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0e12342f-5bb3-41bf-9bee-7f1a5e6874f5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1fc93ede-2eba-4c2a-ab1f-5e13bb00be00")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "366a0e5b-f9d0-49cf-9dc9-0370492a4ea0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(attr exclude_from_pos_files exclude_from_bom)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_circle
+			(center 0 0)
+			(end 2.7 0)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(fill no)
+			(layer "Cmts.User")
+			(uuid "3b6ea60a-e0b0-4390-8884-b07908775235")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 2.95 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "0a6c4c6a-185d-47da-bda5-880aab4403c9")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "8bd6b093-ceeb-4af0-abe3-5e5ad268bbbd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "" np_thru_hole circle
+			(at 0 0)
+			(size 2.7 2.7)
+			(drill 2.7)
+			(layers "*.Cu" "*.Mask")
+			(uuid "1082d466-6744-446d-95ce-c7e4704ac085")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "MountingHole:MountingHole_2.7mm_M2.5"
+		(layer "F.Cu")
+		(uuid "eef4eb4f-6289-4658-bee0-268dff4f762c")
+		(at 5 55)
+		(descr "Mounting Hole 2.7mm, no annular, M2.5")
+		(tags "mounting hole 2.7mm no annular m2.5")
+		(property "Reference" "H7"
+			(at 0 -3.7 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "55118ae0-4c68-454e-aa82-2f77e1950512")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "M2.5 frame mount (50 mm square)"
+			(at 0 3.7 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f54cddab-4a51-4c3f-abfd-03ae3c16a1cd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a7bb7f09-a3e4-4d0c-bf17-a851998a8e58")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9241cd73-a3c2-4c40-a3b6-c8c0de765a91")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(attr exclude_from_pos_files exclude_from_bom)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_circle
+			(center 0 0)
+			(end 2.7 0)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(fill no)
+			(layer "Cmts.User")
+			(uuid "4da2af26-028c-4327-878a-e89e8dfe5ea1")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 2.95 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "cd44d916-9b1b-48d6-a02d-f890879532ee")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "b2d94644-f66d-4d3c-b35f-fc6cea43a7ad")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "" np_thru_hole circle
+			(at 0 0)
+			(size 2.7 2.7)
+			(drill 2.7)
+			(layers "*.Cu" "*.Mask")
+			(uuid "7b6efbfd-f4df-451d-ab3a-066f2f5960a2")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "MountingHole:MountingHole_2.7mm_M2.5"
+		(layer "F.Cu")
+		(uuid "745c513f-4fb1-43cf-b086-77ed7ecc35ae")
+		(at 55 55)
+		(descr "Mounting Hole 2.7mm, no annular, M2.5")
+		(tags "mounting hole 2.7mm no annular m2.5")
+		(property "Reference" "H8"
+			(at 0 -3.7 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "f344a580-e6eb-4283-8bff-7b09853f610c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "M2.5 frame mount (50 mm square)"
+			(at 0 3.7 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0b91473d-709e-47d1-9ca6-0ce95a4a4c64")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "670e037a-8370-4fc4-adc4-77404c5f7f23")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "60c55e1f-f4db-48f6-83d6-7d4c2e4ecf00")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(attr exclude_from_pos_files exclude_from_bom)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_circle
+			(center 0 0)
+			(end 2.7 0)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(fill no)
+			(layer "Cmts.User")
+			(uuid "32be6dde-8f10-4908-8bb8-4758ec8f12d5")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 2.95 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "7858ebde-83ab-4157-ae19-1f7614b9994d")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "d88cc569-a66d-4e66-9a65-ff946380f120")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "" np_thru_hole circle
+			(at 0 0)
+			(size 2.7 2.7)
+			(drill 2.7)
+			(layers "*.Cu" "*.Mask")
+			(uuid "ca7240b9-9a18-40c5-a595-acf8a18f27ee")
+		)
+		(embedded_fonts no)
+	)
 	(footprint "Connector_Wire:SolderWire-0.5sqmm_1x02_P4.6mm_D0.9mm_OD2.1mm"
 		(layer "F.Cu")
 		(uuid "c201d74d-f649-4379-bc2c-5b538383bebd")
-		(at 43.6 52.3 90)
+		(at 43.6 66.3 90)
 		(descr "Soldered wire connection, for 2 times 0.5 mm² wires, basic insulation, conductor diameter 0.9mm, outer diameter 2.1mm, size source Multi-Contact FLEXI-E 0.5 (https://ec.staubli.com/AcroFiles/Catalogues/TM_Cab-Main-11014119_(en)_hi.pdf), bend radius 3 times outer diameter, generated with kicad-footprint-generator")
 		(tags "connector wire 0.5sqmm")
 		(property "Reference" "J5"
@@ -6299,7 +6683,7 @@
 	(footprint "Fuse:Fuse_1812_4532Metric_Pad1.30x3.40mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "d29c1d98-7b86-4aa3-809d-76831d2756a7")
-		(at 12 50)
+		(at 12 64)
 		(descr "Fuse SMD 1812 (4532 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: https://www.nikhef.nl/pub/departments/mt/projects/detectorR_D/dtddice/ERJ2G.pdf), generated with kicad-footprint-generator")
 		(tags "fuse handsolder")
 		(property "Reference" "F1"
@@ -6493,7 +6877,7 @@
 	(footprint "MountingHole:MountingHole_3.2mm_M3"
 		(layer "F.Cu")
 		(uuid "e144bb76-51d7-4430-82eb-15576c6a8842")
-		(at 45.25 37.25)
+		(at 45.25 45.25)
 		(descr "Mounting Hole 3.2mm, no annular, M3")
 		(tags "mounting hole 3.2mm no annular m3")
 		(property "Reference" "H4"
@@ -6844,7 +7228,7 @@
 	(footprint "maame_carrier:Kakute_Pads_2x9_R3"
 		(layer "F.Cu")
 		(uuid "e99dfa88-b7af-4069-9f37-aead165d78cd")
-		(at 7.5 11.84)
+		(at 7.5 19.84)
 		(property "Reference" "J1"
 			(at 1.27 24.2 0)
 			(layer "F.SilkS")
@@ -7450,8 +7834,8 @@
 		(embedded_fonts no)
 	)
 	(gr_line
-		(start 12.5 4.5)
-		(end 47.5 4.5)
+		(start 12.5 12.5)
+		(end 47.5 12.5)
 		(stroke
 			(width 0.15)
 			(type default)
@@ -7460,8 +7844,8 @@
 		(uuid "9e4db35d-e640-4602-806d-25ab5e0f89f1")
 	)
 	(gr_line
-		(start 47.5 4.5)
-		(end 47.5 39.5)
+		(start 47.5 12.5)
+		(end 47.5 47.5)
 		(stroke
 			(width 0.15)
 			(type default)
@@ -7470,8 +7854,8 @@
 		(uuid "3047be5b-b0fa-48be-ad16-8517d551ad46")
 	)
 	(gr_line
-		(start 47.5 39.5)
-		(end 12.5 39.5)
+		(start 47.5 47.5)
+		(end 12.5 47.5)
 		(stroke
 			(width 0.15)
 			(type default)
@@ -7490,7 +7874,7 @@
 		(uuid "0f2cea57-8965-4069-a60c-c411e5dbc92a")
 	)
 	(gr_line
-		(start 0 95)
+		(start 0 110)
 		(end 0 0)
 		(stroke
 			(width 0.1)
@@ -7501,7 +7885,7 @@
 	)
 	(gr_line
 		(start 95 0)
-		(end 95 95)
+		(end 95 110)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -7510,8 +7894,8 @@
 		(uuid "cf8ee23e-1880-44a9-b323-c1f8b508bc23")
 	)
 	(gr_line
-		(start 95 95)
-		(end 0 95)
+		(start 95 110)
+		(end 0 110)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -7520,8 +7904,8 @@
 		(uuid "4b1b2614-a3cf-4a4a-b804-3e95475b27cc")
 	)
 	(gr_line
-		(start 12.5 4.5)
-		(end 47.5 4.5)
+		(start 12.5 12.5)
+		(end 47.5 12.5)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -7530,8 +7914,8 @@
 		(uuid "707eedb6-9d70-4550-81a3-85a6f80f5029")
 	)
 	(gr_line
-		(start 12.5 39.5)
-		(end 12.5 4.5)
+		(start 12.5 47.5)
+		(end 12.5 12.5)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -7540,8 +7924,8 @@
 		(uuid "afe8239e-bc52-4d13-ad99-0f5d8393789f")
 	)
 	(gr_line
-		(start 47.5 4.5)
-		(end 47.5 39.5)
+		(start 47.5 12.5)
+		(end 47.5 47.5)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -7550,8 +7934,8 @@
 		(uuid "b14bf4fe-f7bb-4f6c-8ffe-14d1002a5663")
 	)
 	(gr_line
-		(start 47.5 39.5)
-		(end 12.5 39.5)
+		(start 47.5 47.5)
+		(end 12.5 47.5)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -7560,7 +7944,7 @@
 		(uuid "9b3066ed-5d23-4cd3-aecd-1519adc76e1a")
 	)
 	(gr_text "FRONT = KAKUTE ARROW"
-		(at 30 28.5 0)
+		(at 30 36.5 0)
 		(layer "F.SilkS")
 		(uuid "3d29f423-56a0-4dba-9cf5-524f8b4b0176")
 		(effects
@@ -7571,7 +7955,7 @@
 		)
 	)
 	(gr_text "KAKUTE H7"
-		(at 30 16.5 0)
+		(at 30 24.5 0)
 		(layer "F.SilkS")
 		(uuid "d0368def-f4aa-4a9f-a41e-27fb44e4ae73")
 		(effects
@@ -7582,8 +7966,8 @@
 		)
 	)
 	(gr_line
-		(start 25.5 19.5)
-		(end 34.5 19.5)
+		(start 25.5 27.5)
+		(end 34.5 27.5)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -7592,9 +7976,9 @@
 		(uuid "31d7572b-90f6-4506-b4d5-c2c0b0e6f9bc")
 	)
 	(gr_arc
-		(start 34.5 19.5)
-		(mid 37 22)
-		(end 34.5 24.5)
+		(start 34.5 27.5)
+		(mid 37 30)
+		(end 34.5 32.5)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -7603,8 +7987,8 @@
 		(uuid "d8847e7a-7eac-4462-a25e-e1df25ea3d3d")
 	)
 	(gr_line
-		(start 34.5 24.5)
-		(end 25.5 24.5)
+		(start 34.5 32.5)
+		(end 25.5 32.5)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -7613,9 +7997,9 @@
 		(uuid "df16f702-daa5-4aa5-bfcd-493bbea65ac1")
 	)
 	(gr_arc
-		(start 25.5 24.5)
-		(mid 23 22)
-		(end 25.5 19.5)
+		(start 25.5 32.5)
+		(mid 23 30)
+		(end 25.5 27.5)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -7624,7 +8008,7 @@
 		(uuid "ebc0bd99-e9c4-41ba-a357-1bfd364ddd48")
 	)
 	(gr_text "ESC CABLE SLOT"
-		(at 30 26.5 0)
+		(at 30 34.5 0)
 		(layer "F.SilkS")
 		(uuid "0b5abe54-5650-4762-a71d-7dba122787ca")
 		(effects
@@ -7801,7 +8185,7 @@
 	)
 
 	(gr_text "B+"
-		(at 5.9 11.84 0)
+		(at 5.9 19.84 0)
 		(layer "F.SilkS")
 		(uuid "838baa97-9a43-4d75-8aec-c973c3fd98b6")
 		(effects
@@ -7813,7 +8197,7 @@
 		)
 	)
 	(gr_text "Vo"
-		(at 11.64 11.84 0)
+		(at 11.64 19.84 0)
 		(layer "F.SilkS")
 		(uuid "19f4bc83-8a21-405c-baa2-94f659caa25c")
 		(effects
@@ -7825,7 +8209,7 @@
 		)
 	)
 	(gr_text "GND"
-		(at 5.9 14.38 0)
+		(at 5.9 22.38 0)
 		(layer "F.SilkS")
 		(uuid "4ec68eb4-ce9b-4caf-a30c-c7a43ba6aa5d")
 		(effects
@@ -7837,7 +8221,7 @@
 		)
 	)
 	(gr_text "GND"
-		(at 11.64 14.38 0)
+		(at 11.64 22.38 0)
 		(layer "F.SilkS")
 		(uuid "e5853820-6374-4f5b-8694-2a26c7c361e3")
 		(effects
@@ -7849,7 +8233,7 @@
 		)
 	)
 	(gr_text "R3"
-		(at 5.9 16.92 0)
+		(at 5.9 24.92 0)
 		(layer "F.SilkS")
 		(uuid "5df3571d-6052-495b-b1e9-f09864ffd4b5")
 		(effects
@@ -7861,7 +8245,7 @@
 		)
 	)
 	(gr_text "T3"
-		(at 11.64 16.92 0)
+		(at 11.64 24.92 0)
 		(layer "F.SilkS")
 		(uuid "c3aab514-5fd9-4154-8602-af44e6238863")
 		(effects
@@ -7873,7 +8257,7 @@
 		)
 	)
 	(gr_text "GND"
-		(at 5.9 19.46 0)
+		(at 5.9 27.46 0)
 		(layer "F.SilkS")
 		(uuid "d40d2cce-d030-4f95-98f1-2a0db9289f89")
 		(effects
@@ -7885,7 +8269,7 @@
 		)
 	)
 	(gr_text "5V"
-		(at 11.64 19.46 0)
+		(at 11.64 27.46 0)
 		(layer "F.SilkS")
 		(uuid "e6831c72-d3b9-4484-8a4b-2bd597c89186")
 		(effects
@@ -7897,7 +8281,7 @@
 		)
 	)
 	(gr_text "R4"
-		(at 5.9 22 0)
+		(at 5.9 30 0)
 		(layer "F.SilkS")
 		(uuid "525e1947-4f36-4dc7-bc0a-c28103364a20")
 		(effects
@@ -7909,7 +8293,7 @@
 		)
 	)
 	(gr_text "T4"
-		(at 11.64 22 0)
+		(at 11.64 30 0)
 		(layer "F.SilkS")
 		(uuid "3c04b85d-f6c5-420e-90a8-54d7d50cfa72")
 		(effects
@@ -7921,7 +8305,7 @@
 		)
 	)
 	(gr_text "SDA"
-		(at 5.9 24.54 0)
+		(at 5.9 32.54 0)
 		(layer "F.SilkS")
 		(uuid "c1f5230a-e68b-4de2-b39c-fdc679ea8eaa")
 		(effects
@@ -7933,7 +8317,7 @@
 		)
 	)
 	(gr_text "SCL"
-		(at 11.64 24.54 0)
+		(at 11.64 32.54 0)
 		(layer "F.SilkS")
 		(uuid "3a12a7aa-f1b2-4b9b-a8ed-3bde6801e093")
 		(effects
@@ -7945,7 +8329,7 @@
 		)
 	)
 	(gr_text "R6"
-		(at 5.9 27.08 0)
+		(at 5.9 35.08 0)
 		(layer "F.SilkS")
 		(uuid "b3d0feb5-7b1c-403a-a1bc-96a99f7cfe15")
 		(effects
@@ -7957,7 +8341,7 @@
 		)
 	)
 	(gr_text "T6"
-		(at 11.64 27.08 0)
+		(at 11.64 35.08 0)
 		(layer "F.SilkS")
 		(uuid "6db5f494-473f-443a-b3c1-d11e3e530f68")
 		(effects
@@ -7969,7 +8353,7 @@
 		)
 	)
 	(gr_text "RSI"
-		(at 5.9 29.62 0)
+		(at 5.9 37.62 0)
 		(layer "F.SilkS")
 		(uuid "16e3fd91-abfa-459e-8da8-b2d1985ba7e0")
 		(effects
@@ -7981,7 +8365,7 @@
 		)
 	)
 	(gr_text "5V"
-		(at 11.64 29.62 0)
+		(at 11.64 37.62 0)
 		(layer "F.SilkS")
 		(uuid "686ec290-d06e-4ee9-8db5-f03e7e559c32")
 		(effects
@@ -7993,7 +8377,7 @@
 		)
 	)
 	(gr_text "GND"
-		(at 5.9 32.16 0)
+		(at 5.9 40.16 0)
 		(layer "F.SilkS")
 		(uuid "4d18cbff-55d6-4b2d-81ca-60eeff02ff5b")
 		(effects
@@ -8005,7 +8389,7 @@
 		)
 	)
 	(gr_text "3V3"
-		(at 11.64 32.16 0)
+		(at 11.64 40.16 0)
 		(layer "F.SilkS")
 		(uuid "e5ecb3ce-a13e-4bba-b1d9-20aaa2fd0db0")
 		(effects
@@ -8017,7 +8401,7 @@
 		)
 	)
 	(gr_text "B+ DO NOT WIRE"
-		(at 0.8 9.24 0)
+		(at 0.8 17.24 0)
 		(layer "F.SilkS")
 		(uuid "4790218b-c657-4b4c-90cb-85671b1588ca")
 		(effects
@@ -8029,7 +8413,7 @@
 		)
 	)
 	(gr_text "J1 KAKUTE PADS"
-		(at 0.8 34.56 0)
+		(at 0.8 42.56 0)
 		(layer "F.SilkS")
 		(uuid "1b287644-2f0a-41de-87a3-d768e76485b3")
 		(effects
@@ -8041,7 +8425,7 @@
 		)
 	)
 	(gr_text "T1"
-		(at 52.6 27.92 0)
+		(at 52.6 35.92 0)
 		(layer "F.SilkS")
 		(uuid "463c1f09-5468-4e72-92d1-daf5af204ca5")
 		(effects
@@ -8053,7 +8437,7 @@
 		)
 	)
 	(gr_text "R1"
-		(at 52.6 30.46 0)
+		(at 52.6 38.46 0)
 		(layer "F.SilkS")
 		(uuid "72868e2c-57ba-4058-9ec6-f915287b4d2b")
 		(effects
@@ -8065,7 +8449,7 @@
 		)
 	)
 	(gr_text "GND"
-		(at 52.6 33 0)
+		(at 52.6 41 0)
 		(layer "F.SilkS")
 		(uuid "cb3e53b1-ce47-48a0-950c-a06f18fd1f5b")
 		(effects
@@ -8077,7 +8461,7 @@
 		)
 	)
 	(gr_text "UART1"
-		(at 49.7 25.42 0)
+		(at 49.7 33.42 0)
 		(layer "F.SilkS")
 		(uuid "4c27b1f4-2ddd-426c-b072-9698a2388f76")
 		(effects
@@ -8884,8 +9268,8 @@
 		(uuid "1b65c32f-2d44-472f-953b-e0d2e87563ed")
 	)
 	(gr_line
-		(start 33 13.4)
-		(end 33 8.4)
+		(start 33 21.4)
+		(end 33 16.4)
 		(stroke
 			(width 0.15)
 			(type solid)
@@ -8894,8 +9278,8 @@
 		(uuid "66054ec9-3a16-441d-8dba-600b40e28fea")
 	)
 	(gr_line
-		(start 33 8.4)
-		(end 32 9.6)
+		(start 33 16.4)
+		(end 32 17.6)
 		(stroke
 			(width 0.15)
 			(type solid)
@@ -8904,8 +9288,8 @@
 		(uuid "95f1532f-9ea8-453f-9827-41f3b830996d")
 	)
 	(gr_line
-		(start 33 8.4)
-		(end 34 9.6)
+		(start 33 16.4)
+		(end 34 17.6)
 		(stroke
 			(width 0.15)
 			(type solid)
@@ -8914,7 +9298,7 @@
 		(uuid "39e52723-73e9-4c54-9c51-923d8e60713b")
 	)
 	(gr_text "NOSE"
-		(at 34.6 9.6 0)
+		(at 34.6 17.6 0)
 		(layer "F.SilkS")
 		(uuid "d4249639-78ed-457d-a36f-a31aff5ebb89")
 		(effects
@@ -8926,7 +9310,7 @@
 		)
 	)
 	(gr_text "MAAME CARRIER"
-		(at 72.5 86.5 0)
+		(at 72.5 101.5 0)
 		(layer "F.SilkS")
 		(uuid "7a82e3ae-e487-4b41-97e1-3720313a5c99")
 		(effects
@@ -8938,7 +9322,7 @@
 		)
 	)
 	(gr_text "REV A-DRAFT 2026-10-27"
-		(at 72.5 88.6 0)
+		(at 72.5 103.6 0)
 		(layer "F.SilkS")
 		(uuid "140cb0a5-8620-4e81-94b8-c8deed90c064")
 		(effects
@@ -8949,8 +9333,8 @@
 			(justify left)
 		)
 	)
-	(gr_text "PLACEHOLDER OUTLINE"
-		(at 72.5 90.7 0)
+	(gr_text "CHECK FIT ON FRAME"
+		(at 72.5 105.7 0)
 		(layer "F.SilkS")
 		(uuid "8385447c-5f68-48d0-bb9c-60d2e7ed65c7")
 		(effects
@@ -8962,8 +9346,8 @@
 		)
 	)
 	(gr_line
-		(start 23.5 43)
-		(end 41.5 43)
+		(start 23.5 57)
+		(end 41.5 57)
 		(stroke
 			(width 0.15)
 			(type solid)
@@ -8972,8 +9356,8 @@
 		(uuid "2ea80566-da42-4321-9f26-e8e76912189a")
 	)
 	(gr_line
-		(start 41.5 43)
-		(end 41.5 58)
+		(start 41.5 57)
+		(end 41.5 72)
 		(stroke
 			(width 0.15)
 			(type solid)
@@ -8982,8 +9366,8 @@
 		(uuid "5dfe807a-0a9d-4933-915e-a6de1de45dff")
 	)
 	(gr_line
-		(start 41.5 58)
-		(end 23.5 58)
+		(start 41.5 72)
+		(end 23.5 72)
 		(stroke
 			(width 0.15)
 			(type solid)
@@ -8992,8 +9376,8 @@
 		(uuid "3605de5c-9c6d-474b-b4e7-51b3b78868ff")
 	)
 	(gr_line
-		(start 23.5 58)
-		(end 23.5 43)
+		(start 23.5 72)
+		(end 23.5 57)
 		(stroke
 			(width 0.15)
 			(type solid)
@@ -9002,8 +9386,8 @@
 		(uuid "20d35aee-4625-4f8f-9b0d-49cbfbc924ff")
 	)
 	(gr_line
-		(start 23.5 43)
-		(end 41.5 43)
+		(start 23.5 57)
+		(end 41.5 57)
 		(stroke
 			(width 0.1)
 			(type solid)
@@ -9012,8 +9396,8 @@
 		(uuid "39b017af-2ac1-45eb-a8e6-419e28bfe693")
 	)
 	(gr_line
-		(start 41.5 43)
-		(end 41.5 58)
+		(start 41.5 57)
+		(end 41.5 72)
 		(stroke
 			(width 0.1)
 			(type solid)
@@ -9022,8 +9406,8 @@
 		(uuid "1fccbc83-cfe1-4aba-850f-9574b9f2e3cb")
 	)
 	(gr_line
-		(start 41.5 58)
-		(end 23.5 58)
+		(start 41.5 72)
+		(end 23.5 72)
 		(stroke
 			(width 0.1)
 			(type solid)
@@ -9032,8 +9416,8 @@
 		(uuid "8b7b6a5d-c33a-49b0-aa80-b4af11c90be1")
 	)
 	(gr_line
-		(start 23.5 58)
-		(end 23.5 43)
+		(start 23.5 72)
+		(end 23.5 57)
 		(stroke
 			(width 0.1)
 			(type solid)
@@ -9042,7 +9426,7 @@
 		(uuid "b2cb843a-4468-465c-8ad3-27035e57bc3c")
 	)
 	(gr_text "BEC 5V (DEFAULT)"
-		(at 32.5 45.4 0)
+		(at 32.5 59.4 0)
 		(layer "F.SilkS")
 		(uuid "dfdddd1f-35af-456a-988a-d96676b75c84")
 		(effects
@@ -9053,7 +9437,7 @@
 		)
 	)
 	(gr_text "18 x 15 MODULE"
-		(at 32.5 47.9 0)
+		(at 32.5 61.9 0)
 		(layer "F.SilkS")
 		(uuid "a7f582d7-2c0c-4563-8e3e-5032dffbaa0a")
 		(effects
@@ -9064,7 +9448,7 @@
 		)
 	)
 	(gr_text "NO REVERSE"
-		(at 32.5 50.4 0)
+		(at 32.5 64.4 0)
 		(layer "F.SilkS")
 		(uuid "ba33063f-0436-4d22-bf9a-70af86bfc71c")
 		(effects
@@ -9075,7 +9459,7 @@
 		)
 	)
 	(gr_text "PROTECTION:"
-		(at 32.5 52.9 0)
+		(at 32.5 66.9 0)
 		(layer "F.SilkS")
 		(uuid "de0fe506-b35a-4ea2-aafe-4fda52a1583a")
 		(effects
@@ -9086,7 +9470,7 @@
 		)
 	)
 	(gr_text "CHECK +/-"
-		(at 32.5 55.4 0)
+		(at 32.5 69.4 0)
 		(layer "F.SilkS")
 		(uuid "efe7e525-16cf-4d22-8c44-b1c7da60b571")
 		(effects
@@ -9097,7 +9481,7 @@
 		)
 	)
 	(gr_text "VBAT TAP"
-		(at 4.5 43.2 0)
+		(at 4.5 59.4 0)
 		(layer "F.SilkS")
 		(uuid "78369353-9ed2-4d4c-9ca0-2e24d464dde8")
 		(effects
@@ -9108,7 +9492,7 @@
 		)
 	)
 	(gr_text "+"
-		(at 5.9 52.3 0)
+		(at 5.9 66.3 0)
 		(layer "F.SilkS")
 		(uuid "d025e75a-758e-49b4-90ea-08c8845e9d83")
 		(effects
@@ -9120,7 +9504,7 @@
 		)
 	)
 	(gr_text "-"
-		(at 5.9 47.7 0)
+		(at 5.9 61.7 0)
 		(layer "F.SilkS")
 		(uuid "a80a11d7-59bb-4716-9816-948ec197c4f4")
 		(effects
@@ -9132,7 +9516,7 @@
 		)
 	)
 	(gr_text "F1 PTC ~1.1A"
-		(at 12 54.3 0)
+		(at 12 68.3 0)
 		(layer "F.SilkS")
 		(uuid "40d7ea8d-63d7-4006-8d57-7f39073f6595")
 		(effects
@@ -9143,7 +9527,7 @@
 		)
 	)
 	(gr_text "J4 BEC IN"
-		(at 22.8 45 0)
+		(at 22.8 59 0)
 		(layer "F.SilkS")
 		(uuid "f7a8bbb0-2e01-40c3-a82f-b432584180d5")
 		(effects
@@ -9155,7 +9539,7 @@
 		)
 	)
 	(gr_text "+"
-		(at 21.4 52.3 0)
+		(at 21.4 66.3 0)
 		(layer "F.SilkS")
 		(uuid "acc904ff-354d-4e95-960c-3c44ba1dd006")
 		(effects
@@ -9167,7 +9551,7 @@
 		)
 	)
 	(gr_text "-"
-		(at 21.4 47.7 0)
+		(at 21.4 61.7 0)
 		(layer "F.SilkS")
 		(uuid "15acc2e4-6a2e-4dde-a762-c20d589ba24e")
 		(effects
@@ -9179,7 +9563,7 @@
 		)
 	)
 	(gr_text "J5 BEC OUT"
-		(at 42.3 43.2 0)
+		(at 42.3 57.2 0)
 		(layer "F.SilkS")
 		(uuid "b1fb0174-93a5-4748-9203-b317537cf33e")
 		(effects
@@ -9191,7 +9575,7 @@
 		)
 	)
 	(gr_text "+"
-		(at 45.5 52.3 0)
+		(at 45.5 66.3 0)
 		(layer "F.SilkS")
 		(uuid "fbc88eef-b094-492d-a75a-a03827e1f325")
 		(effects
@@ -9203,7 +9587,7 @@
 		)
 	)
 	(gr_text "-"
-		(at 43.6 45.6 0)
+		(at 43.6 59.6 0)
 		(layer "F.SilkS")
 		(uuid "2b03dcd1-c604-4379-a76c-614d451d0a52")
 		(effects
@@ -9214,7 +9598,7 @@
 		)
 	)
 	(gr_text "C1 5V_AUX"
-		(at 49.6 56 0)
+		(at 49.6 70 0)
 		(layer "F.SilkS")
 		(uuid "35b00ca7-6768-40f4-94a8-86ac4bfb1272")
 		(effects
@@ -9225,7 +9609,7 @@
 		)
 	)
 	(gr_text "D1 PWR LED"
-		(at 55.6 59.6 0)
+		(at 55.6 73.6 0)
 		(layer "F.SilkS")
 		(uuid "0af1fb92-fe68-48a8-b341-f40624b41c38")
 		(effects
@@ -9236,7 +9620,7 @@
 		)
 	)
 	(gr_text "K"
-		(at 57.8 51.2 0)
+		(at 57.8 65.2 0)
 		(layer "F.SilkS")
 		(uuid "d20a4a00-0eb7-42e8-b155-e0cb88276843")
 		(effects
@@ -9247,7 +9631,7 @@
 		)
 	)
 	(gr_text "PI ZERO W: COMPONENTS UP"
-		(at 1 58.6 0)
+		(at 1 72.6 0)
 		(layer "F.SilkS")
 		(uuid "83012991-d7ab-41ef-ac9b-ad0e555a28db")
 		(effects
@@ -9259,7 +9643,7 @@
 		)
 	)
 	(gr_text "PI PIN 1 / SD CARD END"
-		(at 1 60.6 0)
+		(at 1 74.6 0)
 		(layer "F.SilkS")
 		(uuid "5e2251a2-6963-4b49-85ae-50eb50bf985a")
 		(effects
@@ -9271,7 +9655,7 @@
 		)
 	)
 	(gr_text "G"
-		(at 19.7 5.4 0)
+		(at 19.7 13.4 0)
 		(layer "F.SilkS")
 		(uuid "8dc66e37-a144-45c2-8bf1-905738c323a6")
 		(effects
@@ -9282,7 +9666,7 @@
 		)
 	)
 	(gr_text "5V"
-		(at 22.24 5.4 0)
+		(at 22.24 13.4 0)
 		(layer "F.SilkS")
 		(uuid "16909e96-45bb-42d4-a00b-9a33ee94f1e6")
 		(effects
@@ -9293,7 +9677,7 @@
 		)
 	)
 	(gr_text "Vi"
-		(at 24.78 5.4 0)
+		(at 24.78 13.4 0)
 		(layer "F.SilkS")
 		(uuid "3ba0ae60-5a7c-45bb-9fc3-17aec75767a0")
 		(effects
@@ -9304,7 +9688,7 @@
 		)
 	)
 	(gr_text "CAM"
-		(at 27.32 5.4 0)
+		(at 27.32 13.4 0)
 		(layer "F.SilkS")
 		(uuid "cac7bd04-af28-404d-924b-7b0b6594cec6")
 		(effects
@@ -9315,7 +9699,7 @@
 		)
 	)
 	(gr_text "Z-"
-		(at 19.2 38.4 0)
+		(at 19.2 46.4 0)
 		(layer "F.SilkS")
 		(uuid "7e998032-c362-4741-a786-e3aa5bd4624c")
 		(effects
@@ -9326,7 +9710,7 @@
 		)
 	)
 	(gr_text "5V"
-		(at 21.74 38.4 0)
+		(at 21.74 46.4 0)
 		(layer "F.SilkS")
 		(uuid "e38ebf0f-0da6-4d21-99ad-d604d50023de")
 		(effects
@@ -9337,7 +9721,7 @@
 		)
 	)
 	(gr_text "G"
-		(at 24.28 38.4 0)
+		(at 24.28 46.4 0)
 		(layer "F.SilkS")
 		(uuid "820d9601-c6e8-4309-897c-045a8b3ac249")
 		(effects
@@ -9348,7 +9732,7 @@
 		)
 	)
 	(gr_text "LED"
-		(at 26.82 38.4 0)
+		(at 26.82 46.4 0)
 		(layer "F.SilkS")
 		(uuid "c8075082-7ce9-438e-9119-d8baceaecb22")
 		(effects
@@ -9383,9 +9767,57 @@
 		)
 	)
 	(gr_text "VI/CAM NOT WIRED"
-		(at 17.3 2.4 0)
+		(at 17.3 10.4 0)
 		(layer "F.SilkS")
 		(uuid "0fbf6315-6892-417d-9437-4452f00ecdd4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify right)
+		)
+	)
+	(gr_text "FRAME M2.5"
+		(at 7.6 5 0)
+		(layer "F.SilkS")
+		(uuid "f3252cee-3df7-41f0-b8d8-e240f68f9ace")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "FRAME M2.5"
+		(at 52.4 5 0)
+		(layer "F.SilkS")
+		(uuid "f830b235-4cbe-471e-bed5-195f3eee1fd5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify right)
+		)
+	)
+	(gr_text "FRAME M2.5"
+		(at 7.6 55 0)
+		(layer "F.SilkS")
+		(uuid "e2ff7307-f64e-4fd2-beea-877f59a9d6bd")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "FRAME M2.5"
+		(at 52.4 55 0)
+		(layer "F.SilkS")
+		(uuid "1c79dd7a-8b23-43eb-bb46-0b79b536396f")
 		(effects
 			(font
 				(size 1 1)
