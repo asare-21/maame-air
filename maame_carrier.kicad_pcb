@@ -5708,7 +5708,7 @@
 	(footprint "MountingHole:MountingHole_2.7mm_M2.5"
 		(layer "F.Cu")
 		(uuid "e7f32bc9-f77f-4e66-8fe4-8308d73de804")
-		(at 5.85 5.85)
+		(at 5.75 5.75)
 		(descr "Mounting Hole 2.7mm, no annular, M2.5")
 		(tags "mounting hole 2.7mm no annular m2.5")
 		(property "Reference" "H5"
@@ -5723,7 +5723,7 @@
 				)
 			)
 		)
-		(property "Value" "M2.5 frame mount, 48.3 mm square, radial slot"
+		(property "Value" "M2.5 frame mount, 48.5 mm square, radial slot"
 			(at 0 3.7 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -5804,7 +5804,7 @@
 	(footprint "MountingHole:MountingHole_2.7mm_M2.5"
 		(layer "F.Cu")
 		(uuid "ed6e4200-9078-49cd-b20d-f109fbb8b514")
-		(at 54.15 5.85)
+		(at 54.25 5.75)
 		(descr "Mounting Hole 2.7mm, no annular, M2.5")
 		(tags "mounting hole 2.7mm no annular m2.5")
 		(property "Reference" "H6"
@@ -5819,7 +5819,7 @@
 				)
 			)
 		)
-		(property "Value" "M2.5 frame mount, 48.3 mm square, radial slot"
+		(property "Value" "M2.5 frame mount, 48.5 mm square, radial slot"
 			(at 0 3.7 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -5900,7 +5900,7 @@
 	(footprint "MountingHole:MountingHole_2.7mm_M2.5"
 		(layer "F.Cu")
 		(uuid "eef4eb4f-6289-4658-bee0-268dff4f762c")
-		(at 5.85 54.15)
+		(at 5.75 54.25)
 		(descr "Mounting Hole 2.7mm, no annular, M2.5")
 		(tags "mounting hole 2.7mm no annular m2.5")
 		(property "Reference" "H7"
@@ -5915,7 +5915,7 @@
 				)
 			)
 		)
-		(property "Value" "M2.5 frame mount, 48.3 mm square, radial slot"
+		(property "Value" "M2.5 frame mount, 48.5 mm square, radial slot"
 			(at 0 3.7 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -5996,7 +5996,7 @@
 	(footprint "MountingHole:MountingHole_2.7mm_M2.5"
 		(layer "F.Cu")
 		(uuid "745c513f-4fb1-43cf-b086-77ed7ecc35ae")
-		(at 54.15 54.15)
+		(at 54.25 54.25)
 		(descr "Mounting Hole 2.7mm, no annular, M2.5")
 		(tags "mounting hole 2.7mm no annular m2.5")
 		(property "Reference" "H8"
@@ -6011,7 +6011,7 @@
 				)
 			)
 		)
-		(property "Value" "M2.5 frame mount, 48.3 mm square, radial slot"
+		(property "Value" "M2.5 frame mount, 48.5 mm square, radial slot"
 			(at 0 3.7 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -9779,7 +9779,7 @@
 		)
 	)
 	(gr_text "FRAME M2.5"
-		(at 9.75 5.85 0)
+		(at 9.65 5.75 0)
 		(layer "F.SilkS")
 		(uuid "f3252cee-3df7-41f0-b8d8-e240f68f9ace")
 		(effects
@@ -9791,7 +9791,7 @@
 		)
 	)
 	(gr_text "FRAME M2.5"
-		(at 50.25 5.85 0)
+		(at 50.35 5.75 0)
 		(layer "F.SilkS")
 		(uuid "f830b235-4cbe-471e-bed5-195f3eee1fd5")
 		(effects
@@ -9803,7 +9803,7 @@
 		)
 	)
 	(gr_text "FRAME M2.5"
-		(at 9.75 54.15 0)
+		(at 9.65 54.25 0)
 		(layer "F.SilkS")
 		(uuid "e2ff7307-f64e-4fd2-beea-877f59a9d6bd")
 		(effects
@@ -9815,7 +9815,7 @@
 		)
 	)
 	(gr_text "FRAME M2.5"
-		(at 50.25 54.15 0)
+		(at 50.35 54.25 0)
 		(layer "F.SilkS")
 		(uuid "1c79dd7a-8b23-43eb-bb46-0b79b536396f")
 		(effects
