@@ -3747,6 +3747,14 @@
 (symbol "TPS54360B_0_1" (rectangle (start -12.7 7.62) (end 12.7 -10.16) (stroke (width 0.254) (type default)) (fill (type background))))
 (symbol "TPS54360B_1_1" (pin passive line (at 15.24 5.08 180) (length 2.54) (name "BOOT" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.0 1.0))))) (pin passive line (at 15.24 2.54 180) (length 2.54) (name "SW" (effects (font (size 1.27 1.27)))) (number "8" (effects (font (size 1.0 1.0))))) (pin passive line (at 15.24 -2.54 180) (length 2.54) (name "FB" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.0 1.0))))) (pin passive line (at -15.24 5.08 0) (length 2.54) (name "VIN" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.0 1.0))))) (pin passive line (at -15.24 2.54 0) (length 2.54) (name "EN" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.0 1.0))))) (pin passive line (at -15.24 0 0) (length 2.54) (name "RT/CLK" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.0 1.0))))) (pin passive line (at -15.24 -2.54 0) (length 2.54) (name "COMP" (effects (font (size 1.27 1.27)))) (number "6" (effects (font (size 1.0 1.0))))) (pin passive line (at -15.24 -5.08 0) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "7" (effects (font (size 1.0 1.0))))) (pin passive line (at -15.24 -7.62 0) (length 2.54) (name "EP" (effects (font (size 1.27 1.27)))) (number "9" (effects (font (size 1.0 1.0))))))
 )
+		(symbol "maame_carrier:TVS" (in_bom yes) (on_board yes)
+(property "Reference" "U" (at 0 3.81 0) (effects (font (size 1.27 1.27))))
+(property "Value" "TVS" (at 0 -3.81 0) (effects (font (size 1.27 1.27))))
+(property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+(symbol "TVS_0_1" (rectangle (start -10.16 2.54) (end 10.16 -2.54) (stroke (width 0.254) (type default)) (fill (type background))))
+(symbol "TVS_1_1" (pin passive line (at -12.7 0 0) (length 2.54) (name "K" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.0 1.0))))) (pin passive line (at 12.7 0 180) (length 2.54) (name "A" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.0 1.0))))))
+)
 		(symbol "maame_carrier:SERVO"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -4400,7 +4408,7 @@
 		)
 		(uuid "ac000c21-9042-5125-8c9e-0a4774eda63b")
 	)
-	(text "8. Power: 6S Li-ion (18-25.2 V) from J3 tap -> F1 PTC (2 A hold, 4 A trip, 30 V) -> U2 5 V buck (note 10) -> 5V_AUX. Full 3.5 A out at 18 V in draws ~1.1 A."
+	(text "8. Power: 6S Li-ion (18-25.2 V) from J3 tap -> F1 PTC (2 A hold, 4 A trip, 30 V) -> D9 SMBJ30A TVS (clamps surges to ~48 V, under U2 60 V max) -> U2 5 V buck (note 10) -> 5V_AUX. Full 3.5 A out at 18 V in draws ~1.1 A."
 		(exclude_from_sim no)
 		(at 20.32 294.64 0)
 		(effects
@@ -11874,6 +11882,96 @@
 			)
 		)
 	)
+	(symbol
+		(lib_id "maame_carrier:TVS")
+		(at 261.62 228.6 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "80d72ee9-0697-4525-8256-6700cdc3a5e9")
+		(property "Reference" "D9"
+			(at 261.62 223.52 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SMBJ30A TVS 30V standoff, 48.4V clamp"
+			(at 261.62 233.68 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SMB"
+			(at 261.62 228.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 261.62 228.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 261.62 228.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C113998"
+			(at 261.62 228.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2789872e-c17f-4798-bd08-4f20aec95a51")
+		)
+		(pin "2"
+			(uuid "891d14bf-fb6c-42bf-8f61-ef2fb6508e92")
+		)
+		(instances
+			(project "maame_carrier"
+				(path "/347efe6d-e5df-5320-8613-16be4824f8d1"
+					(reference "D9")
+					(unit 1)
+				)
+			)
+		)
+	)
 	(wire
 		(pts
 			(xy 248.92 198.12) (xy 243.84 198.12)
@@ -12314,6 +12412,46 @@
 			(justify left bottom)
 		)
 		(uuid "866a3382-e763-4f9b-aa87-80a0895f90e5")
+	)
+	(wire
+		(pts
+			(xy 248.92 228.6) (xy 243.84 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95e0649f-c7ad-41b5-a9ee-90f6a5658c82")
+	)
+	(label "VBAT_F"
+		(at 243.84 228.6 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f11cb8ad-2adc-40fa-a48e-0529c29cedf3")
+	)
+	(wire
+		(pts
+			(xy 274.32 228.6) (xy 279.4 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88f933af-c360-4471-870f-ca03c696918d")
+	)
+	(label "GND"
+		(at 279.4 228.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "588d6229-3fa6-409c-8550-1ed68499c682")
 	)
 	(sheet_instances
 		(path "/"
