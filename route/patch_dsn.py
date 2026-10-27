@@ -22,13 +22,18 @@ keep = [stadium(50.5, 47.6, 4.5, 2.5 + INSET)]                      # ESC cable 
 keep += [circle(x, y, 2.1 + 1.35 + INSET) for x in (23.25, 71.75) for y in (34.0, 82.5)]   # frame M2.5 slots + screw head/standoff
 add = "".join(f'\n    (keepout "" (polygon signal 0  {path(k)}))' for k in keep)
 i = s.index("(keepout"); s = s[:i] + add.lstrip("\n ") + "\n    " + s[i:]
-# net classes
-i = s.index("(class kicad_default"); j = s.index("(circuit", i)
-toks = re.findall(r'"[^"]*"|\S+', s[i + len("(class kicad_default"):j])
-PWR, GND, VB = {"/5V_AUX", "/5V_FC", "/BEC_SW"}, {"/GND"}, {"/VBAT", "/VBAT_F", "/VBAT_OUT_F"}
-rest = [t for t in toks if t not in PWR | GND | VB]
+# net classes: drop every class KiCad exported (it can emit merged ones like "Power,Default"), rebuild ours
+blocks = list(re.finditer(r'\n    \(class .*?\n    \)(?=\n)', s, re.S))
+assert blocks, "no net classes in DSN"
+toks = []
+for m in blocks:
+    head = m.group(0)[:m.group(0).index("(circuit")]
+    toks += re.findall(r'"[^"]*"|\S+', head)[2:]
+for m in reversed(blocks): s = s[:m.start()] + s[m.end():]
+PWR, GND, VB = {"/5V_AUX", "/5V_FC", "/BEC_SW", "/BEC12_SW", "/12V_AUX", "/9V_FC"}, {"/GND"}, {"/VBAT", "/VBAT_F", "/VBAT_OUT_F"}
+rest = sorted({t for t in toks if t not in PWR | GND | VB})
 via = '(circuit\n        (use_via "Via[0-1]_600:300_um")\n      )\n'
-def cls(name, nets, w, c): return f'(class {name} {" ".join(nets)}\n      {via}      (rule\n        (width {w})\n        (clearance {c})\n      )\n    )\n    '
-end = s.index("\n    )\n", s.index("(rule", j) + 5) + 7     # end of the kicad_default class
-s = s[:i] + cls("kicad_default", rest, 250, 200) + cls("Power", sorted(PWR), 800, 250) + cls("Ground", sorted(GND), 500, 250) + cls("VBAT", sorted(VB), 500, 300) + s[end:].lstrip(" ")
+def cls(name, nets, w, c): return f'\n    (class {name} {" ".join(nets)}\n      {via}      (rule\n        (width {w})\n        (clearance {c})\n      )\n    )'
+k = s.index("\n  )\n  (wiring")
+s = s[:k] + cls("kicad_default", rest, 250, 200) + cls("Power", sorted(PWR), 800, 250) + cls("Ground", sorted(GND), 500, 250) + cls("VBAT", sorted(VB), 800, 300) + s[k:]
 open(p, "w").write(s)
