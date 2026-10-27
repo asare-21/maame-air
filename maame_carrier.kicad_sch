@@ -4215,16 +4215,8 @@
 		(uuid "214dc14d-e078-5454-b8e4-ca157e6161f7")
 	)
 	(no_connect
-		(at 347.98 48.26)
-		(uuid "2815e09d-e4fa-5442-95d6-96600d06d655")
-	)
-	(no_connect
 		(at 312.42 60.96)
 		(uuid "4a922e8d-1f7c-5c8e-a9d5-3be62ae46e1d")
-	)
-	(no_connect
-		(at 347.98 83.82)
-		(uuid "53d6adbd-4fd6-502a-be4d-887b720ec430")
 	)
 	(no_connect
 		(at 312.42 58.42)
@@ -4235,10 +4227,6 @@
 		(uuid "75b0f047-3782-5b33-b7b0-b81d1db3ff01")
 	)
 	(no_connect
-		(at 347.98 81.28)
-		(uuid "7f16fc1d-1c82-546a-a381-ecf6ae5e6991")
-	)
-	(no_connect
 		(at 347.98 66.04)
 		(uuid "87d9b0d2-af14-5c1f-9e31-8f1f2ea3ea78")
 	)
@@ -4247,20 +4235,12 @@
 		(uuid "9b062c18-547b-58ef-8872-a6a59aa49ad2")
 	)
 	(no_connect
-		(at 347.98 78.74)
-		(uuid "b65f2f64-8d27-5116-b071-7589fc1cdfe0")
-	)
-	(no_connect
 		(at 312.42 63.5)
 		(uuid "bdf9dc55-cb0d-5d49-a10b-8ad903695b50")
 	)
 	(no_connect
 		(at 165.1 119.38)
 		(uuid "cc34b103-e4da-5433-9793-c37376a65cf2")
-	)
-	(no_connect
-		(at 312.42 78.74)
-		(uuid "ea47ee59-ff10-58ad-80a7-e136d4b2636c")
 	)
 	(wire
 		(pts
@@ -8333,6 +8313,1545 @@
 			(justify right bottom)
 		)
 		(uuid "2ef81c1f-5ddf-488b-85cc-adaf455295bb")
+	)
+	(symbol
+		(lib_id "maame_carrier:Resistor")
+		(at 203.2 154.94 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f0eaae89-3758-464d-91ff-aed2ced90543")
+		(property "Reference" "R2"
+			(at 203.2 149.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(bold yes)
+				)
+			)
+		)
+		(property "Value" "1k 0805"
+			(at 203.2 160.02 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 203.2 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 203.2 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 203.2 154.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a6b05761-c710-4061-92dc-26c208fc4c7f")
+		)
+		(pin "2"
+			(uuid "84285cab-1bcb-484d-a77a-16696509a3e6")
+		)
+		(instances
+			(project "maame_carrier"
+				(path "/347efe6d-e5df-5320-8613-16be4824f8d1"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "maame_carrier:LED")
+		(at 254 154.94 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "85c5e09e-eaca-4dca-adde-4d7c98f87519")
+		(property "Reference" "D2"
+			(at 254 149.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(bold yes)
+				)
+			)
+		)
+		(property "Value" "Green 0805: 5V_FC on"
+			(at 254 160.02 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 254 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 254 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 254 154.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "5a8b9ff3-ac33-4800-9b83-0de0d1010618")
+		)
+		(pin "1"
+			(uuid "66da7d29-052e-41ae-a482-d694041b567d")
+		)
+		(instances
+			(project "maame_carrier"
+				(path "/347efe6d-e5df-5320-8613-16be4824f8d1"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 190.5 154.94) (xy 185.42 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab3d0e9c-5d03-4d85-a5f3-ff69663c7ccc")
+	)
+	(label "5V_FC"
+		(at 185.42 154.94 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "232e18b5-9ee0-4f9e-aa87-c48ff2555b6a")
+	)
+	(wire
+		(pts
+			(xy 215.9 154.94) (xy 220.98 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "532ccbfa-1712-460b-bc97-173f92757a67")
+	)
+	(label "LED2_A"
+		(at 220.98 154.94 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "acc9e11d-16c5-4c06-bb70-c7e35562dc6c")
+	)
+	(wire
+		(pts
+			(xy 241.3 154.94) (xy 236.22 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "41946491-f501-458e-92ed-e3e947d6d0a8")
+	)
+	(label "LED2_A"
+		(at 236.22 154.94 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "2982275a-5af8-41cc-8b48-57984056bf19")
+	)
+	(wire
+		(pts
+			(xy 266.7 154.94) (xy 271.78 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a556a7e-b5cc-44b4-a74f-78c6a4611b92")
+	)
+	(label "GND"
+		(at 271.78 154.94 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1c39f86a-b884-4020-8f0f-cebab389476c")
+	)
+	(symbol
+		(lib_id "maame_carrier:Resistor")
+		(at 203.2 162.56 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2403742d-a2a3-491b-bba9-88e2ec29dd84")
+		(property "Reference" "R3"
+			(at 203.2 157.48 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(bold yes)
+				)
+			)
+		)
+		(property "Value" "330R 0805"
+			(at 203.2 167.64 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 203.2 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 203.2 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 203.2 162.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c4958b65-5777-4d18-abc4-9933206c8d36")
+		)
+		(pin "2"
+			(uuid "c5cf9fca-2c66-43c9-b097-73395e88ee9d")
+		)
+		(instances
+			(project "maame_carrier"
+				(path "/347efe6d-e5df-5320-8613-16be4824f8d1"
+					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "maame_carrier:LED")
+		(at 254 162.56 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "45a82aeb-4121-4443-8704-2b9e294dec54")
+		(property "Reference" "D3"
+			(at 254 157.48 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(bold yes)
+				)
+			)
+		)
+		(property "Value" "Green 0805: Pi active (GPIO16)"
+			(at 254 167.64 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 254 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 254 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 254 162.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "45106989-2d0e-4533-8ceb-7c40ed364da5")
+		)
+		(pin "1"
+			(uuid "e7f1d707-e765-42aa-9272-f5fc16e77fe0")
+		)
+		(instances
+			(project "maame_carrier"
+				(path "/347efe6d-e5df-5320-8613-16be4824f8d1"
+					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 190.5 162.56) (xy 185.42 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "87709a45-e60b-49cf-8c6c-bb78908e7f05")
+	)
+	(label "LED_PI_ACTIVE"
+		(at 185.42 162.56 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "52a68436-a993-4b36-8438-26c886cc560c")
+	)
+	(wire
+		(pts
+			(xy 215.9 162.56) (xy 220.98 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cecc2f7b-8111-4fe1-b8b3-95440e9e370c")
+	)
+	(label "LED3_A"
+		(at 220.98 162.56 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "791f8d61-deed-4949-89d3-3310ca3e6621")
+	)
+	(wire
+		(pts
+			(xy 241.3 162.56) (xy 236.22 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1b08f0e-524c-47d6-ad4d-62d85151f379")
+	)
+	(label "LED3_A"
+		(at 236.22 162.56 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "568a6e71-f0b0-4a00-86b9-d920a12b1c2c")
+	)
+	(wire
+		(pts
+			(xy 266.7 162.56) (xy 271.78 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7bf1984-a885-4395-828e-8902bebcc927")
+	)
+	(label "GND"
+		(at 271.78 162.56 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2f6733a4-33b6-4b2d-870a-19188b0c5933")
+	)
+	(symbol
+		(lib_id "maame_carrier:Resistor")
+		(at 203.2 170.18 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f1304f7b-ff5c-4a85-9cf2-3c562da15c82")
+		(property "Reference" "R4"
+			(at 203.2 165.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(bold yes)
+				)
+			)
+		)
+		(property "Value" "330R 0805"
+			(at 203.2 175.26 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 203.2 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 203.2 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 203.2 170.18 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b8fd2e9b-0278-4fd7-9d1c-32ca48dd3a1c")
+		)
+		(pin "2"
+			(uuid "cf21dac4-96df-4951-b1a8-676948311da5")
+		)
+		(instances
+			(project "maame_carrier"
+				(path "/347efe6d-e5df-5320-8613-16be4824f8d1"
+					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "maame_carrier:LED")
+		(at 254 170.18 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3b54b929-33b8-491c-afee-0e5210acac81")
+		(property "Reference" "D4"
+			(at 254 165.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(bold yes)
+				)
+			)
+		)
+		(property "Value" "Yellow 0805: data (GPIO20)"
+			(at 254 175.26 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 254 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 254 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 254 170.18 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "e5e67a62-87c7-4459-8fe1-b9e244cacd34")
+		)
+		(pin "1"
+			(uuid "9fda4388-cf8b-40a3-acc2-d72990965141")
+		)
+		(instances
+			(project "maame_carrier"
+				(path "/347efe6d-e5df-5320-8613-16be4824f8d1"
+					(reference "D4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 190.5 170.18) (xy 185.42 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "820f4cba-4b63-4590-af06-4aba4e56b60a")
+	)
+	(label "LED_DATA"
+		(at 185.42 170.18 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d76f0581-072d-48ca-860e-df7d35ecc075")
+	)
+	(wire
+		(pts
+			(xy 215.9 170.18) (xy 220.98 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3468163b-d6d9-48da-86a3-24bb1380b0bb")
+	)
+	(label "LED4_A"
+		(at 220.98 170.18 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5e714013-3572-4521-aae6-63481a9c79e6")
+	)
+	(wire
+		(pts
+			(xy 241.3 170.18) (xy 236.22 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94bcdf6d-d6a5-40ae-a2c9-3675ffdc8b9a")
+	)
+	(label "LED4_A"
+		(at 236.22 170.18 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "486f116c-5d34-452f-9233-590bc3cf62db")
+	)
+	(wire
+		(pts
+			(xy 266.7 170.18) (xy 271.78 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "538408f0-c313-42fb-b1b6-a44509f2453b")
+	)
+	(label "GND"
+		(at 271.78 170.18 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cb0c8c78-6e77-4d10-9985-16d33d1a3cab")
+	)
+	(symbol
+		(lib_id "maame_carrier:Resistor")
+		(at 203.2 177.8 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "832a9b4b-ff1f-4e71-947d-05e4229cb6cd")
+		(property "Reference" "R5"
+			(at 203.2 172.72 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(bold yes)
+				)
+			)
+		)
+		(property "Value" "330R 0805"
+			(at 203.2 182.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 203.2 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 203.2 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 203.2 177.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7d29fbd6-af9a-49df-a4bf-7503365ed280")
+		)
+		(pin "2"
+			(uuid "18f197d6-c329-4a1a-a2a8-a4d683c301e4")
+		)
+		(instances
+			(project "maame_carrier"
+				(path "/347efe6d-e5df-5320-8613-16be4824f8d1"
+					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "maame_carrier:LED")
+		(at 254 177.8 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "793be7ec-9ddf-47c8-bb6e-6fb23b63ef49")
+		(property "Reference" "D5"
+			(at 254 172.72 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(bold yes)
+				)
+			)
+		)
+		(property "Value" "Green 0805: battery high (GPIO19)"
+			(at 254 182.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 254 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 254 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 254 177.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "11128f67-1448-440d-8714-8db03942e16e")
+		)
+		(pin "1"
+			(uuid "d5d5973e-52e0-45ff-a276-8c951dda6a05")
+		)
+		(instances
+			(project "maame_carrier"
+				(path "/347efe6d-e5df-5320-8613-16be4824f8d1"
+					(reference "D5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 190.5 177.8) (xy 185.42 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91a85ddb-e0e3-46db-9d8d-6f19eab75cc3")
+	)
+	(label "LED_BATT_HI"
+		(at 185.42 177.8 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6fd57cab-b9e1-4fe5-94ce-8e3beb07c352")
+	)
+	(wire
+		(pts
+			(xy 215.9 177.8) (xy 220.98 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3367264a-f5e1-4a28-8817-acab2d99ecc9")
+	)
+	(label "LED5_A"
+		(at 220.98 177.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e84b3ca6-928c-45b8-bfa0-fffda82e5415")
+	)
+	(wire
+		(pts
+			(xy 241.3 177.8) (xy 236.22 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4d177648-57da-4cec-b1e5-3399cd79f7b8")
+	)
+	(label "LED5_A"
+		(at 236.22 177.8 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3cdebd66-9820-4032-844a-c8c59acaba4a")
+	)
+	(wire
+		(pts
+			(xy 266.7 177.8) (xy 271.78 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4c14c490-b793-4c61-a0d2-4f593b55424a")
+	)
+	(label "GND"
+		(at 271.78 177.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a126da72-1961-46f3-a8ce-9568cafc1db6")
+	)
+	(symbol
+		(lib_id "maame_carrier:Resistor")
+		(at 203.2 185.42 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0994a2e4-7634-4f2d-a289-7d337b3484ba")
+		(property "Reference" "R6"
+			(at 203.2 180.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(bold yes)
+				)
+			)
+		)
+		(property "Value" "330R 0805"
+			(at 203.2 190.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 203.2 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 203.2 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 203.2 185.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1cf790be-7155-4ca0-a466-c8defe689e65")
+		)
+		(pin "2"
+			(uuid "2773e16f-159e-4286-baff-0430e4e129bb")
+		)
+		(instances
+			(project "maame_carrier"
+				(path "/347efe6d-e5df-5320-8613-16be4824f8d1"
+					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "maame_carrier:LED")
+		(at 254 185.42 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "eb88c7f9-54e9-46c2-9a5e-cd6691a8907b")
+		(property "Reference" "D6"
+			(at 254 180.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(bold yes)
+				)
+			)
+		)
+		(property "Value" "Yellow 0805: battery mid (GPIO21)"
+			(at 254 190.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 254 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 254 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 254 185.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "5a4e61c2-d637-4936-8e3f-dea6085e9d64")
+		)
+		(pin "1"
+			(uuid "3123d61c-c2cc-48a5-938d-85c1ed5a6aa7")
+		)
+		(instances
+			(project "maame_carrier"
+				(path "/347efe6d-e5df-5320-8613-16be4824f8d1"
+					(reference "D6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 190.5 185.42) (xy 185.42 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9c31510-c914-4a21-9898-558286a7f978")
+	)
+	(label "LED_BATT_MID"
+		(at 185.42 185.42 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0fe688ab-2f58-465b-8457-1c5be4cd5736")
+	)
+	(wire
+		(pts
+			(xy 215.9 185.42) (xy 220.98 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e6c4ebcd-3954-4489-98e5-e34fe4f0fad4")
+	)
+	(label "LED6_A"
+		(at 220.98 185.42 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9989e998-c5f8-4fe2-bccd-f3eb5e7e0f92")
+	)
+	(wire
+		(pts
+			(xy 241.3 185.42) (xy 236.22 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0697df98-2f35-4a70-b439-29c21fbeea61")
+	)
+	(label "LED6_A"
+		(at 236.22 185.42 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "9e9882b9-15ec-4b0a-a794-edeb6d1341d4")
+	)
+	(wire
+		(pts
+			(xy 266.7 185.42) (xy 271.78 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dff869a7-b067-4303-a303-8bcf5639ca87")
+	)
+	(label "GND"
+		(at 271.78 185.42 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ed63c9c5-b4a9-40be-9a3a-527180d00412")
+	)
+	(symbol
+		(lib_id "maame_carrier:Resistor")
+		(at 203.2 193.04 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8251fa5d-45d6-4907-b92b-03db14cb42e6")
+		(property "Reference" "R7"
+			(at 203.2 187.96 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(bold yes)
+				)
+			)
+		)
+		(property "Value" "390R 0805"
+			(at 203.2 198.12 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 203.2 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 203.2 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 203.2 193.04 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d8d6d9ab-428d-4a20-b82b-0c6dc53c4e51")
+		)
+		(pin "2"
+			(uuid "34d85ae3-a67c-43dc-acad-e5e9c6d7635a")
+		)
+		(instances
+			(project "maame_carrier"
+				(path "/347efe6d-e5df-5320-8613-16be4824f8d1"
+					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "maame_carrier:LED")
+		(at 254 193.04 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f6c26c34-dd68-443b-85ee-3b981cebecd9")
+		(property "Reference" "D7"
+			(at 254 187.96 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(bold yes)
+				)
+			)
+		)
+		(property "Value" "Red 0805: battery low (GPIO18)"
+			(at 254 198.12 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 254 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 254 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 254 193.04 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "17fdf07e-c9aa-4a41-8364-5f91f5df6cf0")
+		)
+		(pin "1"
+			(uuid "bc92fb86-6cda-4f39-934e-69e97a06fb3c")
+		)
+		(instances
+			(project "maame_carrier"
+				(path "/347efe6d-e5df-5320-8613-16be4824f8d1"
+					(reference "D7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 190.5 193.04) (xy 185.42 193.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7468975-864b-42ec-9e19-c6f6135818e4")
+	)
+	(label "LED_BATT_LO"
+		(at 185.42 193.04 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "63f7abbb-ce3f-4414-9d1e-4ee4b5da467c")
+	)
+	(wire
+		(pts
+			(xy 215.9 193.04) (xy 220.98 193.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "77ba58c0-2488-40a3-b992-ef66fcd5e9bf")
+	)
+	(label "LED7_A"
+		(at 220.98 193.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d6123cde-08e0-4824-9be9-12b0e10bf8a7")
+	)
+	(wire
+		(pts
+			(xy 241.3 193.04) (xy 236.22 193.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a47e3677-e3c3-4cae-811d-4916a9eab811")
+	)
+	(label "LED7_A"
+		(at 236.22 193.04 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "ce4f4cb0-3c07-4b2d-87be-70c12db09e61")
+	)
+	(wire
+		(pts
+			(xy 266.7 193.04) (xy 271.78 193.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6234350f-3a2f-47df-b978-a8914c8c0803")
+	)
+	(label "GND"
+		(at 271.78 193.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b9b1a3b8-96e5-4fdb-8eda-6ad2911ad826")
+	)
+	(wire
+		(pts
+			(xy 347.98 78.74) (xy 353.06 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "61f7fe86-f57b-4ce8-ac15-49b46561f478")
+	)
+	(label "LED_PI_ACTIVE"
+		(at 353.06 78.74 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4f58cc5e-bef2-498f-9085-0e505fff8b5b")
+	)
+	(wire
+		(pts
+			(xy 347.98 81.28) (xy 353.06 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e08d5c3-4287-4eaa-9124-9e2aea87eaf2")
+	)
+	(label "LED_DATA"
+		(at 353.06 81.28 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a1e52c48-a4a8-4235-b5fb-8e70676b5616")
+	)
+	(wire
+		(pts
+			(xy 312.42 78.74) (xy 307.34 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f59a0291-8eda-4341-9f29-063479f92199")
+	)
+	(label "LED_BATT_HI"
+		(at 307.34 78.74 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "809a599a-486f-4b46-8f0b-08b1e8217449")
+	)
+	(wire
+		(pts
+			(xy 347.98 83.82) (xy 353.06 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7514ae70-c990-4d57-833a-1ab1390cff8c")
+	)
+	(label "LED_BATT_MID"
+		(at 353.06 83.82 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "38bbf3e2-e51d-4a26-b074-b2e8fc82187c")
+	)
+	(wire
+		(pts
+			(xy 347.98 48.26) (xy 353.06 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "73435da5-d4c9-45ea-8e75-3fbcb6861361")
+	)
+	(label "LED_BATT_LO"
+		(at 353.06 48.26 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "52f8422c-b1d4-4fd8-bc66-07aa0bcb9245")
+	)
+	(text "9. Status LEDs: D2 FC 5V and D1 AUX 5V are hardware. D3-D7 are driven by Pi software: GPIO16 PI ACTIVE, GPIO20 DATA, GPIO19/21/18 BATT HIGH/MID/LOW (from FC BATTERY_STATUS via MAVLink). They stay off until the Pi script runs."
+		(exclude_from_sim no)
+		(at 20.32 238.76 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "f93d8df3-32e8-42f2-9999-597410410bfc")
 	)
 	(sheet_instances
 		(path "/"
