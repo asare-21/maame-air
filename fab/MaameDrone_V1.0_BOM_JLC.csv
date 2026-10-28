@@ -11,8 +11,6 @@ Red 0805: battery low (GPIO18),D7,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,
 B560C 60V 5A Schottky SMC,D8,D_SMC,C85100
 "SMBJ30A TVS 30V standoff, 48.4V clamp",D9,D_SMB,C113998
 "PTC fuse 1812 30V 2A hold 4A trip (BSMD1812-200-30V, LCSC C960026)","F1,F2",Fuse_1812_4532Metric_Pad1.30x3.40mm_HandSolder,C960026
-Kakute left pad strip: 2x9 male header 2.54 mm (JLC THT),J1,PinHeader_2x09_P2.54mm_Vertical,C42372517
-Kakute top pads G 5V Vi CAM: 1x4 male header (JLC THT),"J23,J24,J25",PinHeader_1x04_P2.54mm_Vertical,C32713270
 8.2uH 8.4A Coilcraft XAL6060-822MEC,L1,L_Coilcraft_XAL6060-XXX,C19191627
 1k 0805,"R1,R2",R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C17513
 330R 0805,"R3,R4,R5,R6",R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C17630
@@ -21,5 +19,4 @@ Kakute top pads G 5V Vi CAM: 1x4 male header (JLC THT),"J23,J24,J25",PinHeader_1
 13k 1% 0603 (COMP),R9,R_0603_1608Metric,C22797
 53.6k 1% 0603 (FB top),R10,R_0603_1608Metric,C23074
 10k 1% 0603 (FB bottom),R11,R_0603_1608Metric,C25804
-"Pi Zero W socket: 2x20 female header 2.54 mm, 8.5 mm (JLC THT)",U1,Pi_Zero_Socketed_FaceDown_MountingHoles,C5124634
 TPS54360BDDAR 60V 3.5A buck,U2,TI_SO-PowerPAD-8_ThermalVias,C524806

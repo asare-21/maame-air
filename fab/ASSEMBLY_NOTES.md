@@ -1,13 +1,24 @@
 # MaameDrone V1.0: assembly notes
 
 ## What JLCPCB fits
-All SMD parts, plus these through-hole parts:
-- J1: 2x9 male header, 2.54 mm (LCSC C42372517)
-- J23, J24, J25: 1x4 male headers, 2.54 mm (LCSC C32713270)
-- U1: Pi socket, 2x20 female header, 2.54 mm, 8.5 mm tall (LCSC C5124634)
+Only the SMD parts (U2, L1, D1-D9, F1, F2, C1-C8, R1-R11): 32 parts, 21 BOM lines.
+Every through-hole part is hand-soldered and left out of the BOM/CPL (still shown in the 3D view).
 
-Everything else (peripheral headers J6-J13, J17, J18, J7, JST-XH output J20, wire pads J3) is left out of the BOM/CPL and hand-soldered.
-In JLC's placement preview, check the headers sit square on their holes (the CPL gives each header's centre).
+## Parts to buy and hand-solder (all 2.54 mm pitch unless stated; LCSC numbers, in stock at JLC/LCSC on 2026-10-28)
+| Qty | Part | LCSC | Where |
+|---|---|---|---|
+| 1 | 2x20 female socket, 8.5 mm tall | C5124634 | U1 (Pi) |
+| 1 | 2x9 male header | C42372517 | J1 (Kakute) |
+| 1 | 2x8 male header | C32713281 | J7 (Pi GPIO) |
+| 1 | 1x7 male header | C32713273 | J18 (Pi SPI) |
+| 3 | 1x6 male header | C32713272 | J8, J11, J17 |
+| 6 | 1x4 male header | C32713270 | J23, J24, J25, J6, J9, J12 |
+| 1 | 1x3 male header | C32713269 | J10 |
+| 1 | 1x2 male header | C32713268 | J13 |
+| 1 | 2-pin JST-XH compatible, vertical, 2.5 mm | C2908600 | J20 (VBAT OUT) |
+| - | battery wires, 18 AWG | - | J3 pads |
+Long strips of male header can be snapped to length instead of buying each size.
+Solder U1 square and flat (8.5 mm socket): tack one pin at each end, check, then solder the rest.
 
 ## Pi Zero W
 The Pi plugs onto U1 FACE DOWN: its 2x20 male header is soldered on the Pi's top (component) side with the pins
