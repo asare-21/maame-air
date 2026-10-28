@@ -1,0 +1,11 @@
+Designator,Quantity,Description,LCSC Part #,Notes
+U1,1,"Female socket 2x20, 2.54 mm, 8.5 mm tall, through-hole",C5124634,Pi Zero socket; solder square and flat
+J1,1,"Male pin header 2x9, 2.54 mm, vertical",C42372517,Kakute left pad strip
+J7,1,"Male pin header 2x8, 2.54 mm, vertical",C32713281,Pi GPIO
+J18,1,"Male pin header 1x7, 2.54 mm, vertical",C32713273,Pi SPI
+"J8,J11,J17",3,"Male pin header 1x6, 2.54 mm, vertical",C32713272,"GPS, TF-Luna, FC spare"
+"J6,J9,J12,J23,J24,J25",6,"Male pin header 1x4, 2.54 mm, vertical",C32713270,"Power spare, SiK, I2C spare, Kakute top/bottom/JST"
+J10,1,"Male pin header 1x3, 2.54 mm, vertical",C32713269,iBUS receiver
+J13,1,"Male pin header 1x2, 2.54 mm, vertical",C32713268,Servo 5V
+J20,1,"JST-XH compatible 2-pin, 2.5 mm, vertical",C2908600,VBAT OUT
+J3,2,"Silicone wire 18 AWG, red + black",-,Battery leads to the 0.5 mm2 wire pads
