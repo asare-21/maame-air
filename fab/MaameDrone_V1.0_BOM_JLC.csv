@@ -5,21 +5,14 @@ Comment,Designator,Footprint,LCSC Part #
 6.8nF 50V 0603 (COMP),C5,C_0603_1608Metric,C1631
 47uF 10V X7R 1210 (OUT),"C6,C7",C_1210_3225Metric,C84494
 39pF 50V C0G 0603 (COMP),C8,C_0603_1608Metric,C107049
-Green 0805: 5V_AUX on,D1,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C2297
-Green 0805: 5V_FC on,D2,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C2297
-Green 0805: Pi active (GPIO16),D3,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C2297
-Yellow 0805: data (GPIO20),D4,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C2296
-Green 0805: battery high (GPIO19),D5,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C2297
-Yellow 0805: battery mid (GPIO21),D6,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C2296
+Green 0805: 5V_AUX on,"D1,D2,D3,D5",LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C2297
+Yellow 0805: data (GPIO20),"D4,D6",LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C2296
 Red 0805: battery low (GPIO18),D7,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C84256
 B560C 60V 5A Schottky SMC,D8,D_SMC,C85100
 "SMBJ30A TVS 30V standoff, 48.4V clamp",D9,D_SMB,C113998
-"PTC fuse 1812 30V 2A hold 4A trip (BSMD1812-200-30V, LCSC C960026)",F1,Fuse_1812_4532Metric_Pad1.30x3.40mm_HandSolder,C960026
-PTC fuse 1812 30V 2A hold 4A trip (BSMD1812-200-30V) - VBAT OUT,F2,Fuse_1812_4532Metric_Pad1.30x3.40mm_HandSolder,C960026
+"PTC fuse 1812 30V 2A hold 4A trip (BSMD1812-200-30V, LCSC C960026)","F1,F2",Fuse_1812_4532Metric_Pad1.30x3.40mm_HandSolder,C960026
 Kakute left pad strip: 2x9 male header 2.54 mm (JLC THT),J1,PinHeader_2x09_P2.54mm_Vertical,C42372517
-Kakute top pads G 5V Vi CAM: 1x4 male header (JLC THT),J23,PinHeader_1x04_P2.54mm_Vertical,C32713270
-Kakute bottom pads Z- 5V G LED: 1x4 male header (JLC THT),J24,PinHeader_1x04_P2.54mm_Vertical,C32713270
-Kakute JST 9V(NC) T1 R1 G: 1x4 male header (JLC THT),J25,PinHeader_1x04_P2.54mm_Vertical,C32713270
+Kakute top pads G 5V Vi CAM: 1x4 male header (JLC THT),"J23,J24,J25",PinHeader_1x04_P2.54mm_Vertical,C32713270
 8.2uH 8.4A Coilcraft XAL6060-822MEC,L1,L_Coilcraft_XAL6060-XXX,C19191627
 1k 0805,"R1,R2",R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C17513
 330R 0805,"R3,R4,R5,R6",R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C17630
