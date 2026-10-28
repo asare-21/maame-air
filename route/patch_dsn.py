@@ -30,7 +30,7 @@ for m in blocks:
     head = m.group(0)[:m.group(0).index("(circuit")]
     toks += re.findall(r'"[^"]*"|\S+', head)[2:]
 for m in reversed(blocks): s = s[:m.start()] + s[m.end():]
-PWR, GND, VB = {"/5V_AUX", "/5V_FC", "/BEC_SW", "/BEC12_SW", "/12V_AUX", "/9V_FC"}, {"/GND"}, {"/VBAT", "/VBAT_F", "/VBAT_OUT_F"}
+PWR, GND, VB = {"/5V_AUX", "/5V_FC", "/BEC_SW"}, {"/GND"}, {"/VBAT", "/VBAT_F", "/VBAT_OUT_F"}
 rest = sorted({t for t in toks if t not in PWR | GND | VB})
 via = '(circuit\n        (use_via "Via[0-1]_600:300_um")\n      )\n'
 def cls(name, nets, w, c): return f'\n    (class {name} {" ".join(nets)}\n      {via}      (rule\n        (width {w})\n        (clearance {c})\n      )\n    )'

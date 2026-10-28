@@ -527,18 +527,6 @@
       {
         "netclass": "Power",
         "pattern": "/BEC_SW"
-      },
-      {
-        "netclass": "Power",
-        "pattern": "/BEC12_SW"
-      },
-      {
-        "netclass": "Power",
-        "pattern": "/12V_AUX"
-      },
-      {
-        "netclass": "Power",
-        "pattern": "/9V_FC"
       }
     ]
   },
