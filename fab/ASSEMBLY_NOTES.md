@@ -12,7 +12,7 @@ In JLC's placement preview, check the headers sit square on their holes (the CPL
 ## Pi Zero W
 The Pi plugs onto U1 FACE DOWN: its 2x20 male header is soldered on the Pi's top (component) side with the pins
 pointing up, as on a Pi Zero WH. Turn the Pi over and push it onto the socket so that:
-- pin 1 (3V3, square pad on the carrier, "< PIN 1") is at the RIGHT end of the socket, inner row,
+- pin 1 (3V3, square pad on the carrier, "< PIN 1") is at the RIGHT end of the socket, on the row nearer the REAR edge (the 5V row is nearer the board middle),
 - the Pi's SD card is at the right, its USB/HDMI edge at the rear of the carrier.
 Every pin is named on the silkscreen. Do not fit the Pi face up: that mirrors the pinout and puts 3V3/5V on the wrong pins.
 Clearance: the Pi's component face sits about 11 mm above the carrier (8.5 mm socket + ~2.5 mm header spacer); the
