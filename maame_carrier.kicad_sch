@@ -6661,7 +6661,7 @@
 				)
 			)
 		)
-		(property "Footprint" "maame_carrier:Pi_Zero_Socketed_FaceUp_MountingHoles"
+		(property "Footprint" "maame_carrier:Pi_Zero_Socketed_FaceDown_MountingHoles"
 			(at 330.2 35.56 0)
 			(hide yes)
 			(show_name no)

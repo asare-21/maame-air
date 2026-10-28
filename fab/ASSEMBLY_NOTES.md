@@ -10,11 +10,14 @@ Everything else (peripheral headers J6-J13, J17, J18, J7, JST-XH output J20, wir
 In JLC's placement preview, check the headers sit square on their holes (the CPL gives each header's centre).
 
 ## Pi Zero W
-The Pi plugs straight onto U1, component side up (chips facing up, SD card on the left, USB/HDMI at the rear).
-Solder a 2x20 male header on the Pi's UNDERSIDE: push the short ends up through the holes from below, so the
-plastic spacer and the long pins are under the Pi, and solder on the top (component) side. The pins then point down into U1.
-**Do not use a Pi Zero WH** (factory header on top, pins pointing up): it would have to go in upside down, which
-mirrors the pinout and puts 3V3/5V on the wrong pins.
+The Pi plugs onto U1 FACE DOWN: its 2x20 male header is soldered on the Pi's top (component) side with the pins
+pointing up, as on a Pi Zero WH. Turn the Pi over and push it onto the socket so that:
+- pin 1 (3V3, square pad on the carrier, "< PIN 1") is at the RIGHT end of the socket, inner row,
+- the Pi's SD card is at the right, its USB/HDMI edge at the rear of the carrier.
+Every pin is named on the silkscreen. Do not fit the Pi face up: that mirrors the pinout and puts 3V3/5V on the wrong pins.
+Clearance: the Pi's component face sits about 11 mm above the carrier (8.5 mm socket + ~2.5 mm header spacer); the
+tallest Pi parts (mini-HDMI ~3.2 mm) leave ~7.8 mm, and there are no carrier parts under the Pi outline.
+Pi standoffs, if used, need to match that gap (measure; about 11 mm).
 
 ## Kakute harness (J1, J23, J24, J25)
 The Kakute pads are flat solder pads, so the Kakute does not plug straight onto the carrier.
@@ -37,7 +40,7 @@ Pin 1 of each header is the square pad; every pin is labelled on the silkscreen.
 
 ## Mechanical
 - Frame: 4x M2.5 slots on a 48.5 mm square, standoffs at least 10 mm. Trim leads to 1.5 mm or less underneath.
-- Pi Zero: standard-height 2x20 socket (8.5 mm).
+- Pi Zero: face down on the standard-height 2x20 socket (8.5 mm); see the Pi Zero W section.
 
 ## First power-up (bench supply, about 20 V, current limited, nothing plugged in)
 1. 5V_AUX on J6/J13: 5.0-5.1 V, AUX5V LED on.

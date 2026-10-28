@@ -28,5 +28,5 @@ Kakute JST 9V(NC) T1 R1 G: 1x4 male header (JLC THT),J25,PinHeader_1x04_P2.54mm_
 13k 1% 0603 (COMP),R9,R_0603_1608Metric,C22797
 53.6k 1% 0603 (FB top),R10,R_0603_1608Metric,C23074
 10k 1% 0603 (FB bottom),R11,R_0603_1608Metric,C25804
-"Pi Zero W socket: 2x20 female header 2.54 mm, 8.5 mm (JLC THT)",U1,Pi_Zero_Socketed_FaceUp_MountingHoles,C5124634
+"Pi Zero W socket: 2x20 female header 2.54 mm, 8.5 mm (JLC THT)",U1,Pi_Zero_Socketed_FaceDown_MountingHoles,C5124634
 TPS54360BDDAR 60V 3.5A buck,U2,TI_SO-PowerPAD-8_ThermalVias,C524806
