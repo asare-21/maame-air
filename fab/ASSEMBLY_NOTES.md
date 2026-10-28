@@ -10,8 +10,11 @@ Everything else (peripheral headers J6-J13, J17, J18, J7, JST-XH output J20, wir
 In JLC's placement preview, check the headers sit square on their holes (the CPL gives each header's centre).
 
 ## Pi Zero W
-The Pi plugs straight onto U1, component side up. A plain Pi Zero W has no header: solder a 2x20 male header
-on it first (or use a Pi Zero WH, which comes with one).
+The Pi plugs straight onto U1, component side up (chips facing up, SD card on the left, USB/HDMI at the rear).
+Solder a 2x20 male header on the Pi's UNDERSIDE: push the short ends up through the holes from below, so the
+plastic spacer and the long pins are under the Pi, and solder on the top (component) side. The pins then point down into U1.
+**Do not use a Pi Zero WH** (factory header on top, pins pointing up): it would have to go in upside down, which
+mirrors the pinout and puts 3V3/5V on the wrong pins.
 
 ## Kakute harness (J1, J23, J24, J25)
 The Kakute pads are flat solder pads, so the Kakute does not plug straight onto the carrier.

@@ -15270,6 +15270,17 @@
 			)
 		)
 	)
+	(gr_text "PI HEADER ON UNDERSIDE, PINS DOWN (NOT A ZERO WH)"
+		(at 47.5 110.2 0)
+		(layer "F.SilkS")
+		(uuid "06f71eca-cabc-4b91-808c-2d199950b94a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
 	(gr_text "USB / HDMI SIDE"
 		(at 47.5 112.2 0)
 		(layer "F.SilkS")
