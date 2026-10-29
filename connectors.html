@@ -1,0 +1,2041 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="User guide for the MaameDrone V1.0 carrier board (Kakute H7 + Pi Zero, 6S)">
+      
+      
+      
+      
+        <link rel="prev" href="index.html">
+      
+      
+        <link rel="next" href="power.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
+    
+    
+      
+        <title>Connectors and pinouts - MaameDrone V1.0 Carrier Board</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="light-green">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#connectors-and-pinouts" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="index.html" title="MaameDrone V1.0 Carrier Board" class="md-header__button md-logo" aria-label="MaameDrone V1.0 Carrier Board" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            MaameDrone V1.0 Carrier Board
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Connectors and pinouts
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="light-green"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="green" data-md-color-accent="light-green"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="MaameDrone V1.0 Carrier Board" class="md-nav__button md-logo" aria-label="MaameDrone V1.0 Carrier Board" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    MaameDrone V1.0 Carrier Board
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Connectors and pinouts
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="connectors.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Connectors and pinouts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#power-connectors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Power connectors
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Power connectors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#j3-vbat-tap" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        J3 VBAT TAP
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#j20-vbat-out" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        J20 VBAT OUT
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#j6-pwr-spare" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        J6 PWR SPARE
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#j13-servo-5v" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        J13 SERVO 5V
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#peripheral-headers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Peripheral headers
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Peripheral headers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#j8-gps-tbs-m10q" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        J8 GPS (TBS M10Q)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#j11-tf-luna-i2c-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        J11 TF-Luna (I2C mode)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#j12-i2c-spare" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        J12 I2C SPARE
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#j9-sik-radio-uart4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        J9 SiK radio (UART4)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#j10-rc-receiver-ibus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        J10 RC receiver (iBUS)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#j17-fc-spare" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        J17 FC SPARE
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pi-expansion-headers-33-v-logic-only" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pi expansion headers (3.3 V logic only)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pi expansion headers (3.3 V logic only)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#j7-pi-gpio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        J7 PI GPIO
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#j18-pi-spi0" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        J18 PI SPI0
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kakute-harness-headers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kakute harness headers
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Kakute harness headers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#j1-2x9-kakute-left-pad-strip" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        J1 (2x9): Kakute left pad strip
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#j23-1x4-kakute-top-edge-pads" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        J23 (1x4): Kakute top-edge pads
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#j24-1x4-kakute-bottom-edge-pads" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        J24 (1x4): Kakute bottom-edge pads
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#j25-1x4-kakute-6-pin-jst-9v-g-t1-r1-g-r6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        J25 (1x4): Kakute 6-pin JST (9V G T1 R1 G R6)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#u1-pi-zero-socket" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        U1 Pi Zero socket
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#status-leds" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Status LEDs
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="power.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Power
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="compatibility.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Compatibility
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="mounting.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mounting and cover
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="software.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Firmware and software
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="bom.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bill of materials
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="assembly.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Assembly and bring-up
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="limitations.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Limitations and open items
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#power-connectors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Power connectors
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Power connectors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#j3-vbat-tap" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        J3 VBAT TAP
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#j20-vbat-out" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        J20 VBAT OUT
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#j6-pwr-spare" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        J6 PWR SPARE
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#j13-servo-5v" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        J13 SERVO 5V
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#peripheral-headers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Peripheral headers
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Peripheral headers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#j8-gps-tbs-m10q" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        J8 GPS (TBS M10Q)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#j11-tf-luna-i2c-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        J11 TF-Luna (I2C mode)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#j12-i2c-spare" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        J12 I2C SPARE
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#j9-sik-radio-uart4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        J9 SiK radio (UART4)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#j10-rc-receiver-ibus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        J10 RC receiver (iBUS)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#j17-fc-spare" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        J17 FC SPARE
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pi-expansion-headers-33-v-logic-only" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pi expansion headers (3.3 V logic only)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pi expansion headers (3.3 V logic only)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#j7-pi-gpio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        J7 PI GPIO
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#j18-pi-spi0" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        J18 PI SPI0
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kakute-harness-headers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kakute harness headers
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Kakute harness headers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#j1-2x9-kakute-left-pad-strip" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        J1 (2x9): Kakute left pad strip
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#j23-1x4-kakute-top-edge-pads" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        J23 (1x4): Kakute top-edge pads
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#j24-1x4-kakute-bottom-edge-pads" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        J24 (1x4): Kakute bottom-edge pads
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#j25-1x4-kakute-6-pin-jst-9v-g-t1-r1-g-r6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        J25 (1x4): Kakute 6-pin JST (9V G T1 R1 G R6)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#u1-pi-zero-socket" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        U1 Pi Zero socket
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#status-leds" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Status LEDs
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="connectors-and-pinouts">Connectors and pinouts<a class="headerlink" href="#connectors-and-pinouts" title="Permanent link">&para;</a></h1>
+<p>Every header is 2.54 mm pitch. Pin 1 is the square pad, and every pin is named on the silkscreen. On the upright 1-row headers along the left and right edges, pin 1 is the end nearest the nose. "TX" and "RX" in each table are from the peripheral's side, so the device's TX always lands on an FC RX.</p>
+<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Ref</th>
+<th>Silkscreen</th>
+<th>Where</th>
+<th>Pins</th>
+<th>Connects to</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>J3</td>
+<td>VBAT TAP</td>
+<td>Left edge, front</td>
+<td>2 solder pads</td>
+<td>Battery voltage from the ESC's battery pads (18 AWG)</td>
+</tr>
+<tr>
+<td>J20</td>
+<td>VBAT OUT</td>
+<td>Left edge, front</td>
+<td>JST-XH 2</td>
+<td>Fused 6S output, 2 A</td>
+</tr>
+<tr>
+<td>J8</td>
+<td>GPS M10Q</td>
+<td>Left edge</td>
+<td>1x6</td>
+<td>GPS on FC UART6 + FC I2C</td>
+</tr>
+<tr>
+<td>J11</td>
+<td>TF-LUNA I2C</td>
+<td>Left edge</td>
+<td>1x6</td>
+<td>TF-Luna lidar on FC I2C</td>
+</tr>
+<tr>
+<td>J12</td>
+<td>I2C SPARE</td>
+<td>Left edge</td>
+<td>1x4</td>
+<td>Spare FC I2C device</td>
+</tr>
+<tr>
+<td>J13</td>
+<td>SERVO 5V</td>
+<td>Left edge, rear</td>
+<td>1x2</td>
+<td>Payload servo power (5V_AUX)</td>
+</tr>
+<tr>
+<td>J7</td>
+<td>PI GPIO 3V3</td>
+<td>Right edge, front</td>
+<td>2x8</td>
+<td>Pi I2C1 + 12 spare GPIOs</td>
+</tr>
+<tr>
+<td>J9</td>
+<td>SIK UART4</td>
+<td>Right edge</td>
+<td>1x4</td>
+<td>Telemetry radio on FC UART4</td>
+</tr>
+<tr>
+<td>J10</td>
+<td>IBUS R3</td>
+<td>Right edge</td>
+<td>1x3</td>
+<td>RC receiver on FC R3</td>
+</tr>
+<tr>
+<td>J6</td>
+<td>PWR SPARE</td>
+<td>Right edge</td>
+<td>1x4</td>
+<td>Spare 5V_AUX and 5V_FC</td>
+</tr>
+<tr>
+<td>J17</td>
+<td>FC SPARE</td>
+<td>Right edge</td>
+<td>1x6</td>
+<td>Kakute T3, RSSI, 3V3, buzzer, LED</td>
+</tr>
+<tr>
+<td>J18</td>
+<td>PI SPI 3V3</td>
+<td>Right edge, rear</td>
+<td>1x7</td>
+<td>Pi SPI0</td>
+</tr>
+<tr>
+<td>J1</td>
+<td>KAKUTE HEADER</td>
+<td>Left of the Kakute</td>
+<td>2x9</td>
+<td>Kakute left pad strip (harness)</td>
+</tr>
+<tr>
+<td>J23</td>
+<td>(Kakute top)</td>
+<td>Front of the Kakute</td>
+<td>1x4</td>
+<td>Kakute top pads (harness)</td>
+</tr>
+<tr>
+<td>J24</td>
+<td>(Kakute bottom)</td>
+<td>Rear of the Kakute</td>
+<td>1x4</td>
+<td>Kakute bottom pads (harness)</td>
+</tr>
+<tr>
+<td>J25</td>
+<td>UART1</td>
+<td>Right of the Kakute</td>
+<td>1x4</td>
+<td>Kakute 6-pin JST: UART1 (harness)</td>
+</tr>
+<tr>
+<td>U1</td>
+<td>PIN 1</td>
+<td>Rear</td>
+<td>2x20 socket</td>
+<td>Raspberry Pi Zero, face down</td>
+</tr>
+</tbody>
+</table>
+<h2 id="power-connectors">Power connectors<a class="headerlink" href="#power-connectors" title="Permanent link">&para;</a></h2>
+<p><img alt="Front-left corner: J3, J20, the buck and fuses" src="img/zoom-power.jpg" /></p>
+<h3 id="j3-vbat-tap">J3 VBAT TAP<a class="headerlink" href="#j3-vbat-tap" title="Permanent link">&para;</a></h3>
+<p>Two solder-wire pads, marked "6S 18-25.2V". Run 18 AWG silicone wire from the ESC's battery pads. Pin 1 (+) is VBAT, pin 2 (−) is GND. Worst-case draw is about 3.1 A: 1.1 A into the buck at full 5 V load from a flat pack, plus 2 A on J20.</p>
+<h3 id="j20-vbat-out">J20 VBAT OUT<a class="headerlink" href="#j20-vbat-out" title="Permanent link">&para;</a></h3>
+<p>JST-XH 2-pin, vertical. Pin 1 = OUT+ (battery through F2, 2 A hold), pin 2 = OUT− (GND). Use it for an accessory that wants raw battery voltage, and check the accessory accepts 25.2 V.</p>
+<h3 id="j6-pwr-spare">J6 PWR SPARE<a class="headerlink" href="#j6-pwr-spare" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Pin</th>
+<th>Net</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>5V_AUX</td>
+<td>Board buck, shared with the Pi and servo</td>
+</tr>
+<tr>
+<td>2</td>
+<td>GND</td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>5V_FC</td>
+<td>Kakute's 5 V; keep loads small (current limit unconfirmed)</td>
+</tr>
+<tr>
+<td>4</td>
+<td>GND</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="j13-servo-5v">J13 SERVO 5V<a class="headerlink" href="#j13-servo-5v" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Pin</th>
+<th>Net</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1 (+)</td>
+<td>5V_AUX</td>
+</tr>
+<tr>
+<td>2 (−)</td>
+<td>GND</td>
+</tr>
+</tbody>
+</table>
+<p>J13 carries servo power only. The servo's signal wire goes to <strong>M5 on the Kakute's 8-pin ESC port 2 plug</strong> (port 2 = B+, R7, GND, NC, M5, M6, M7, M8), not to the carrier. Set <code>SERVO5_FUNCTION</code> to 28 (Gripper).</p>
+<h2 id="peripheral-headers">Peripheral headers<a class="headerlink" href="#peripheral-headers" title="Permanent link">&para;</a></h2>
+<p><img alt="Left edge: J8, J11, J12, J13" src="img/zoom-left-edge.jpg" width="260" /></p>
+<h3 id="j8-gps-tbs-m10q">J8 GPS (TBS M10Q)<a class="headerlink" href="#j8-gps-tbs-m10q" title="Permanent link">&para;</a></h3>
+<p>The order matches the M10Q's own pad labels.</p>
+<table>
+<thead>
+<tr>
+<th>Pin</th>
+<th>Silk</th>
+<th>Net</th>
+<th>Kakute pad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>TX</td>
+<td>UART6_FC_RX</td>
+<td>R6</td>
+</tr>
+<tr>
+<td>2</td>
+<td>RX</td>
+<td>UART6_FC_TX</td>
+<td>T6</td>
+</tr>
+<tr>
+<td>3</td>
+<td>GND</td>
+<td>GND</td>
+<td>GND</td>
+</tr>
+<tr>
+<td>4</td>
+<td>5V_FC</td>
+<td>5V_FC</td>
+<td>5V</td>
+</tr>
+<tr>
+<td>5</td>
+<td>SCL</td>
+<td>I2C_SCL</td>
+<td>SCL</td>
+</tr>
+<tr>
+<td>6</td>
+<td>SDA</td>
+<td>I2C_SDA</td>
+<td>SDA</td>
+</tr>
+</tbody>
+</table>
+<h3 id="j11-tf-luna-i2c-mode">J11 TF-Luna (I2C mode)<a class="headerlink" href="#j11-tf-luna-i2c-mode" title="Permanent link">&para;</a></h3>
+<p>Pins 1–6 follow the TF-Luna's own pin order. CFG is tied to GND on the board, which puts the TF-Luna in I2C mode (address 0x10).</p>
+<table>
+<thead>
+<tr>
+<th>Pin</th>
+<th>Silk</th>
+<th>Net</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>5V_FC</td>
+<td>5V_FC</td>
+</tr>
+<tr>
+<td>2</td>
+<td>SDA</td>
+<td>I2C_SDA</td>
+</tr>
+<tr>
+<td>3</td>
+<td>SCL</td>
+<td>I2C_SCL</td>
+</tr>
+<tr>
+<td>4</td>
+<td>GND</td>
+<td>GND</td>
+</tr>
+<tr>
+<td>5</td>
+<td>CFG=GND</td>
+<td>GND</td>
+</tr>
+<tr>
+<td>6</td>
+<td>MUX nc</td>
+<td>Not connected</td>
+</tr>
+</tbody>
+</table>
+<h3 id="j12-i2c-spare">J12 I2C SPARE<a class="headerlink" href="#j12-i2c-spare" title="Permanent link">&para;</a></h3>
+<p>Pin 1 5V_FC, pin 2 GND, pin 3 SCL, pin 4 SDA. Same FC I2C bus as the GPS compass, TF-Luna and the Kakute's baro, so a new device must not use an address already on the bus.</p>
+<p><img alt="Right edge: J7, J9, J10, J6, J17, J18" src="img/zoom-right-edge.jpg" width="300" /></p>
+<h3 id="j9-sik-radio-uart4">J9 SiK radio (UART4)<a class="headerlink" href="#j9-sik-radio-uart4" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Pin</th>
+<th>Silk</th>
+<th>Net</th>
+<th>Kakute pad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>5V_FC</td>
+<td>5V_FC</td>
+<td>5V</td>
+</tr>
+<tr>
+<td>2</td>
+<td>GND</td>
+<td>GND</td>
+<td>GND</td>
+</tr>
+<tr>
+<td>3</td>
+<td>TX</td>
+<td>UART4_FC_RX</td>
+<td>R4</td>
+</tr>
+<tr>
+<td>4</td>
+<td>RX</td>
+<td>UART4_FC_TX</td>
+<td>T4</td>
+</tr>
+</tbody>
+</table>
+<h3 id="j10-rc-receiver-ibus">J10 RC receiver (iBUS)<a class="headerlink" href="#j10-rc-receiver-ibus" title="Permanent link">&para;</a></h3>
+<p>A standard servo-lead order, S + −.</p>
+<table>
+<thead>
+<tr>
+<th>Pin</th>
+<th>Silk</th>
+<th>Net</th>
+<th>Kakute pad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>IBUS</td>
+<td>RC_IBUS</td>
+<td>R3</td>
+</tr>
+<tr>
+<td>2</td>
+<td>5V_FC</td>
+<td>5V_FC</td>
+<td>5V</td>
+</tr>
+<tr>
+<td>3</td>
+<td>GND</td>
+<td>GND</td>
+<td>GND</td>
+</tr>
+</tbody>
+</table>
+<h3 id="j17-fc-spare">J17 FC SPARE<a class="headerlink" href="#j17-fc-spare" title="Permanent link">&para;</a></h3>
+<p>Kakute signals not used yet.</p>
+<table>
+<thead>
+<tr>
+<th>Pin</th>
+<th>Silk</th>
+<th>Net</th>
+<th>Kakute pad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>T3</td>
+<td>UART3_TX_SPARE</td>
+<td>T3</td>
+</tr>
+<tr>
+<td>2</td>
+<td>RSSI</td>
+<td>RSSI_SPARE</td>
+<td>Rsi</td>
+</tr>
+<tr>
+<td>3</td>
+<td>3V3_FC</td>
+<td>3V3_FC</td>
+<td>3V3</td>
+</tr>
+<tr>
+<td>4</td>
+<td>GND</td>
+<td>GND</td>
+<td>GND</td>
+</tr>
+<tr>
+<td>5</td>
+<td>BUZ-</td>
+<td>BUZZER_SPARE</td>
+<td>Z−</td>
+</tr>
+<tr>
+<td>6</td>
+<td>LED</td>
+<td>LED_SPARE</td>
+<td>LED (addressable LED data)</td>
+</tr>
+</tbody>
+</table>
+<p>BUZ− is the Kakute's switched buzzer return: a buzzer goes between a 5 V pin and BUZ−.</p>
+<h2 id="pi-expansion-headers-33-v-logic-only">Pi expansion headers (3.3 V logic only)<a class="headerlink" href="#pi-expansion-headers-33-v-logic-only" title="Permanent link">&para;</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>These pins go straight to the Pi's GPIO, which is not 5 V tolerant. Never put 5 V on a signal pin here.</p>
+</div>
+<h3 id="j7-pi-gpio">J7 PI GPIO<a class="headerlink" href="#j7-pi-gpio" title="Permanent link">&para;</a></h3>
+<p>Odd pins in the left column, even pins in the right.</p>
+<table>
+<thead>
+<tr>
+<th>Pin</th>
+<th>Signal</th>
+<th>Pin</th>
+<th>Signal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>3V3 (Pi)</td>
+<td>2</td>
+<td>GND</td>
+</tr>
+<tr>
+<td>3</td>
+<td>SDA1 (GPIO2)</td>
+<td>4</td>
+<td>SCL1 (GPIO3)</td>
+</tr>
+<tr>
+<td>5</td>
+<td>GPIO4</td>
+<td>6</td>
+<td>GPIO17</td>
+</tr>
+<tr>
+<td>7</td>
+<td>GPIO27</td>
+<td>8</td>
+<td>GPIO22</td>
+</tr>
+<tr>
+<td>9</td>
+<td>GPIO23</td>
+<td>10</td>
+<td>GPIO24</td>
+</tr>
+<tr>
+<td>11</td>
+<td>GPIO25</td>
+<td>12</td>
+<td>GPIO5</td>
+</tr>
+<tr>
+<td>13</td>
+<td>GPIO6</td>
+<td>14</td>
+<td>GPIO12</td>
+</tr>
+<tr>
+<td>15</td>
+<td>GPIO13</td>
+<td>16</td>
+<td>GPIO26</td>
+</tr>
+</tbody>
+</table>
+<p>The Pi's I2C1 on J7 is a separate bus from the FC's I2C. It is not connected to the GPS or the TF-Luna.</p>
+<h3 id="j18-pi-spi0">J18 PI SPI0<a class="headerlink" href="#j18-pi-spi0" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Pin</th>
+<th>Signal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>3V3 (Pi)</td>
+</tr>
+<tr>
+<td>2</td>
+<td>GND</td>
+</tr>
+<tr>
+<td>3</td>
+<td>MOSI (GPIO10)</td>
+</tr>
+<tr>
+<td>4</td>
+<td>MISO (GPIO9)</td>
+</tr>
+<tr>
+<td>5</td>
+<td>SCLK (GPIO11)</td>
+</tr>
+<tr>
+<td>6</td>
+<td>CE0 (GPIO8)</td>
+</tr>
+<tr>
+<td>7</td>
+<td>CE1 (GPIO7)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="kakute-harness-headers">Kakute harness headers<a class="headerlink" href="#kakute-harness-headers" title="Permanent link">&para;</a></h2>
+<p>The Kakute's pads are flat solder pads, so it joins the board by a short harness: 26–28 AWG silicone wire soldered to the pads, crimped into 2.54 mm Dupont housings at the other end. Each header copies the Kakute's pad layout one to one, so each wire runs straight across. Leave the wires slack so the Kakute stays soft-mounted.</p>
+<p><img alt="Kakute area: J1, J23, J24, J25 and the ESC slot" src="img/zoom-kakute.jpg" /></p>
+<h3 id="j1-2x9-kakute-left-pad-strip">J1 (2x9): Kakute left pad strip<a class="headerlink" href="#j1-2x9-kakute-left-pad-strip" title="Permanent link">&para;</a></h3>
+<p>Odd pins = the Kakute's outer column, even pins = the inner column.</p>
+<table>
+<thead>
+<tr>
+<th>Pin</th>
+<th>Kakute pad</th>
+<th>Board net</th>
+<th>Pin</th>
+<th>Kakute pad</th>
+<th>Board net</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>B+</td>
+<td><strong>Do not wire</strong></td>
+<td>2</td>
+<td>Vo</td>
+<td><strong>Do not wire</strong></td>
+</tr>
+<tr>
+<td>3</td>
+<td>GND</td>
+<td>GND</td>
+<td>4</td>
+<td>GND</td>
+<td>GND</td>
+</tr>
+<tr>
+<td>5</td>
+<td>R3</td>
+<td>RC_IBUS (J10)</td>
+<td>6</td>
+<td>T3</td>
+<td>UART3_TX_SPARE (J17)</td>
+</tr>
+<tr>
+<td>7</td>
+<td>GND</td>
+<td>GND</td>
+<td>8</td>
+<td>5V</td>
+<td>5V_FC</td>
+</tr>
+<tr>
+<td>9</td>
+<td>R4</td>
+<td>UART4_FC_RX (J9)</td>
+<td>10</td>
+<td>T4</td>
+<td>UART4_FC_TX (J9)</td>
+</tr>
+<tr>
+<td>11</td>
+<td>SDA</td>
+<td>I2C_SDA</td>
+<td>12</td>
+<td>SCL</td>
+<td>I2C_SCL</td>
+</tr>
+<tr>
+<td>13</td>
+<td>R6</td>
+<td>UART6_FC_RX (J8)</td>
+<td>14</td>
+<td>T6</td>
+<td>UART6_FC_TX (J8)</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Rsi</td>
+<td>RSSI_SPARE (J17)</td>
+<td>16</td>
+<td>5V</td>
+<td>5V_FC</td>
+</tr>
+<tr>
+<td>17</td>
+<td>GND</td>
+<td>GND</td>
+<td>18</td>
+<td>3V3</td>
+<td>3V3_FC (J17)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="j23-1x4-kakute-top-edge-pads">J23 (1x4): Kakute top-edge pads<a class="headerlink" href="#j23-1x4-kakute-top-edge-pads" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Pin</th>
+<th>Kakute pad</th>
+<th>Net</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>G</td>
+<td>GND</td>
+</tr>
+<tr>
+<td>2</td>
+<td>5V</td>
+<td>5V_FC</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Vi</td>
+<td><strong>Do not wire</strong></td>
+</tr>
+<tr>
+<td>4</td>
+<td>CAM</td>
+<td><strong>Do not wire</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="j24-1x4-kakute-bottom-edge-pads">J24 (1x4): Kakute bottom-edge pads<a class="headerlink" href="#j24-1x4-kakute-bottom-edge-pads" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Pin</th>
+<th>Kakute pad</th>
+<th>Net</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Z−</td>
+<td>BUZZER_SPARE (J17)</td>
+</tr>
+<tr>
+<td>2</td>
+<td>5V</td>
+<td>5V_FC</td>
+</tr>
+<tr>
+<td>3</td>
+<td>G</td>
+<td>GND</td>
+</tr>
+<tr>
+<td>4</td>
+<td>LED</td>
+<td>LED_SPARE (J17)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="j25-1x4-kakute-6-pin-jst-9v-g-t1-r1-g-r6">J25 (1x4): Kakute 6-pin JST (9V G T1 R1 G R6)<a class="headerlink" href="#j25-1x4-kakute-6-pin-jst-9v-g-t1-r1-g-r6" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Pin</th>
+<th>Kakute pin</th>
+<th>Net</th>
+<th>Goes to</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>9V</td>
+<td><strong>Do not wire</strong></td>
+<td>Nothing</td>
+</tr>
+<tr>
+<td>2</td>
+<td>T1</td>
+<td>UART1_FC_TX</td>
+<td>Pi pin 10 (GPIO15 RXD)</td>
+</tr>
+<tr>
+<td>3</td>
+<td>R1</td>
+<td>UART1_FC_RX</td>
+<td>Pi pin 8 (GPIO14 TXD)</td>
+</tr>
+<tr>
+<td>4</td>
+<td>G</td>
+<td>GND</td>
+<td>GND</td>
+</tr>
+</tbody>
+</table>
+<p>The JST's second G and R6 pins are left unconnected (R6 is already on J1).</p>
+<h2 id="u1-pi-zero-socket">U1 Pi Zero socket<a class="headerlink" href="#u1-pi-zero-socket" title="Permanent link">&para;</a></h2>
+<p><img alt="Pi socket with pin labels; pin 1 at the right" src="img/zoom-pi-socket.jpg" /></p>
+<p>A 2x20 female socket, 8.5 mm tall. The Pi plugs on <strong>face down</strong>: its header is on the component side, pins pointing at the carrier. Pin 1 (3V3, marked "&lt; PIN 1") is at the right end, on the row nearer the rear edge. The SD card is on the right and the USB/HDMI edge is at the rear.</p>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>Fitting the Pi face up mirrors the pinout and puts 5 V on the wrong pins.</p>
+</div>
+<p>Pins the board uses (the rest are free, and most are on J7 and J18):</p>
+<table>
+<thead>
+<tr>
+<th>Pi pin</th>
+<th>Pi signal</th>
+<th>Board net</th>
+<th>Goes to</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1, 17</td>
+<td>3V3</td>
+<td>3V3_PI</td>
+<td>J7.1, J18.1</td>
+</tr>
+<tr>
+<td>2, 4</td>
+<td>5V</td>
+<td>5V_AUX</td>
+<td>Board buck (powers the Pi)</td>
+</tr>
+<tr>
+<td>6, 9, 14, 20, 25, 30, 34, 39</td>
+<td>GND</td>
+<td>GND</td>
+<td></td>
+</tr>
+<tr>
+<td>8</td>
+<td>GPIO14 TXD</td>
+<td>UART1_FC_RX</td>
+<td>Kakute R1 via J25.3</td>
+</tr>
+<tr>
+<td>10</td>
+<td>GPIO15 RXD</td>
+<td>UART1_FC_TX</td>
+<td>Kakute T1 via J25.2</td>
+</tr>
+<tr>
+<td>12</td>
+<td>GPIO18</td>
+<td>LED_BATT_LO</td>
+<td>D7 red, B-L</td>
+</tr>
+<tr>
+<td>35</td>
+<td>GPIO19</td>
+<td>LED_BATT_HI</td>
+<td>D5 green, B-H</td>
+</tr>
+<tr>
+<td>36</td>
+<td>GPIO16</td>
+<td>LED_PI_ACTIVE</td>
+<td>D3 green, PI</td>
+</tr>
+<tr>
+<td>38</td>
+<td>GPIO20</td>
+<td>LED_DATA</td>
+<td>D4 yellow, DATA</td>
+</tr>
+<tr>
+<td>40</td>
+<td>GPIO21</td>
+<td>LED_BATT_MID</td>
+<td>D6 yellow, B-M</td>
+</tr>
+<tr>
+<td>27, 28</td>
+<td>ID_SD, ID_SC</td>
+<td>Not connected</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="status-leds">Status LEDs<a class="headerlink" href="#status-leds" title="Permanent link">&para;</a></h2>
+<p><img alt="Status LED row" src="img/zoom-leds.jpg" /></p>
+<p>Seven LEDs sit in a row behind the buck, labelled "STATUS". From left to right:</p>
+<table>
+<thead>
+<tr>
+<th>Silk</th>
+<th>Ref</th>
+<th>Colour</th>
+<th>Driven by</th>
+<th>On means</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FC5V</td>
+<td>D2</td>
+<td>Green</td>
+<td>5V_FC via 1 k</td>
+<td>Kakute 5 V present</td>
+</tr>
+<tr>
+<td>AUX5V</td>
+<td>D1</td>
+<td>Green</td>
+<td>5V_AUX via 1 k</td>
+<td>Board buck running</td>
+</tr>
+<tr>
+<td>PI</td>
+<td>D3</td>
+<td>Green</td>
+<td>Pi GPIO16 via 330 Ω</td>
+<td>Companion script running</td>
+</tr>
+<tr>
+<td>DATA</td>
+<td>D4</td>
+<td>Yellow</td>
+<td>Pi GPIO20 via 330 Ω</td>
+<td>MAVLink traffic</td>
+</tr>
+<tr>
+<td>B-H</td>
+<td>D5</td>
+<td>Green</td>
+<td>Pi GPIO19 via 330 Ω</td>
+<td>Battery high</td>
+</tr>
+<tr>
+<td>B-M</td>
+<td>D6</td>
+<td>Yellow</td>
+<td>Pi GPIO21 via 330 Ω</td>
+<td>Battery mid</td>
+</tr>
+<tr>
+<td>B-L</td>
+<td>D7</td>
+<td>Red</td>
+<td>Pi GPIO18 via 390 Ω</td>
+<td>Battery low</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.sections", "navigation.top", "toc.follow", "search.highlight"], "search": "assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.c21346df.min.js"></script>
+      
+    
+  </body>
+</html>

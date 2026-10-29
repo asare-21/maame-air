@@ -1,0 +1,878 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="User guide for the MaameDrone V1.0 carrier board (Kakute H7 + Pi Zero, 6S)">
+      
+      
+      
+      
+        <link rel="prev" href="software.html">
+      
+      
+        <link rel="next" href="assembly.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
+    
+    
+      
+        <title>Bill of materials - MaameDrone V1.0 Carrier Board</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="light-green">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#bill-of-materials" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="index.html" title="MaameDrone V1.0 Carrier Board" class="md-header__button md-logo" aria-label="MaameDrone V1.0 Carrier Board" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            MaameDrone V1.0 Carrier Board
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Bill of materials
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="light-green"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="green" data-md-color-accent="light-green"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="MaameDrone V1.0 Carrier Board" class="md-nav__button md-logo" aria-label="MaameDrone V1.0 Carrier Board" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    MaameDrone V1.0 Carrier Board
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="connectors.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Connectors and pinouts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="power.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Power
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="compatibility.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Compatibility
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="mounting.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mounting and cover
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="software.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Firmware and software
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bill of materials
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="bom.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bill of materials
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#fitted-by-jlcpcb-smd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fitted by JLCPCB (SMD)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hand-soldered-through-hole" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hand-soldered (through-hole)
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="assembly.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Assembly and bring-up
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="limitations.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Limitations and open items
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#fitted-by-jlcpcb-smd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fitted by JLCPCB (SMD)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hand-soldered-through-hole" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hand-soldered (through-hole)
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="bill-of-materials">Bill of materials<a class="headerlink" href="#bill-of-materials" title="Permanent link">&para;</a></h1>
+<p>JLCPCB assembles the 32 surface-mount parts (21 BOM lines). You buy and solder the through-hole parts yourself. LCSC stock was checked on 28 Oct 2026. The fab files are <code>fab/MaameDrone_V1.0_BOM_JLC.csv</code>, <code>fab/MaameDrone_V1.0_CPL_JLC.csv</code> and <code>fab/MaameDrone_V1.0_BOM_hand_solder.csv</code> in the board repo.</p>
+<h2 id="fitted-by-jlcpcb-smd">Fitted by JLCPCB (SMD)<a class="headerlink" href="#fitted-by-jlcpcb-smd" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Ref</th>
+<th>Part</th>
+<th>LCSC</th>
+<th>Job</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>U2</td>
+<td>TPS54360BDDAR, 60 V 3.5 A buck</td>
+<td>C524806</td>
+<td>Makes 5V_AUX</td>
+</tr>
+<tr>
+<td>L1</td>
+<td>Coilcraft XAL6060-822MEC, 8.2 µH 8.4 A</td>
+<td>C19191627</td>
+<td>Buck inductor</td>
+</tr>
+<tr>
+<td>D8</td>
+<td>B560C, 60 V 5 A Schottky (SMC)</td>
+<td>C85100</td>
+<td>Buck catch diode</td>
+</tr>
+<tr>
+<td>D9</td>
+<td>SMBJ30A TVS, 30 V standoff (SMB)</td>
+<td>C113998</td>
+<td>Input spike clamp</td>
+</tr>
+<tr>
+<td>F1, F2</td>
+<td>BSMD1812-200-30V PTC, 2 A hold / 4 A trip</td>
+<td>C960026</td>
+<td>Buck input fuse, J20 fuse</td>
+</tr>
+<tr>
+<td>C1</td>
+<td>470 µF 16 V electrolytic</td>
+<td>C22383803</td>
+<td>5V_AUX bulk (servo surges)</td>
+</tr>
+<tr>
+<td>C2, C3</td>
+<td>2.2 µF 100 V X7R 1210</td>
+<td>C153036</td>
+<td>Buck input</td>
+</tr>
+<tr>
+<td>C6, C7</td>
+<td>47 µF 10 V X7R 1210</td>
+<td>C84494</td>
+<td>Buck output</td>
+</tr>
+<tr>
+<td>C4</td>
+<td>100 nF 50 V 0603</td>
+<td>C14663</td>
+<td>Bootstrap</td>
+</tr>
+<tr>
+<td>C5, C8</td>
+<td>6.8 nF / 39 pF 0603</td>
+<td>C1631 / C107049</td>
+<td>Loop compensation</td>
+</tr>
+<tr>
+<td>R8–R11</td>
+<td>162 k, 13 k, 53.6 k, 10 k, 1 % 0603</td>
+<td>C227607, C22797, C23074, C25804</td>
+<td>600 kHz timing, compensation, 5.0 V feedback</td>
+</tr>
+<tr>
+<td>D1–D3, D5</td>
+<td>Green 0805 LED</td>
+<td>C2297</td>
+<td>AUX5V, FC5V, PI, B-H</td>
+</tr>
+<tr>
+<td>D4, D6</td>
+<td>Yellow 0805 LED</td>
+<td>C2296</td>
+<td>DATA, B-M</td>
+</tr>
+<tr>
+<td>D7</td>
+<td>Red 0805 LED</td>
+<td>C84256</td>
+<td>B-L</td>
+</tr>
+<tr>
+<td>R1, R2</td>
+<td>1 k 0805</td>
+<td>C17513</td>
+<td>Power LED resistors</td>
+</tr>
+<tr>
+<td>R3–R6 / R7</td>
+<td>330 Ω / 390 Ω 0805</td>
+<td>C17630 / C17655</td>
+<td>Pi LED resistors</td>
+</tr>
+</tbody>
+</table>
+<h2 id="hand-soldered-through-hole">Hand-soldered (through-hole)<a class="headerlink" href="#hand-soldered-through-hole" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Qty</th>
+<th>Part</th>
+<th>LCSC</th>
+<th>Where</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>2x20 female socket, 8.5 mm tall</td>
+<td>C5124634</td>
+<td>U1 (Pi). Must be the standard 8.5 mm height.</td>
+</tr>
+<tr>
+<td>1</td>
+<td>2x9 male header</td>
+<td>C42372517</td>
+<td>J1</td>
+</tr>
+<tr>
+<td>1</td>
+<td>2x8 male header</td>
+<td>C32713281</td>
+<td>J7</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1x7 male header</td>
+<td>C32713273</td>
+<td>J18</td>
+</tr>
+<tr>
+<td>3</td>
+<td>1x6 male header</td>
+<td>C32713272</td>
+<td>J8, J11, J17</td>
+</tr>
+<tr>
+<td>6</td>
+<td>1x4 male header</td>
+<td>C32713270</td>
+<td>J6, J9, J12, J23, J24, J25</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1x3 male header</td>
+<td>C32713269</td>
+<td>J10</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1x2 male header</td>
+<td>C32713268</td>
+<td>J13</td>
+</tr>
+<tr>
+<td>1</td>
+<td>JST-XH 2-pin vertical, 2.5 mm</td>
+<td>C2908600</td>
+<td>J20</td>
+</tr>
+<tr>
+<td>1 m each</td>
+<td>18 AWG silicone wire, red + black</td>
+<td>–</td>
+<td>J3 battery tap</td>
+</tr>
+<tr>
+<td>1 kit</td>
+<td>2.54 mm Dupont housings (1x4, 2x9) + crimp pins</td>
+<td>–</td>
+<td>Kakute harness</td>
+</tr>
+<tr>
+<td>1 m</td>
+<td>26–28 AWG silicone wire</td>
+<td>–</td>
+<td>Kakute harness</td>
+</tr>
+<tr>
+<td>4</td>
+<td>M2.5 standoffs, 10 mm or more, + screws</td>
+<td>–</td>
+<td>Board to frame</td>
+</tr>
+<tr>
+<td>4</td>
+<td>M2.5 standoffs, about 11 mm, + screws</td>
+<td>–</td>
+<td>Pi Zero (optional)</td>
+</tr>
+</tbody>
+</table>
+<p>Male headers can all be snapped from long 2.54 mm breakaway strips instead of buying each size.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.sections", "navigation.top", "toc.follow", "search.highlight"], "search": "assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.c21346df.min.js"></script>
+      
+    
+  </body>
+</html>
