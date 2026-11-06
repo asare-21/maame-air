@@ -31,6 +31,9 @@ COPTER_MODE_AUTO = 3
 COPTER_MODE_GUIDED = 4
 COMPANION_MODES = (COPTER_MODE_AUTO, COPTER_MODE_GUIDED)
 HEARTBEAT_PERIOD_S = 0.5
+# GCS -> Pi: COMMAND_LONG to component 191; param1 1 = get ready (ACTIVE), 0 = standby.
+# MAV_CMD_USER_2, since ArduDeck's own FC Lua script uses USER_1.
+MAAME_CMD_SET_READY = 31011
 # MAVLink2 signing key shared with the FC and ArduDeck: 64 hex chars, root-only.
 SIGNING_KEY_FILE = "/etc/maame/mavlink-signing.key"
 SIGNING_LINK_ID = 1
@@ -106,8 +109,42 @@ class CompanionLink:
                 self._last_fc_hb = now
                 if self.signing_key and not self.signing:
                     self._start_signing(signed_timestamp(msg.get_msgbuf()))
+            elif (msg.get_type() == "COMMAND_LONG" and msg.command == MAAME_CMD_SET_READY
+                    and msg.target_component == mavutil.mavlink.MAV_COMP_ID_ONBOARD_COMPUTER):
+                self._handle_set_ready(msg)
         if self.leds is not None:
             self.leds.update(now)
+
+    def not_ready_reason(self):
+        """Why the Pi will not go ACTIVE, or None if it can."""
+        if not self.fc_alive():
+            return "no FC heartbeat"
+        if self.leds is not None:
+            if self.leds.level is None:
+                return "battery level unknown"
+            if self.leds.level == "low" or self.leds.failsafe:
+                return "battery low"
+        return None
+
+    def _handle_set_ready(self, msg):
+        ack = mavutil.mavlink.MAV_RESULT_ACCEPTED
+        if msg.param1 >= 0.5:
+            reason = self.not_ready_reason()
+            if reason:
+                ack = mavutil.mavlink.MAV_RESULT_DENIED
+                self.say(mavutil.mavlink.MAV_SEVERITY_WARNING, f"Pi not ready: {reason}")
+            else:
+                self.set_ready(True)
+                self.say(mavutil.mavlink.MAV_SEVERITY_INFO, "Pi ready")
+        else:
+            self.set_ready(False)
+            self.say(mavutil.mavlink.MAV_SEVERITY_INFO, "Pi standby")
+        self.mav.mav.command_ack_send(MAAME_CMD_SET_READY, ack, 0, 0,
+                                      msg.get_srcSystem(), msg.get_srcComponent())
+
+    def say(self, severity, text):
+        self.mav.mav.statustext_send(severity, text.encode()[:50])
+        print(text, flush=True)
 
     def _start_signing(self, fc_timestamp):
         # Start just after the FC's own timestamp: the Pi has no RTC and may boot
