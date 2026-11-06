@@ -1,0 +1,11 @@
+[Unit]
+Description=Maame Wi-Fi: fall back to the Pi hotspot when no known network connects
+After=NetworkManager.service
+Wants=NetworkManager.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/maame-wifi-fallback.sh
+
+[Install]
+WantedBy=multi-user.target
