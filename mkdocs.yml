@@ -1,0 +1,14 @@
+site_name: MaameDrone V1.0 carrier board
+site_description: Carrier board for a Holybro Kakute H7 flight controller and a Raspberry Pi Zero W on a 6S drone.
+repo_url: https://github.com/asare-21/maame-air
+theme:
+  name: mkdocs
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+nav:
+  - Home: index.md
+  - Board tour: board.md
+  - Assembly: assembly.md
+  - Fabrication files: fabrication.md

@@ -5,3 +5,5 @@ tools/*.jar
 fp-info-cache
 *.kicad_prl
 *.lck
+site/
+.DS_Store
