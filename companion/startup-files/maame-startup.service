@@ -1,13 +1,14 @@
 [Unit]
 Description=MaameDrone startup checks, LED test and companion link
-After=network.target
-Wants=network-online.target
+After=network.target mavlink-router.service
+Wants=network-online.target mavlink-router.service
 
 [Service]
 Environment=PYTHONUNBUFFERED=1
 Type=simple
 WorkingDirectory=/home/maame/startup-files
-ExecStart=/home/maame/startup-files/start-maame.sh
+# mavlink-router owns /dev/serial0 and forwards the FC to this UDP port
+ExecStart=/home/maame/startup-files/start-maame.sh --device udpin:127.0.0.1:14551
 Restart=on-failure
 RestartSec=5
 User=root

@@ -1,0 +1,11 @@
+[Unit]
+Description=MAVLink router: FC UART1 to companion, Wi-Fi GCS and TCP
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/mavlink-routerd -c /etc/mavlink-router/main.conf
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target

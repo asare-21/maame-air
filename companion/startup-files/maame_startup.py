@@ -92,7 +92,20 @@ def check_uart_config():
             ok("no login console on the serial port")
 
 
-def check_serial():
+def port_holders(target):
+    """{pid: process name} of everything holding target open, except us."""
+    out = subprocess.run(["fuser", target], capture_output=True, text=True, timeout=5)
+    holders = {}
+    for p in out.stdout.split():
+        if p.isdigit() and int(p) != os.getpid():
+            try:
+                holders[p] = open(f"/proc/{p}/comm").read().strip()
+            except OSError:
+                holders[p] = "?"
+    return holders
+
+
+def check_serial(device):
     if not os.path.exists(SERIAL_DEV):
         fail(f"{SERIAL_DEV} does not exist (UART not enabled, reboot after config change)")
         return
@@ -100,18 +113,28 @@ def check_serial():
     ok(f"{SERIAL_DEV} -> {target}")
     if target.endswith("ttyS0"):
         warn("serial0 is the mini-UART (ttyS0); 921600 baud is unreliable there")
+    # A udp/tcp --device means mavlink-router owns the UART and we talk to it instead.
+    via_router = not device.startswith("/dev/")
     try:
-        out = subprocess.run(["fuser", target], capture_output=True, text=True, timeout=5)
-        pids = [p for p in out.stdout.split() if p.isdigit() and int(p) != os.getpid()]
-        if pids:
-            fail(f"{target} already in use by PID {' '.join(pids)} (only one program can open it; "
-                 "stop maame-battery-leds.service or the mission script)")
-        else:
-            ok(f"{target} is free")
+        holders = port_holders(target)
     except FileNotFoundError:
-        warn("fuser not installed, cannot check whether the port is free")
+        warn("fuser not installed, cannot check who holds the port")
+        return
     except subprocess.TimeoutExpired:
         warn("fuser timed out")
+        return
+    names = " ".join(f"{n} (PID {p})" for p, n in holders.items())
+    if via_router:
+        if "mavlink-routerd" in holders.values():
+            ok(f"{target} held by mavlink-router, companion uses {device}")
+        else:
+            fail(f"mavlink-router does not hold {target} ({names or 'nothing does'}); "
+                 "check: systemctl status mavlink-router")
+    elif holders:
+        fail(f"{target} already in use by {names} (only one program can open it; "
+             "stop mavlink-router or the mission script, or start with --device udpin:127.0.0.1:14551)")
+    else:
+        ok(f"{target} is free")
 
 
 def led_self_test():
@@ -158,7 +181,7 @@ def main():
     check_files()
     check_modules()
     check_uart_config()
-    check_serial()
+    check_serial(args.device)
 
     if failures:
         print(f"\n{len(failures)} check(s) failed, not starting:", flush=True)
