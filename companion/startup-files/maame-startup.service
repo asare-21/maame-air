@@ -1,0 +1,16 @@
+[Unit]
+Description=MaameDrone startup checks, LED test and companion link
+After=network.target
+Wants=network-online.target
+
+[Service]
+Environment=PYTHONUNBUFFERED=1
+Type=simple
+WorkingDirectory=/home/maame/startup-files
+ExecStart=/home/maame/startup-files/start-maame.sh
+Restart=on-failure
+RestartSec=5
+User=root
+
+[Install]
+WantedBy=multi-user.target
