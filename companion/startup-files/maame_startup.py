@@ -137,6 +137,20 @@ def check_serial(device):
         ok(f"{target} is free")
 
 
+def check_signing():
+    from maame_ready import SIGNING_KEY_FILE, load_signing_key
+    if not os.path.exists(SIGNING_KEY_FILE):
+        warn(f"no MAVLink signing key ({SIGNING_KEY_FILE}); if the FC has signing on, "
+             "it will drop the Pi heartbeat and the arming gate stays closed")
+        return
+    if load_signing_key() is None:
+        fail(f"{SIGNING_KEY_FILE} is not a 64-hex-character key")
+        return
+    if os.stat(SIGNING_KEY_FILE).st_mode & 0o077:
+        warn(f"{SIGNING_KEY_FILE} is readable by other users; chmod 600")
+    ok("MAVLink signing key present")
+
+
 def led_self_test():
     from gpiozero import LED
     from maame_leds import PIN_PI, PIN_DATA, PIN_BH, PIN_BM, PIN_BL
@@ -182,6 +196,7 @@ def main():
     check_modules()
     check_uart_config()
     check_serial(args.device)
+    check_signing()
 
     if failures:
         print(f"\n{len(failures)} check(s) failed, not starting:", flush=True)
