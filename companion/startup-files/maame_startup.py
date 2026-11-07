@@ -24,7 +24,7 @@ import time
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 
-REQUIRED_FILES = ("maame_leds.py", "maame_ready.py", "maame_battery_leds.py")
+REQUIRED_FILES = ("maame_leds.py", "maame_ready.py", "maame_battery_leds.py", "maame_status.py")
 REQUIRED_MODULES = ("gpiozero", "lgpio", "pymavlink")
 CONFIG_TXT = ("/boot/firmware/config.txt", "/boot/config.txt")
 CMDLINE_TXT = ("/boot/firmware/cmdline.txt", "/boot/cmdline.txt")

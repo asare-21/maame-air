@@ -27,10 +27,14 @@ import time
 
 from pymavlink import mavutil
 
+from maame_status import read_status
+
 COPTER_MODE_AUTO = 3
 COPTER_MODE_GUIDED = 4
 COMPANION_MODES = (COPTER_MODE_AUTO, COPTER_MODE_GUIDED)
 HEARTBEAT_PERIOD_S = 0.5
+# Pi health (maame_status.py) to the GCS companion panel as NAMED_VALUE_FLOAT.
+STATUS_PERIOD_S = 2.0
 # GCS -> Pi: COMMAND_LONG to component 191; param1 1 = get ready (ACTIVE), 0 = standby.
 # MAV_CMD_USER_2, since ArduDeck's own FC Lua script uses USER_1.
 MAAME_CMD_SET_READY = 31011
@@ -67,6 +71,7 @@ class CompanionLink:
         self.fc_armed = False
         self._last_hb_sent = 0.0
         self._last_fc_hb = 0.0
+        self._last_status_sent = 0.0
         self.signing_key = load_signing_key()
         self.signing = False
 
@@ -94,6 +99,8 @@ class CompanionLink:
         now = time.monotonic()
         if now - self._last_hb_sent >= HEARTBEAT_PERIOD_S:
             self._send_heartbeat()
+        if now - self._last_status_sent >= STATUS_PERIOD_S:
+            self._send_status(now)
         while True:
             msg = self.mav.recv_match(blocking=False)
             if msg is None:
@@ -156,6 +163,15 @@ class CompanionLink:
             link_id=SIGNING_LINK_ID)
         self.signing = True
         print(f"MAVLink signing on (timestamp from {'FC' if fc_timestamp else 'Pi clock'})", flush=True)
+
+    def _send_status(self, now):
+        self._last_status_sent = now
+        try:
+            boot_ms = int(now * 1000) & 0xFFFFFFFF
+            for name, value in read_status().items():
+                self.mav.mav.named_value_float_send(boot_ms, name.encode(), value)
+        except Exception as e:  # health reporting must never stop the gate heartbeat
+            print(f"Pi status not sent: {e}", flush=True)
 
     def _send_heartbeat(self):
         status = (mavutil.mavlink.MAV_STATE_ACTIVE if self.ready
