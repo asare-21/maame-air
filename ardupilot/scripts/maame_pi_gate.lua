@@ -7,9 +7,13 @@
 --   SCR_USER2      on Pi loss while armed: 0 = warn only, 1 = RTL from GUIDED,
 --                  2 = RTL from GUIDED and AUTO
 -- A runtime error keeps arming blocked.
+-- PIG_VER (read-only marker) = the running gate version; ArduDeck uses it to
+-- tell whether the gate is running and up to date.
 
 local mavlink_msgs = require("MAVLink/mavlink_msgs")
 
+local GATE_VERSION = 2
+local PARAM_TABLE_KEY = 73   -- unique among this FC's Lua scripts
 local PI_COMPID = 191
 local MAV_STATE_ACTIVE = 4
 local PI_TIMEOUT_MS = 3000
@@ -25,6 +29,13 @@ mavlink:register_rx_msgid(HEARTBEAT_ID)
 
 local auth_id = arming:get_aux_auth_id()
 assert(auth_id, "Pi gate: no aux auth id")
+
+-- After the auth id: if this fails the gate still blocks arming, only the marker is missing.
+if param:add_table(PARAM_TABLE_KEY, "PIG_", 1) and param:add_param(PARAM_TABLE_KEY, 1, "VER", GATE_VERSION) then
+  param:set("PIG_VER", GATE_VERSION)  -- running version, not saved
+else
+  gcs:send_text(MAV_SEVERITY_WARNING, "Pi gate: PIG_VER param unavailable")
+end
 
 local last_active_ms = nil   -- last ACTIVE heartbeat from the Pi
 local pi_ok = false
@@ -92,5 +103,5 @@ local function protected_loop()
 end
 
 arming:set_aux_auth_failed(auth_id, "Pi companion not ready")
-gcs:send_text(MAV_SEVERITY_INFO, "Pi gate loaded")
+gcs:send_text(MAV_SEVERITY_INFO, "Pi gate v" .. GATE_VERSION .. " loaded")
 return protected_loop, LOOP_MS
