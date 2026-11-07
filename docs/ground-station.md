@@ -55,6 +55,30 @@ Shortcuts: Shift+P / Shift+A / Shift+R / Shift+L (no shortcut for the kill).
 If every link is lost in AUTO the FC **continues the mission** (and then lands /
 returns as the mission says); low battery → RTL, critical → land; fence breach → RTL.
 
+## Flying by hand: the Maame cockpit
+
+Telemetry view → Workspace → Add panel → **Maame Cockpit**. No RC or gamepad: everything
+is a GUIDED target relative to the drone's heading, so **letting go always means hold**.
+
+* **Take off to N m** (1–10 m; the Pi must be ACTIVE – the button offers *Pi ready*).
+* **Take control** – switches to GUIDED, pausing any mission; the cockpit never moves a
+  drone in another mode.
+* **Nudge pad** – Forward / Back / Left / Right / Up / Down by 1, 2 or 5 m; turn ±45° / ±90°.
+* **Sticks** – drag: left = climb / turn, right = forward / sideways, up to the *Max speed*
+  (0.5–3 m/s). Release = stop at once.
+* **Keyboard flying** (switch on in the panel): W/S forward-back, A/D sideways, ↑/↓ climb,
+  ←/→ turn. Shift+P/A/R/L stay the emergency keys; leaving the window stops the drone.
+* Hard limits whatever you press: 3 m/s, 1 m/s climb, 45°/s turn, 10 m per nudge.
+  Lost link in GUIDED → the FC returns home.
+
+## Vibration and tuning
+
+The hover test card shows live vibration while flying and a verdict after landing
+(< 30 m/s² good, 30–60 marginal, > 60 or any accelerometer clipping: fix the mounting
+first). To tune the motor-noise filter, before the hover turn on vibration logging and
+after it analyse the flight in **Setup → Quick Setup → Motor vibration filter**
+(it finds the motor noise peak and sets the notch filter).
+
 ## Phone or tablet
 
 The Pi serves a dashboard at **http://maame.local:8080** (hotspot:
@@ -106,6 +130,16 @@ ssh -t maame@maame.local 'cd ~/camera && sudo ./install-camera.sh'
 Then ArduDeck → Camera panel → source **Maame Pi camera (Wi-Fi)**
 (`rtsp://maame.local:8554/cam`, 720p, 1.5 Mbit/s). The stream runs at low CPU
 priority so it can never starve the companion.
+
+## Updating the Pi and testing changes
+
+* **Update the Pi** with this repo's companion code: `companion/deploy.sh` (from the Mac;
+  refuses while the drone is armed, backs up the old files, restarts the services and
+  records the running commit in `~/startup-files/VERSION`).
+* **Simulator tests**: `python3 sitl/run_tests.py` (or e.g. `… run_tests.py cockpit hover`)
+  runs the launch/emergency, hover, signing, dashboard and cockpit tests against ArduPilot
+  SITL with this repo's gate and Pi code. Needs pymavlink (`PYTHON=…`) and the ArduCopter
+  SITL that ArduDeck downloads (or `ARDUCOPTER=…`).
 
 ## Troubleshooting
 
