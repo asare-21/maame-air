@@ -7,3 +7,4 @@ fp-info-cache
 *.lck
 site/
 .DS_Store
+__pycache__/
