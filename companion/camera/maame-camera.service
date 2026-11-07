@@ -1,0 +1,18 @@
+[Unit]
+Description=MaameDrone camera: MediaMTX RTSP stream of the Pi camera (rtsp://maame.local:8554/cam)
+After=network.target maame-startup.service
+
+[Service]
+ExecStart=/usr/local/bin/mediamtx /etc/maame-camera/mediamtx.yml
+Restart=on-failure
+RestartSec=5
+# Video is optional; the companion's arming-gate heartbeat is not. Keep the encoder
+# from ever starving maame-startup on the single-core Zero W.
+Nice=10
+CPUWeight=20
+MemoryMax=150M
+DynamicUser=yes
+SupplementaryGroups=video
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,35 @@
+# MaameDrone camera: MediaMTX serving the Pi camera as RTSP.
+#   ArduDeck: Camera panel > source "Maame Pi camera (Wi-Fi)" = rtsp://maame.local:8554/cam
+# Installed to /etc/maame-camera/mediamtx.yml by install-camera.sh.
+#
+# Sized for a Pi Zero W sharing 2.4 GHz Wi-Fi with MAVLink: 720p25 at 1.5 Mbit/s,
+# hardware H.264. Raise the bitrate only if the link badge stays healthy.
+
+logLevel: warn
+
+# RTSP only (TCP/UDP 8554); the other servers would cost the Zero W CPU for nothing.
+rtsp: yes
+rtspAddress: :8554
+rtmp: no
+hls: no
+webrtc: no
+srt: no
+api: no
+metrics: no
+pprof: no
+playback: no
+
+paths:
+  cam:
+    source: rpiCamera
+    rpiCameraCamID: 0
+    rpiCameraWidth: 1280
+    rpiCameraHeight: 720
+    rpiCameraFPS: 25
+    rpiCameraCodec: hardwareH264
+    rpiCameraBitrate: 1500000
+    # keyframe every 2 s so a viewer that joins or recovers gets a picture quickly
+    rpiCameraIDRPeriod: 50
+    # Camera Module 3: lock focus at infinity, autofocus hunts on a vibrating drone
+    rpiCameraAfMode: manual
+    rpiCameraLensPosition: 0.0
