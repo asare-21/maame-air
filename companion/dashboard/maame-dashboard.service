@@ -1,0 +1,16 @@
+[Unit]
+Description=MaameDrone phone/tablet dashboard (http://maame.local:8080)
+After=mavlink-router.service
+Wants=mavlink-router.service
+
+[Service]
+# root: reads the root-only PIN and signing key in /etc/maame
+ExecStart=/home/maame/drone-env/bin/python3 /home/maame/dashboard/maame_dashboard.py
+Restart=on-failure
+RestartSec=5
+Environment=PYTHONUNBUFFERED=1
+# below the companion (the arming-gate heartbeat), above the camera
+Nice=5
+
+[Install]
+WantedBy=multi-user.target

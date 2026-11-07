@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0d1524">
+<title>MaameDrone</title>
+<style>
+  :root { --bg:#0d1524; --card:#131d31; --line:#22304a; --ink:#e6f4f1; --muted:#7f94ad; --teal:#1ed7bf; --amber:#f5b942; --red:#ff5c5c; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.4 -apple-system, "Segoe UI", Roboto, sans-serif; padding: 16px; padding-bottom: 140px; }
+  h1 { font-size: 18px; margin: 0 0 12px; display: flex; justify-content: space-between; align-items: center; }
+  h1 span:first-child b { color: var(--teal); }
+  .pill { font-size: 13px; padding: 3px 10px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); }
+  .pill.ok { color: var(--teal); border-color: #1ed7bf55; } .pill.bad { color: var(--red); border-color: #ff5c5c55; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .tile { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 12px; }
+  .tile .k { font-size: 12px; color: var(--muted); }
+  .tile .v { font-size: 22px; font-weight: 650; margin-top: 2px; font-variant-numeric: tabular-nums; }
+  .wide { grid-column: span 2; }
+  .warn { color: var(--amber); } .bad { color: var(--red); } .good { color: var(--teal); }
+  ul { margin: 6px 0 0; padding-left: 18px; color: var(--muted); font-size: 13px; }
+  .bar { position: fixed; left: 0; right: 0; bottom: 0; background: #0b1220ee; border-top: 1px solid var(--line);
+         display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; padding: 12px 16px calc(12px + env(safe-area-inset-bottom)); }
+  button { font: inherit; font-weight: 650; border-radius: 12px; border: 0; padding: 16px 8px; color: #06121a; min-height: 56px; }
+  button:disabled { opacity: .35; }
+  #pause { background: var(--teal); } #rtl { background: var(--amber); } #land { background: #c9d6e6; }
+  .pin { max-width: 320px; margin: 15vh auto; text-align: center; }
+  .pin input { font: inherit; font-size: 24px; letter-spacing: 6px; text-align: center; width: 100%; padding: 12px; border-radius: 12px;
+               border: 1px solid var(--line); background: var(--card); color: var(--ink); }
+  .pin button { margin-top: 12px; width: 100%; background: var(--teal); }
+  .note { color: var(--muted); font-size: 13px; margin-top: 14px; }
+  .hidden { display: none; }
+</style>
+</head>
+<body>
+<div id="pinView" class="pin hidden">
+  <h1 style="justify-content:center"><span><b>Maame</b>Drone</span></h1>
+  <p class="note">Enter the dashboard PIN (on the Pi: <code>sudo cat /etc/maame/dashboard-pin</code>).</p>
+  <input id="pinInput" inputmode="numeric" autocomplete="off" aria-label="Dashboard PIN">
+  <button id="pinSave">Open dashboard</button>
+  <p id="pinErr" class="bad"></p>
+</div>
+
+<div id="main" class="hidden">
+  <h1><span><b>Maame</b>Drone</span><span id="link" class="pill">…</span></h1>
+  <div class="grid">
+    <div class="tile"><div class="k">Mode</div><div class="v" id="mode">-</div></div>
+    <div class="tile"><div class="k">Motors</div><div class="v" id="armed">-</div></div>
+    <div class="tile"><div class="k">Battery</div><div class="v" id="batt">-</div></div>
+    <div class="tile"><div class="k">GPS</div><div class="v" id="gps">-</div></div>
+    <div class="tile"><div class="k">Height</div><div class="v" id="alt">-</div></div>
+    <div class="tile"><div class="k">From home</div><div class="v" id="home">-</div></div>
+    <div class="tile"><div class="k">Mission step</div><div class="v" id="seq">-</div></div>
+    <div class="tile"><div class="k">Pi companion</div><div class="v" id="pi">-</div></div>
+    <div class="tile wide"><div class="k">Messages</div><ul id="msgs"></ul></div>
+  </div>
+  <p class="note">The laptop is in charge (arm, launch, motor kill). From here: stop and hold, return home, or land.</p>
+</div>
+
+<div id="bar" class="bar hidden">
+  <button id="pause">Pause</button>
+  <button id="rtl">Return home</button>
+  <button id="land">Land here</button>
+</div>
+
+<script>
+  const $ = (id) => document.getElementById(id);
+  let pin = '';
+  try { pin = localStorage.getItem('maamePin') || ''; } catch (e) {}
+
+  function showPin(err) {
+    $('main').classList.add('hidden'); $('bar').classList.add('hidden'); $('pinView').classList.remove('hidden');
+    $('pinErr').textContent = err || '';
+  }
+  $('pinSave').onclick = () => {
+    pin = $('pinInput').value.trim();
+    try { localStorage.setItem('maamePin', pin); } catch (e) {}
+    poll();
+  };
+
+  const fmt = (v, unit, d = 0) => (v === null || v === undefined ? '-' : `${Number(v).toFixed(d)} ${unit}`);
+
+  function render(s) {
+    $('pinView').classList.add('hidden'); $('main').classList.remove('hidden'); $('bar').classList.remove('hidden');
+    $('link').textContent = s.fc_online ? 'linked' : 'no link'; $('link').className = 'pill ' + (s.fc_online ? 'ok' : 'bad');
+    $('mode').textContent = s.mode || '-';
+    $('armed').textContent = s.armed ? 'ARMED' : 'disarmed'; $('armed').className = 'v ' + (s.armed ? 'warn' : '');
+    const cell = s.volts ? s.volts / 6 : null;
+    $('batt').textContent = s.volts ? `${s.volts.toFixed(1)} V` + (s.battery_pct !== null ? ` · ${s.battery_pct}%` : '') : '-';
+    $('batt').className = 'v ' + (cell === null ? '' : cell < 3.6 ? 'bad' : cell < 3.75 ? 'warn' : 'good');
+    $('gps').textContent = `${s.fix >= 3 ? '3D' : 'no fix'} · ${s.sats}`; $('gps').className = 'v ' + (s.fix >= 3 && s.sats >= 8 ? 'good' : 'warn');
+    $('alt').textContent = fmt(s.alt_m, 'm', 1);
+    $('home').textContent = fmt(s.home_dist_m, 'm');
+    $('seq').textContent = s.mission_seq ?? '-';
+    $('pi').textContent = !s.pi_online ? 'offline' : s.pi_active ? 'ACTIVE' : 'standby';
+    $('pi').className = 'v ' + (!s.pi_online ? 'bad' : s.pi_active ? 'good' : '');
+    $('msgs').innerHTML = '';
+    for (const m of s.messages) { const li = document.createElement('li'); li.textContent = m; $('msgs').appendChild(li); }
+    for (const b of ['pause', 'rtl', 'land']) $(b).disabled = !s.fc_online;
+  }
+
+  async function poll() {
+    if (!pin) return showPin();
+    try {
+      const r = await fetch('/api/state', { headers: { 'X-Maame-Pin': pin } });
+      if (r.status === 401) { pin = ''; return showPin('Wrong PIN'); }
+      render(await r.json());
+    } catch (e) {
+      $('link').textContent = 'Pi unreachable'; $('link').className = 'pill bad';
+    }
+  }
+
+  async function act(action, question) {
+    if (question && !confirm(question)) return;
+    try {
+      const r = await fetch('/api/cmd', { method: 'POST', headers: { 'X-Maame-Pin': pin, 'Content-Type': 'application/json' },
+                                          body: JSON.stringify({ action }) });
+      if (!r.ok) alert('Not sent: ' + (await r.json()).error);
+    } catch (e) { alert('Not sent: the Pi is unreachable'); }
+  }
+  $('pause').onclick = () => act('pause');                 // the safe stop: no question
+  $('rtl').onclick = () => act('rtl', 'Return home and land?');
+  $('land').onclick = () => act('land', 'Land where it is now?');
+
+  poll();
+  setInterval(poll, 1000);
+</script>
+</body>
+</html>
