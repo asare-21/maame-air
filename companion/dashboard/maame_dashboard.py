@@ -99,20 +99,30 @@ class Link:
         self.state = new_state()
         self.lock = threading.Lock()
         try:
-            from maame_ready import load_signing_key
-            key = load_signing_key()
+            from maame_ready import load_signing_key, signed_timestamp
+            self.key, self._signed_ts = load_signing_key(), signed_timestamp
         except Exception:
-            key = None
-        if key:
-            self.mav.setup_signing(key, sign_outgoing=True, link_id=3,
-                                   initial_timestamp=int((time.time() - 1420070400) * 1e5))
+            self.key = None
+        # Signing starts on the FC's first heartbeat (seeded from its timestamp, like the
+        # companion): set up before that, pymavlink's signed commands were ignored by the FC.
+        self.signing = False
         self._last_stream_req = 0.0
+
+    def _start_signing(self, heartbeat):
+        fc_ts = self._signed_ts(heartbeat.get_msgbuf())
+        self.mav.setup_signing(self.key, sign_outgoing=True, link_id=3,
+                               initial_timestamp=fc_ts + 1 if fc_ts else int((time.time() - 1420070400) * 1e5))
+        self.signing = True
+        print(f"MAVLink signing on (timestamp from {'FC' if fc_ts else 'Pi clock'})", flush=True)
 
     def run(self):
         while True:
             msg = self.mav.recv_match(blocking=True, timeout=1)
             now = time.monotonic()
             if msg is not None and msg.get_type() != "BAD_DATA":
+                if (self.key and not self.signing and msg.get_type() == "HEARTBEAT"
+                        and msg.get_srcSystem() == FC_SYSID and msg.get_srcComponent() == 1):
+                    self._start_signing(msg)
                 with self.lock:
                     apply_message(self.state, msg, now)
             # with no laptop asking, the FC streams little to this link: ask gently
@@ -127,9 +137,13 @@ class Link:
             return snapshot(self.state, time.monotonic())
 
     def send_action(self, action):
+        """False while signing is not running yet: the FC would ignore the command."""
+        if self.key and not self.signing:
+            return False
         mode = ACTIONS[action]
         self.mav.mav.command_long_send(FC_SYSID, 1, self.mavutil.mavlink.MAV_CMD_DO_SET_MODE, 0,
                                        self.mavutil.mavlink.MAV_MODE_FLAG_CUSTOM_MODE_ENABLED, mode, 0, 0, 0, 0, 0)
+        return True
 
 
 def make_handler(link, pin):
@@ -167,7 +181,8 @@ def make_handler(link, pin):
                 action = None
             if action not in ACTIONS:
                 return self._send(400, {"error": "action must be pause, rtl or land"})
-            link.send_action(action)
+            if link.send_action(action) is False:
+                return self._send(503, {"error": "no signed link to the drone yet, try again in a moment"})
             print(f"dashboard: {action} from {self.client_address[0]}", flush=True)
             self._send(200, {"sent": action})
 

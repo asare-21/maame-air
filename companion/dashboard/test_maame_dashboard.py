@@ -41,9 +41,11 @@ class State(unittest.TestCase):
 
 
 class FakeLink:
-    def __init__(self): self.sent = []
     def snapshot(self): return {"mode": "AUTO"}
-    def send_action(self, a): self.sent.append(a)
+    def __init__(self): self.sent, self.ready = [], True
+    def send_action(self, a):
+        if not self.ready: return False
+        self.sent.append(a); return True
 
 
 class Http(unittest.TestCase):
@@ -78,6 +80,11 @@ class Http(unittest.TestCase):
         self.assertEqual(self.req("/api/cmd", "4821", {"action": "arm"})[0], 400)
         self.assertEqual(self.req("/api/cmd", "4821", {"action": "rtl"})[0], 200)
         self.assertEqual(self.link.sent, ["rtl"])
+
+    def test_refuses_until_the_signed_link_is_up(self):
+        self.link.ready = False
+        self.assertEqual(self.req("/api/cmd", "4821", {"action": "pause"})[0], 503)
+        self.assertEqual(self.link.sent, [])
 
 
 if __name__ == "__main__":
