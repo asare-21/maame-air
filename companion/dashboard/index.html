@@ -97,7 +97,8 @@
     $('pi').className = 'v ' + (!s.pi_online ? 'bad' : s.pi_active ? 'good' : '');
     $('msgs').innerHTML = '';
     for (const m of s.messages) { const li = document.createElement('li'); li.textContent = m; $('msgs').appendChild(li); }
-    for (const b of ['pause', 'rtl', 'land']) $(b).disabled = !s.fc_online;
+    for (const b of ['pause', 'rtl', 'land']) $(b).disabled = !s.fc_online || !s.can_command;
+    $('bar').classList.toggle('hidden', !s.can_command); // view-only PIN: watch, no buttons
   }
 
   async function poll() {

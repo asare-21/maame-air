@@ -22,7 +22,7 @@ class StatusParsers(unittest.TestCase):
 
     def test_read_status_never_raises_and_names_fit_mavlink(self):
         status = read_status()  # also off-Pi, where /proc and /sys are missing
-        self.assertEqual(set(status), {"PI_TEMP", "PI_LOAD", "PI_WIFI", "PI_THROT", "PI_ROUTER"})
+        self.assertEqual(set(status), {"PI_TEMP", "PI_LOAD", "PI_WIFI", "PI_THROT", "PI_ROUTER", "PI_CAM"})
         self.assertTrue(all(len(k) <= 10 for k in status))
 
 

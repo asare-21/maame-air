@@ -51,7 +51,7 @@ class FakeLink:
 class Http(unittest.TestCase):
     def setUp(self):
         self.link = FakeLink()
-        self.srv = ThreadingHTTPServer(("127.0.0.1", 0), make_handler(self.link, "4821"))
+        self.srv = ThreadingHTTPServer(("127.0.0.1", 0), make_handler(self.link, "4821", "1357"))
         threading.Thread(target=self.srv.serve_forever, daemon=True).start()
         self.base = f"http://127.0.0.1:{self.srv.server_address[1]}"
 
@@ -73,7 +73,13 @@ class Http(unittest.TestCase):
         self.assertEqual(self.req("/api/state")[0], 401)
         self.assertEqual(self.req("/api/state", "1111")[0], 401)
         code, body = self.req("/api/state", "4821")
-        self.assertEqual((code, json.loads(body)), (200, {"mode": "AUTO"}))
+        self.assertEqual((code, json.loads(body)), (200, {"mode": "AUTO", "can_command": True}))
+
+    def test_view_pin_watches_but_cannot_command(self):
+        code, body = self.req("/api/state", "1357")
+        self.assertEqual((code, json.loads(body)["can_command"]), (200, False))
+        self.assertEqual(self.req("/api/cmd", "1357", {"action": "land"})[0], 401)
+        self.assertEqual(self.link.sent, [])
 
     def test_only_pause_rtl_land_with_the_right_pin(self):
         self.assertEqual(self.req("/api/cmd", "1111", {"action": "land"})[0], 401)

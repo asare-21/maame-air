@@ -11,6 +11,7 @@ Safety:
   * never sends HEARTBEAT and uses its own system id (254): a phone must not
     stand in for the laptop in the FC's GCS-lost failsafe (MAV_GCS_SYSID 255);
   * every request needs the PIN in /etc/maame/dashboard-pin (the hotspot is open);
+    an optional view-only PIN (/etc/maame/dashboard-view-pin) can watch but not command;
   * commands are signed when /etc/maame/mavlink-signing.key exists.
 Run as root (reads both root-only files): see maame-dashboard.service.
 """
@@ -26,6 +27,8 @@ from math import asin, cos, radians, sin, sqrt
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 PIN_FILE = "/etc/maame/dashboard-pin"
+# optional second PIN that can only watch (spectators): no commands
+VIEW_PIN_FILE = "/etc/maame/dashboard-view-pin"
 DASHBOARD_SYSID = 254
 DASHBOARD_COMPID = 190
 FC_SYSID = 1
@@ -146,7 +149,7 @@ class Link:
         return True
 
 
-def make_handler(link, pin):
+def make_handler(link, pin, view_pin=None):
     page = open(os.path.join(HERE, "index.html"), "rb").read()
 
     class Handler(BaseHTTPRequestHandler):
@@ -164,9 +167,11 @@ def make_handler(link, pin):
             if self.path == "/" or self.path.startswith("/?"):
                 return self._send(200, page, "text/html; charset=utf-8")
             if self.path == "/api/state":
-                if not pin_ok(self.headers.get("X-Maame-Pin"), pin):
+                sent = self.headers.get("X-Maame-Pin")
+                can_command = pin_ok(sent, pin)
+                if not (can_command or pin_ok(sent, view_pin)):
                     return self._send(401, {"error": "PIN required"})
-                return self._send(200, link.snapshot())
+                return self._send(200, {**link.snapshot(), "can_command": can_command})
             self._send(404, {"error": "not found"})
 
         def do_POST(self):
@@ -194,11 +199,15 @@ def main():
         pin = open(PIN_FILE).read().strip()
     except OSError:
         sys.exit(f"no PIN: create {PIN_FILE} (install-dashboard.sh does)")
+    try:
+        view_pin = open(VIEW_PIN_FILE).read().strip() or None
+    except OSError:
+        view_pin = None
     link = Link(sys.argv[1] if len(sys.argv) > 1 else "tcp:127.0.0.1:5760")
     threading.Thread(target=link.run, daemon=True).start()
     port = int(os.environ.get("MAAME_DASHBOARD_PORT", "8080"))
     print(f"Maame dashboard on :{port}", flush=True)
-    ThreadingHTTPServer(("", port), make_handler(link, pin)).serve_forever()
+    ThreadingHTTPServer(("", port), make_handler(link, pin, view_pin)).serve_forever()
 
 
 if __name__ == "__main__":

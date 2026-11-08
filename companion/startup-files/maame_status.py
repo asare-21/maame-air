@@ -10,6 +10,7 @@ panel shows them (and blocks launch on under-voltage or overheating).
              bit 0 under-voltage now, 1 freq capped, 2 throttled, 3 soft temp limit;
              bits 16-19 = the same "has happened since boot"
   PI_ROUTER  1 when mavlink-routerd is running
+  PI_CAM     1 when the camera stream (mediamtx) is running
 
 Every reader returns a fallback instead of raising: health reporting must
 never stop the arming-gate heartbeat.
@@ -96,6 +97,7 @@ def read_status():
         "PI_WIFI": wifi_dbm(),
         "PI_THROT": float(throttled()),
         "PI_ROUTER": 1.0 if process_running("mavlink-routerd") else 0.0,
+        "PI_CAM": 1.0 if process_running("mediamtx") else 0.0,
     }
 
 

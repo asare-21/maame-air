@@ -92,6 +92,9 @@ ssh -t maame@maame.local 'sudo bash ~/dashboard/install-dashboard.sh'
 ```
 
 It prints a 6-digit PIN once (later: `sudo cat /etc/maame/dashboard-pin`).
+For spectators, add a **view-only PIN** (watch, no buttons):
+`ssh -t maame@maame.local "sudo sh -c 'echo 2468 > /etc/maame/dashboard-view-pin && chmod 600 /etc/maame/dashboard-view-pin && systemctl restart maame-dashboard'"`
+(use your own number).
 
 ## Flight logs
 
