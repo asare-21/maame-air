@@ -1,0 +1,26 @@
+name: Companion tests
+
+# Pi companion + dashboard unit tests (standard library only). The SITL flight tests
+# (sitl/run_tests.py) need the ArduCopter SITL binary and run on the laptop.
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  python:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'  # the Pi runs Bookworm's 3.11
+      - name: Pi health readers
+        working-directory: companion/startup-files
+        run: python -m unittest -v test_maame_status
+      - name: Phone dashboard
+        working-directory: companion/dashboard
+        run: python -m unittest -v test_maame_dashboard
+      - name: Scripts parse
+        run: for f in companion/*.sh companion/*/*.sh; do bash -n "$f"; done
