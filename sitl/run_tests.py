@@ -6,8 +6,9 @@ arming gate (ardupilot/scripts) + the real Pi companion / dashboard code.
     python3 sitl/run_tests.py              # all tests
     python3 sitl/run_tests.py hover signing
 
-Needs pymavlink in the Python that runs the tests (PYTHON, default: this one) and an
-ArduCopter SITL binary (ARDUCOPTER, default: the one ArduDeck downloads).
+Runs the tests with PYTHON if set; otherwise with sitl/.venv, created and filled from
+companion/startup-files/requirements.txt on first use. Needs an ArduCopter SITL binary
+(ARDUCOPTER, default: the one ArduDeck downloads).
 Each test gets a fresh SITL in its own temporary folder; a test passes when it prints
 "RESULT ALL PASS" within its time limit.
 """
@@ -33,6 +34,7 @@ TESTS = {
     "signing": ("signing_test.py", [], False, 300),
     "dashboard": ("dashboard_test.py", [], False, 240),
     "cockpit": ("cockpit_test.py", [], True, 540),
+    "motor-vibe": ("motor_vibe_test.py", [], True, 180),
 }
 
 
@@ -41,6 +43,22 @@ def find_binary():
     if not path or not os.access(path, os.X_OK):
         sys.exit("no ArduCopter SITL binary: set ARDUCOPTER=/path/to/arducopter (or let ArduDeck download one)")
     return path
+
+
+def test_python():
+    """PYTHON if set, else sitl/.venv with the companion's requirements (installed when missing)."""
+    if os.environ.get("PYTHON"):
+        return os.environ["PYTHON"]
+    venv = HERE / ".venv"
+    py = venv / "bin" / "python"
+    if not py.exists():
+        print(f"creating {venv}", flush=True)
+        subprocess.run([sys.executable, "-m", "venv", str(venv)], check=True)
+    if subprocess.run([str(py), "-c", "import pymavlink"], capture_output=True).returncode:
+        print("installing the test requirements into sitl/.venv", flush=True)
+        subprocess.run([str(py), "-m", "pip", "install", "-q", "--disable-pip-version-check", "-r",
+                        str(REPO / "companion" / "startup-files" / "requirements.txt")], check=True)
+    return str(py)
 
 
 def run(name, binary, python):
@@ -99,7 +117,7 @@ def main():
     unknown = [n for n in names if n not in TESTS]
     if unknown:
         sys.exit(f"unknown test(s) {unknown}; choose from {list(TESTS)}")
-    binary, python = find_binary(), os.environ.get("PYTHON", sys.executable)
+    binary, python = find_binary(), test_python()
     results = {n: run(n, binary, python) for n in names}
     print("\n" + ", ".join(f"{n} {'PASS' if ok else 'FAIL'}" for n, ok in results.items()))
     sys.exit(0 if all(results.values()) else 1)

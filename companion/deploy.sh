@@ -32,10 +32,11 @@ elif hb.base_mode & 128: sys.exit('the drone is ARMED: not deploying')
 PYEOF"
 ssh "$PI" "set -e; mkdir -p ~/startup-files/backup-$STAMP ~/dashboard
   cp ~/startup-files/*.py ~/startup-files/*.sh ~/startup-files/backup-$STAMP/ 2>/dev/null || true"
-scp -q "$HERE"/startup-files/*.py "$HERE"/startup-files/start-maame.sh "$PI":startup-files/
+scp -q "$HERE"/startup-files/*.py "$HERE"/startup-files/start-maame.sh "$HERE"/startup-files/requirements.txt "$PI":startup-files/
 scp -q "$HERE"/dashboard/maame_dashboard.py "$HERE"/dashboard/index.html "$PI":dashboard/
 
 ssh "$PI" "set -e
+  $PY -m pip install -q --disable-pip-version-check -r ~/startup-files/requirements.txt || echo 'pip install failed (Pi offline?): start-maame.sh retries at boot'
   cd ~/startup-files && $PY -m py_compile maame_*.py && cd ~/dashboard && $PY -m py_compile maame_dashboard.py
   echo '$REV $STAMP' > ~/startup-files/VERSION
   for s in maame-startup maame-dashboard; do

@@ -8,3 +8,4 @@ fp-info-cache
 site/
 .DS_Store
 __pycache__/
+.venv/

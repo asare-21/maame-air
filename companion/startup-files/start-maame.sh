@@ -3,6 +3,7 @@
 #  1. If the internet is reachable, pull the latest code from GitHub (fast-forward only).
 #     If there's no network, the pull fails, or the new code doesn't compile, keep the onboard version.
 #  2. Find the drone-env venv and run maame_startup.py (checks, LED test, live loop).
+#  3. Install any missing Python packages (requirements.txt, apt for the GPIO libraries).
 # Usage: ./start-maame.sh [--check-only] [--skip-led-test] [--no-update]
 DIR="$(cd "$(dirname "$0")" && pwd)"
 GIT_USER="${MAAME_GIT_USER:-maame}"   # owner of the clone; git refuses root on another user's repo
@@ -69,5 +70,27 @@ if [ -z "$PY" ]; then
     log "drone-env venv not found, using system python3"
     PY=/usr/bin/python3
 fi
+# Make sure the Python packages are there (installs only what is missing; offline = log and carry on,
+# maame_startup.py then reports the missing module).
+ensure_python_deps() {
+    "$PY" -c "import pymavlink, gpiozero, lgpio" 2>/dev/null && return
+    if ! "$PY" -c "import gpiozero, lgpio" 2>/dev/null && [ "$(id -u)" = 0 ]; then
+        log "installing python3-gpiozero python3-lgpio (apt)"
+        timeout 300 apt-get install -y -q python3-gpiozero python3-lgpio >/dev/null 2>&1 \
+            || log "apt install failed (offline?)"
+    fi
+    if ! "$PY" -c "import pymavlink" 2>/dev/null; then
+        if [ "$PY" = /usr/bin/python3 ]; then
+            VENV=/home/maame/drone-env
+            log "creating $VENV"
+            as_owner python3 -m venv --system-site-packages "$VENV" && PY="$VENV/bin/python3" || return
+        fi
+        log "installing $(grep -v '^#' "$DIR/requirements.txt" | xargs) (pip)"
+        as_owner timeout 600 "$PY" -m pip install -q --disable-pip-version-check -r "$DIR/requirements.txt" \
+            || log "pip install failed (offline?)"
+    fi
+}
+ensure_python_deps
+
 cd "$DIR"
 exec "$PY" "$DIR/maame_startup.py" "${ARGS[@]}"
